@@ -1,0 +1,16 @@
+<svg id="Группа_29" data-name="Группа 29" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffea02;
+      }
+
+      .cls-2 {
+        fill: #141516;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Прямоугольник_712" data-name="Прямоугольник 712" class="cls-1" width="90" height="90"/>
+  <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M969.934,3865.87h-7.8v-9.23a2.129,2.129,0,0,0-4.258,0v13.49h12.063A2.13,2.13,0,0,0,969.934,3865.87ZM960,3846a22,22,0,1,0,22,22A22,22,0,0,0,960,3846Zm0,39.74A17.74,17.74,0,1,1,977.741,3868,17.762,17.762,0,0,1,960,3885.74Z" transform="translate(-915 -3823)"/>
+</svg>

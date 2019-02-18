@@ -7,14 +7,22 @@ use yii\console\Controller;
 
 class AdminController extends Controller
 {
-    public function actionCreate()
+    public function actionCreate($password)
     {
-        $user = new User();
-        $user->username = 'admin';
-        $user->email = 'admin@example.ru';
-        $user->setPassword(123456);
-        $user->generateAuthKey();
+        if ($password){
+            $user = new User();
+            $user->username = 'admin';
+            $user->email = 'admin@example.ru';
+            $user->setPassword($password);
+            $user->generateAuthKey();
 
-        $user->save();
+            if ($user->save()){
+                print 'success';
+            }else{
+                print 'save error';
+            }
+        }else{
+            print 'need inter password';
+        }
     }
 }

@@ -79,11 +79,12 @@ class HomePage extends Model
     {
         return [
             'title' => 'Заголовок страницы',
-            'logoText' => 'Текст заголовка',
+            'logoText' => 'Текст логотипа',
+            'headerMainText' => 'Текст в шапке сайта',
             'meta_title' => 'Meta-title',
             'meta_description' => 'Meta-description',
 
-            'banner_firstTitle' => 'Заголово банера',
+            'banner_firstTitle' => 'Заголовок банера',
             'banner_secondTitle' => 'Текст под заголовком',
 
             'FFB_title' => 'Заголовок',

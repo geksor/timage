@@ -19,6 +19,9 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -26,56 +29,84 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            . '</li>';
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
-    ?>
+<?= \frontend\widgets\HeaderWidget::widget() ?>
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
+<main style="flex: 1">
+
+    <?= $content ?>
+
+</main>
+
+<?= \frontend\widgets\FooterWidget::widget() ?>
+
+<div class="modal fade" id="exampleModalHeader" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title main__about-popup-info-text">Поможем сэкономить
+                    до 10%<br>Узнай как</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="main__about-popup-info">Заполните обязательные поля (имя, телефон)</p>
+                <input class="main__about-popup-name" type="text" placeholder="Ваше имя"><br>
+                <input class="main__about-popup-number" type="number" placeholder="Номер телефона"><br>
+                <div class="main__about-popup-agree-wrapper">
+                    <p class="main__about-popup-agree-text">Нажимая кнопку отправить, я даю согласие на обработку
+                        своей <span><a href="personal-information.html">персональной информациии.</a></span></p>
+                </div>
+                <button class="main__about-popup-info-send-button" type="submit">Отправить</button>
+            </div>
+        </div>
     </div>
 </div>
-
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+<div class="modal fade" id="exampleModalConsult" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title main__about-popup-info-text">Бесплатная консультация</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="main__about-popup-info">Заполните обязательные поля (имя, телефон)</p>
+                <input class="main__about-popup-name" type="text" placeholder="Ваше имя"><br>
+                <input class="main__about-popup-number" type="number" placeholder="Номер телефона"><br>
+                <div class="main__about-popup-agree-wrapper">
+                    <p class="main__about-popup-agree-text">Нажимая кнопку отправить, я даю согласие на обработку
+                        своей <span><a href="personal-information.html">персональной информациии.</a></span></p>
+                </div>
+                <button class="main__about-popup-info-send-button" type="submit">Отправить</button>
+            </div>
+        </div>
     </div>
-</footer>
+</div>
+<div class="modal fade" id="exampleModalOrder" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title main__about-popup-info-text" id="exampleModalLongTitle">Заказать расчет</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="main__about-popup-info">Заполните обязательные поля (имя, телефон)</p>
+                <input class="main__about-popup-name" type="text" placeholder="Ваше имя"><br>
+                <input class="main__about-popup-number" type="number" placeholder="Номер телефона"><br>
+                <div class="main__about-popup-agree-wrapper">
+                    <p class="main__about-popup-agree-text">Нажимая кнопку отправить, я даю согласие на
+                        обработку
+                        своей <span><a href="personal-information.html">персональной информациии.</a></span></p>
+                </div>
+                <button class="main__about-popup-info-send-button" type="submit">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php $this->endBody() ?>
 </body>

@@ -1,53 +1,80 @@
 <?php
 
 /* @var $this yii\web\View */
+/* @var $propHomePage \common\models\HomePage */
+/* @var $propContact \common\models\Contact */
 
-$this->title = 'My Yii Application';
+$this->title = $propHomePage->title;
 ?>
-<div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+<div class="main__intro">
+    <div class="container-fluid main__intro-banner">
+        <div class="container main__intro-wrapper">
+            <div class="row main__intro-mobile">
+                <div class="col-lg-12">
+                    <h2 class="main__intro-title"><?= $propHomePage->banner_firstTitle ?></h2>
+                    <p class="main__intro-info"><?= $propHomePage->banner_secondTitle ?></p>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+            <div class="row main__intro-mobile">
+                <div class="main__intro-cost-wrapper">
+                    <a class="main__intro-cost" data-toggle="modal" data-target="#exampleModalConsult" href="#">Бесплатная
+                        консультация</a>
+                </div>
             </div>
         </div>
-
     </div>
+</div>
+
+<div class="main__product">
+    <div class="container-fluid background-grey main__quality-block-padding">
+        <div class="container main__product-wrapper">
+            <h2><?= $propHomePage->FFB_title ?></h2>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="main__product-text-wrapper background-white">
+                        <?= $propHomePage->FFB_text ?>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img class="main__product-stairs-image" src="<?= $propHomePage->getThumbImage('FFB_image') ?>" alt="Перила из нержавеющей стали"
+                         style="width: 100%">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?= \frontend\widgets\WeProjectWidget::widget() ?>
+
+<div class="main__quality">
+    <div class="container-fluid background-grey main__quality-block-margin">
+        <div class="container">
+            <h2 class="main__quality-title-text"><?= $propHomePage->FSB_title ?></h2>
+            <div class="row main__quality-block-padding">
+                <div class="col-lg-6">
+                    <div class="col-lg-12 main__quality-product-wrapper background-white">
+                        <?= $propHomePage->FSB_text ?>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="main__quality-image-new" src="<?= $propHomePage->getThumbImage('FSB_image') ?>" alt="Качественная работа"
+                         style="width: 100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?= \frontend\widgets\HomeProductWidget::widget() ?>
+
+</div>
+
+<?= \frontend\widgets\WeProductWidget::widget() ?>
+
+<?= \frontend\widgets\WePartnerWidget::widget() ?>
+
+<?= \frontend\widgets\StaticConsultWidget::widget() ?>
+
+<div class="main__map">
+    <?= $propContact->mapScript ?>
 </div>

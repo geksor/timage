@@ -10,7 +10,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'STMebel-Панель администратора';
+$this->title = 'Timedj-Панель администратора';
 ?>
 <div class="site-index container-fluid">
     <p>
