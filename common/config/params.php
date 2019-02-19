@@ -33,6 +33,7 @@ $homePage = jsonFile('home-page');
 return [
     'adminEmail' => 'admin@example.com',
     'supportEmail' => 'support@example.com',
+    'notificEmail' => 'notific@example.com',
     'user.passwordResetTokenExpire' => 3600,
     'Contact' => $contact,
     'ProjectPage' => $projectPage,

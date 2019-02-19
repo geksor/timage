@@ -16,12 +16,14 @@ use yii\bootstrap\ActiveForm;
             </div>
             <div class="row">
                 <? $form = ActiveForm::begin([
+                        'action' => '/site/call-back',
                         'options' => [
                                 'class' => 'col-lg-12 main__questions-inputs-wrapper'
                         ]
                 ]) ?>
                     <div style="display: none">
                         <?= $form->field($model, 'first_name')->label(false) ?>
+                        <?= $form->field($model, 'type')->label(false) ?>
                     </div>
                     <div class="main__questions-input-name">
                         <?= $form->field($model, 'name')->textInput(['placeholder' => 'Имя'])->label(false) ?>

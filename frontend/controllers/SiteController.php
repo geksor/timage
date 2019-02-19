@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\Callback;
 use common\models\Contact;
 use common\models\HomePage;
 use Yii;
@@ -117,6 +118,31 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+    public function actionCallBack()
+    {
+        $callBackModel = new CallBack();
+        $contact = new Contact();
+        $contact->load(Yii::$app->params);
+
+        if ( $callBackModel->load( Yii::$app->request->post() ) && !$callBackModel->first_name ) {
+            if ($callBackModel->save()){
+                Yii::$app->session->setFlash('popUp', ' Мы свяжемся с Вами в ближайшее время.');
+
+                $messHeader = $callBackModel->type===2?'Запрос консультации':'Запрос информации о скидках';
+                if ($contact->chatId){
+                    $message = "$messHeader\n Имя: $callBackModel->name \n Телефон: $callBackModel->phone";
+                    \Yii::$app->bot->sendMessage((integer)$contact->chatId, $message);
+                }
+                if ($contact->email){
+                    $callBackModel->sendEmail($contact->email);
+                }
+                return $this->redirect(Yii::$app->request->referrer);
+            }
+        }
+        Yii::$app->session->setFlash('popUp', 'Что то пошло не так.');
+        return $this->redirect(Yii::$app->request->referrer);
     }
 
 }

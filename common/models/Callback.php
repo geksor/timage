@@ -20,6 +20,7 @@ use Yii;
  * @property string $name
  * @property string $phone
  * @property int $type
+ * @property string $first_name
  */
 class Callback extends \yii\db\ActiveRecord
 {
@@ -53,11 +54,40 @@ class Callback extends \yii\db\ActiveRecord
             'id' => 'ID',
             'created_at' => 'Дата создания',
             'done_at' => 'Дата изменения',
-            'viewed' => 'Viewed',
-            'name' => 'Name',
-            'phone' => 'Phone',
-            'type' => 'Type',
+            'viewed' => 'Состояние',
+            'name' => 'Имя',
+            'phone' => 'Телефон',
+            'type' => 'Тип',
         ];
+    }
+
+    /**
+     * Sends an email to the specified email address using the information collected by this model.
+     *
+     * @param $setTo
+     * @param string $email the target email address
+     * @return bool whether the email was sent
+     *
+     */
+    public function sendEmail($setTo)
+    {
+        $mailHead = $this->type===2?'Запрос консультации':'Запрос информации о скидках';
+        $body = '<h1>'.$mailHead.'</h1>
+                <p>
+                    <a href="'. Yii::$app->request->hostInfo .'/admin/call-back/view/'. $this->id .'">Ссылка на запрос</a>
+                </p>
+                <h2>Информация</h2>
+                <p> Дата запроса: '.Yii::$app->formatter->asDate($this->created_at, 'long').'</p>
+                <p> Время запроса: '.Yii::$app->formatter->asTime($this->created_at).'</p>
+                <p> Имя: '.$this->name.'</p>
+                <p> Телефон: '.$this->phone . '</p>';
+
+        return Yii::$app->mailer->compose()
+            ->setTo($setTo)
+            ->setFrom([Yii::$app->params['notificEmail'] => Yii::$app->name])
+            ->setSubject($mailHead.': '. $this->name)
+            ->setHtmlBody($body)
+            ->send();
     }
 
     /**
