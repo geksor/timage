@@ -509,7 +509,7 @@ ul.header__contacts__list {
 }
 
 .main__quality-image-new {
-    height: 70%;
+    /*height: 70%;*/
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -542,7 +542,7 @@ ul.header__contacts__list {
 }
 
 .main__quality-block-margin {
-    margin-bottom: -7%;
+    /*margin-bottom: -7%;*/
 }
 
 
@@ -1667,7 +1667,7 @@ button.main__intro-action:hover {
     }
 
     .main__quality-image-new {
-        height: 72%;
+        /*height: 72%;*/
     }
 
     .footer__adress-text {
@@ -2660,4 +2660,19 @@ button.main__intro-action:hover {
     background-color: #FDB507;
     padding: 1%;
     border-radius: .25rem;
+}
+
+.main__our-projects-image-block-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+}
+
+.main__our-projects-image-block-wrapper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }

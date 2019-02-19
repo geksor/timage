@@ -14,7 +14,9 @@
                                 $firstImg = $model->getBehavior('galleryBehavior')->getImages()[0];
                                 $img = $firstImg?$firstImg->getUrl('preview'):'/no_image.png';
                             ?>
+                           <div class="main__our-projects-image-block-wrapper">
                             <img src="<?= $img ?>" alt="<?= $model->title ?>" style="width: 100%">
+                           </div>
                             <p class="main__our-project-text"><?= $model->title ?></p>
                         </div>
                     <?}?>
