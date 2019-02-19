@@ -35,7 +35,7 @@
 
                                 </div>
                                 <div class=""main__quality-text-block-wrapper-one">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModalOrder">Заказать
+                                    <a href="#" data-toggle="modal" data-product-name = '<?= $firstProduct->title ?>' data-target="#exampleModalOrder">Заказать
                                         расчет</a>
                                 </div>
                             </div>
@@ -71,7 +71,7 @@
                                 <h3><?= $secondProduct->title ?></h3>
                                 <p><?= $secondProduct->short_desc ?></p>
                                 <div class="main__quality-order-button button-left">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModalOrder">Заказать
+                                    <a href="#" data-toggle="modal" data-product-name = '<?= $secondProduct->title ?>' data-target="#exampleModalOrder">Заказать
                                         расчет</a>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
                                 <h3><?= $lastProduct->title ?></h3>
                                 <p><?= $lastProduct->short_desc ?></p>
                                 <div>
-                                    <a href="#" data-toggle="modal" data-target="#exampleModalOrder">Заказать
+                                    <a href="#" data-toggle="modal" data-product-name = '<?= $lastProduct->title ?>' data-target="#exampleModalOrder">Заказать
                                         расчет</a>
                                 </div>
                             </div>

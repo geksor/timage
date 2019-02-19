@@ -41,7 +41,8 @@ class Callback extends \yii\db\ActiveRecord
         return [
             [['created_at', 'done_at', 'viewed', 'type'], 'integer'],
             [['first_name', 'name', 'phone'], 'string'],
-            [['name', 'phone'], 'required', 'message' => 'Обязательное поле'],
+            [['name', 'phone'], 'required'],
+            ['phone', 'match', 'pattern' => '/^([+]?[0-9\s-\(\)]{3,25})*$/i']
         ];
     }
 
@@ -74,7 +75,7 @@ class Callback extends \yii\db\ActiveRecord
         $mailHead = $this->type===2?'Запрос консультации':'Запрос информации о скидках';
         $body = '<h1>'.$mailHead.'</h1>
                 <p>
-                    <a href="'. Yii::$app->request->hostInfo .'/admin/call-back/view/'. $this->id .'">Ссылка на запрос</a>
+                    <a href="'. Yii::$app->request->hostInfo .'/admin/callback/view/'. $this->id .'">Ссылка на запрос</a>
                 </p>
                 <h2>Информация</h2>
                 <p> Дата запроса: '.Yii::$app->formatter->asDate($this->created_at, 'long').'</p>
@@ -104,6 +105,9 @@ class Callback extends \yii\db\ActiveRecord
                     : $this->created_at;
         }else{
             $this->created_at = time();
+        }
+        if ($this->phone){
+            $this->phone = preg_replace("/[^0-9]/", '', $this->phone);
         }
         return parent::beforeSave($insert);
     }
