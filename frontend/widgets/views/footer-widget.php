@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 footer__logo-wrapper">
-                    <a href="/"><img src="public/img/timedj-plus-logo.svg" alt="<?= $paramsHomePage->logoText ?>" style="width: 75%"></a>
+                    <a href="/"><img src="/public/img/timedj-plus-logo.svg" alt="<?= $paramsHomePage->logoText ?>" style="width: 75%"></a>
                     <p class="footer__logo-text"><?= $paramsHomePage->logoText ?></p>
                 </div>
                 <div class="col-lg-3 footer__tel-wrapper">

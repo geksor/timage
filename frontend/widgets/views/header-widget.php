@@ -10,7 +10,7 @@
                 <div class="col-lg-3">
                     <div class="header__company-name-wrapper">
                         <a href="/">
-                            <img class="header__timedj-plus-logo" src="public/img/timedj-plus-logo.svg" alt="<?= $paramsHomePage->logoText ?>"
+                            <img class="header__timedj-plus-logo" src="/public/img/timedj-plus-logo.svg" alt="<?= $paramsHomePage->logoText ?>"
                                          style="width: 70%">
                         </a>
                         <a class="header__company-name" href="/"><?= $paramsHomePage->logoText ?></a>
@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-lg-3 header__contacts-wrapper">
                     <div class="icon-tel-wrapper">
-                        <img class="header__call-icon" src="public/img/call-icon.svg" alt="Иконка телефона">
+                        <img class="header__call-icon" src="/public/img/call-icon.svg" alt="Иконка телефона">
                         <ul class="header__contacts__list">
                             <li>
                                 <a class="header__contacts__item tel-top" href="tel:<?= preg_replace("/[^0-9]/", '', $paramsContact->phone_1) ?>">
@@ -60,10 +60,10 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <a class="contacts-navigation-tel" href="tel:<?= preg_replace("/[^0-9]/", '', $paramsContact->phone_1) ?>">
-                            <img src="public/img/contacts-icon-1.svg" alt="Иконка телефона">
+                            <img src="/public/img/contacts-icon-1.svg" alt="Иконка телефона">
                         </a>
                         <a class="contacts-navigation-mail" href="/contacts">
-                            <img src="public/img/contacts-icon-2.svg" alt="Иконка контакты">
+                            <img src="/public/img/contacts-icon-2.svg" alt="Иконка контакты">
                         </a>
                         <div class="row">
                             <div class="col-lg-12 d-flex">
