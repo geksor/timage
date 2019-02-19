@@ -27,7 +27,7 @@ $this->title = $propHomePage->title;
 </div>
 
 <div class="main__product">
-    <div class="container-fluid background-grey main__quality-block-padding">
+    <div class="container-fluid background-grey main__quality-block-wrapper">
         <div class="container main__product-wrapper">
             <h2><?= $propHomePage->FFB_title ?></h2>
             <div class="row">
@@ -48,10 +48,10 @@ $this->title = $propHomePage->title;
 <?= \frontend\widgets\WeProjectWidget::widget() ?>
 
 <div class="main__quality">
-    <div class="container-fluid background-grey main__quality-block-margin">
+    <div class="container-fluid background-grey main__quality-block-wrapper">
         <div class="container">
             <h2 class="main__quality-title-text"><?= $propHomePage->FSB_title ?></h2>
-            <div class="row main__quality-block-padding">
+            <div class="row">
                 <div class="col-lg-6">
                     <div class="col-lg-12 main__quality-product-wrapper background-white">
                         <?= $propHomePage->FSB_text ?>
