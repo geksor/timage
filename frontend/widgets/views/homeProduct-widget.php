@@ -136,3 +136,16 @@
     </div>
 <?}?>
 
+<?
+
+$js = <<<JS
+
+    $('.productOnHomeModalButton').on('click', function() {
+        var sectionName = $($(this).data('target')).find('#callbacksection-section_name');
+        sectionName.val($(this).data('product-name'));
+    });
+JS;
+
+$this->registerJs($js, $position = yii\web\View::POS_END, $key = null);
+?>
+
