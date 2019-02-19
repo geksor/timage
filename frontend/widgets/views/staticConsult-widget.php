@@ -20,6 +20,9 @@ use yii\bootstrap\ActiveForm;
                                 'class' => 'col-lg-12 main__questions-inputs-wrapper'
                         ]
                 ]) ?>
+                    <div style="display: none">
+                        <?= $form->field($model, 'first_name')->label(false) ?>
+                    </div>
                     <div class="main__questions-input-name">
                         <?= $form->field($model, 'name')->textInput(['placeholder' => 'Имя'])->label(false) ?>
                     </div>

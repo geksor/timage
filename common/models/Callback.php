@@ -7,6 +7,12 @@ use Yii;
 /**
  * This is the model class for table "callback".
  *
+ * type 1 - sale
+ *
+ * type 2 - consult
+ *
+ * prop first_name - trap from bot
+ *
  * @property int $id
  * @property int $created_at
  * @property int $done_at
@@ -17,6 +23,7 @@ use Yii;
  */
 class Callback extends \yii\db\ActiveRecord
 {
+    public $first_name;
     /**
      * {@inheritdoc}
      */
@@ -32,7 +39,7 @@ class Callback extends \yii\db\ActiveRecord
     {
         return [
             [['created_at', 'done_at', 'viewed', 'type'], 'integer'],
-            [['name', 'phone'], 'string'],
+            [['first_name', 'name', 'phone'], 'string'],
             [['name', 'phone'], 'required', 'message' => 'Обязательное поле'],
         ];
     }
@@ -44,12 +51,30 @@ class Callback extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'created_at' => 'Created At',
-            'done_at' => 'Done At',
+            'created_at' => 'Дата создания',
+            'done_at' => 'Дата изменения',
             'viewed' => 'Viewed',
             'name' => 'Name',
             'phone' => 'Phone',
             'type' => 'Type',
         ];
+    }
+
+    /**
+     * @param bool $insert
+     * @return bool
+     */
+    public function beforeSave($insert)
+    {
+        if ($this->created_at){
+
+            $this->created_at =
+                is_string($this->created_at)
+                    ? strtotime($this->created_at)
+                    : $this->created_at;
+        }else{
+            $this->created_at = time();
+        }
+        return parent::beforeSave($insert);
     }
 }
