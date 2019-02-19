@@ -10,7 +10,9 @@
                 <div class="row slider">
                     <? foreach ($models as $model) {/* @var $model \common\models\CatalogSections */?>
                         <div class="main__preview-image">
+                            <div class="main__preview-image-wrapper">
                             <img src="<?= $model->getThumbImage('main_image') ?>" alt="<?= $model->title ?>" style="width: 100%">
+                            </div>
                             <p class="main__preview-text"><?= $model->title ?></p>
                         </div>
                     <?}?>

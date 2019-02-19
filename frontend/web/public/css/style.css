@@ -576,7 +576,24 @@ ul.header__contacts__list {
     /*margin-bottom: -7%;*/
 }
 
+.slick-slide img {
+    padding: 0 1%;
+}
 
+.main__preview-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 81%;
+}
+
+.main__preview-image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
 .main__quality-product-wrapper div {
     padding: 0 2% 5% 2%;
