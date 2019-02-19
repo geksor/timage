@@ -7,6 +7,8 @@ use Yii;
 /**
  * This is the model class for table "callback_section".
  *
+ * prop first_name - trap from bot
+ *
  * @property int $id
  * @property int $created_at
  * @property int $done_at
@@ -14,9 +16,11 @@ use Yii;
  * @property string $name
  * @property string $phone
  * @property string $section_name
+ * @property string $first_name
  */
 class CallbackSection extends \yii\db\ActiveRecord
 {
+    public $first_name;
     /**
      * {@inheritdoc}
      */

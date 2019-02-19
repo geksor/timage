@@ -43,29 +43,7 @@ AppAsset::register($this);
 
 <?= \frontend\widgets\ModalConsultWidget::widget() ?>
 
-<div class="modal fade" id="exampleModalOrder" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title main__about-popup-info-text" id="exampleModalLongTitle">Заказать расчет</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p class="main__about-popup-info">Заполните обязательные поля (имя, телефон)</p>
-                <input class="main__about-popup-name" type="text" placeholder="Ваше имя"><br>
-                <input class="main__about-popup-number" type="number" placeholder="Номер телефона"><br>
-                <div class="main__about-popup-agree-wrapper">
-                    <p class="main__about-popup-agree-text">Нажимая кнопку отправить, я даю согласие на
-                        обработку
-                        своей <span><a href="personal-information.html">персональной информациии.</a></span></p>
-                </div>
-                <button class="main__about-popup-info-send-button" type="submit">Отправить</button>
-            </div>
-        </div>
-    </div>
-</div>
+<?= \frontend\widgets\ModalSectionWidget::widget() ?>
 
 <?php $this->endBody() ?>
 </body>
