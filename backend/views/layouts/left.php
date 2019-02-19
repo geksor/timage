@@ -18,7 +18,7 @@
                                 'icon' => 'phone-square',
                                 'url' => ['/callback'],
                                 "active" => Yii::$app->controller->id === 'callback',
-                           ],
+                            ],
                             ['label' => 'Разделы', 'icon' => 'comments', 'url' => ['/callback-section'], "active" => Yii::$app->controller->id === 'callback-section',],
                         ],
                     ],

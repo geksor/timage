@@ -41,6 +41,12 @@ if (Yii::$app->controller->action->id === 'login') {
             .bg-cropbox{width: 100%!important;}
             .image-form .workarea-cropbox{height: 600px!important;}
             .image-form .bg-cropbox{height: 600px!important;}
+            .newRow{
+                background-color: #ffdcdc!important;
+            }
+            .noReadRow{
+                background-color: #fffdce!important;
+            }
         </style>
     </head>
     <body class="hold-transition skin-blue sidebar-mini">

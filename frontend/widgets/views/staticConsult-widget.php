@@ -34,7 +34,7 @@ use yii\bootstrap\ActiveForm;
                     </div>
 
                     <div class="main__questions-input-submit">
-                        <input type="button" value="Бесплатная консультация">
+                        <input type="submit" value="Бесплатная консультация">
                     </div>
 
                 <? ActiveForm::end() ?>
