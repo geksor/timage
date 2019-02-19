@@ -33,6 +33,7 @@ class Callback extends \yii\db\ActiveRecord
         return [
             [['created_at', 'done_at', 'viewed', 'type'], 'integer'],
             [['name', 'phone'], 'string'],
+            [['name', 'phone'], 'required', 'message' => 'Обязательное поле'],
         ];
     }
 
