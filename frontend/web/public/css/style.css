@@ -618,6 +618,24 @@ ul.header__contacts__list {
     height: 100%;
 }
 
+.main__map {
+    height: 300px !important;
+}
+
+.main__map script {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+.main__map .ymaps-2-1-72-map {
+    height: 300px !important;
+}
+
+.main__map iframe {
+    width: 100% !important;
+    height: 300px !important;
+}
+
 .main__quality-product-wrapper div {
     padding: 0 2% 5% 2%;
     text-align: right;
@@ -1240,7 +1258,33 @@ p.help-block.help-block-error {
 
 .main__contacts-map-wrapper {
     padding: 0 10% 10% 10%;
+    /*height: 400px !important;*/
+    /*width: 660px !important;*/
+    /*margin: 0 10% 10% 10%;*/
 }
+
+.main__contacts-map-wrapper #ymaps1550648550023131353 {
+    height: 100% !important;
+}
+
+/*ymaps.ymaps-2-1-72-map-2-1-72-map {*/
+    /*height: 400px !important;*/
+    /*width: 660px !important;*/
+/*}*/
+
+/*.ymaps#ymaps1550647931449544725 {*/
+    /*height: 400px !important;*/
+/*}*/
+
+/*.main__contacts-map-wrapper script {*/
+    /*height: 400px !important;*/
+    /*width: 660px !important;*/
+/*}*/
+
+/*.main__contacts-map-wrapper iframe {*/
+    /*height: 400px !important;*/
+    /*width: 660px !important;*/
+/*}*/
 
 .padding-partners-bottom {
     padding: 0 0 3% 0;
