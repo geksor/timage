@@ -13,6 +13,8 @@ $this->registerMetaTag([
     'content' => $model->meta_description,
 ]);
 
+$images = $model->getBehavior('galleryBehavior')->getImages();
+
 ?>
 
 <div class="main__catalog">
@@ -26,37 +28,24 @@ $this->registerMetaTag([
                 <p>от <?= Yii::$app->formatter->asInteger($model->price) ?> руб.</p>
                 <p><?= $model->desc ?></p>
                 <div class="main__catalog-consult-button-wrapper">
-                    <a class="main__catalog-consult-button" data-toggle="modal" data-target="#exampleModalConsult"
+                    <a class="main__catalog-consult-button" data-toggle="modal" data-target="#exampleModalOrder"
                        href="#">Бесплатная консультация</a>
                 </div>
             </div>
         </div>
-        <h3 class="main__catalog-title-text">Примеры выполненных работ</h3>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 main__catalog-wrapper">
-                <img src="img/catalog-image-2.jpg" alt="Изображение работ" style="width: 100%">
+        <? if ($images) {?>
+            <h3 class="main__catalog-title-text">Примеры выполненных работ</h3>
+            <div class="row">
+                <? foreach ($images as $image) {?>
+                    <div class="col-lg-3 col-md-6 col-sm-12 main__catalog-wrapper">
+                        <img src="<?= $image->getUrl('preview') ?>" alt="<?= $image->name ?>" style="width: 100%">
+                    </div>
+                <?}?>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 main__catalog-wrapper">
-                <img src="img/catalog-image-2.jpg" alt="Изображение работ" style="width: 100%">
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 main__catalog-wrapper">
-                <img src="img/catalog-image-2.jpg" alt="Изображение работ" style="width: 100%">
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 main__catalog-wrapper">
-                <img src="img/catalog-image-2.jpg" alt="Изображение работ" style="width: 100%">
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 main__catalog-wrapper">
-                <img src="img/catalog-image-2.jpg" alt="Изображение работ" style="width: 100%">
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 main__catalog-wrapper">
-                <img src="img/catalog-image-2.jpg" alt="Изображение работ" style="width: 100%">
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 main__catalog-wrapper">
-                <img src="img/catalog-image-2.jpg" alt="Изображение работ" style="width: 100%">
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 main__catalog-wrapper main__catalog-wrapper-bottom">
-                <img src="img/catalog-image-2.jpg" alt="Изображение работ" style="width: 100%">
-            </div>
-        </div>
+        <?}?>
     </div>
 </div>
+
+<?= \frontend\widgets\ModalSectionWidget::widget([
+    'sectionName' => $model->title,
+]) ?>

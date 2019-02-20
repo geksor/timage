@@ -172,11 +172,11 @@ class SiteController extends Controller
                 if ($contact->email){
                     $callBackModel->sendEmail($contact->email);
                 }
-                return $this->refresh();
+                return $this->redirect(Yii::$app->request->referrer);
             }
         }
         Yii::$app->session->setFlash('popUp', 'Что то пошло не так.');
-        return $this->refresh();
+        return $this->redirect(Yii::$app->request->referrer);
     }
 
     /**
@@ -200,11 +200,11 @@ class SiteController extends Controller
                 if ($contact->email){
                     $callBackModel->sendEmail($contact->email);
                 }
-                return $this->refresh();
+                return $this->redirect(Yii::$app->request->referrer);
             }
         }
         Yii::$app->session->setFlash('popUp', 'Что то пошло не так.');
-        return $this->refresh();
+        return $this->redirect(Yii::$app->request->referrer);
     }
 
 }
