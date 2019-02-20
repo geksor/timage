@@ -23,7 +23,7 @@ AppAsset::register($this);
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
     <?php $this->registerCsrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+    <title><?= Html::encode($this->title) ?> - OOO фирма "Тимедж+"</title>
     <?php $this->head() ?>
 </head>
 <body>

@@ -1,45 +1,55 @@
 <?php
 
 /* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \frontend\models\ContactForm */
+/* @var $pageParam \common\models\Contact */
 
-use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
-use yii\captcha\Captcha;
-
-$this->title = 'Contact';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = $pageParam->title;
+$this->registerMetaTag([
+    'name' => 'title',
+    'content' => $pageParam->meta_title,
+]);
+$this->registerMetaTag([
+    'name' => 'description',
+    'content' => $pageParam->meta_description,
+]);
 ?>
-<div class="site-contact">
-    <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-    </p>
-
-    <div class="row">
-        <div class="col-lg-5">
-            <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
-
-                <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
-
-                <?= $form->field($model, 'email') ?>
-
-                <?= $form->field($model, 'subject') ?>
-
-                <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
-
-                <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-                    'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
-                ]) ?>
-
-                <div class="form-group">
-                    <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
+<div class="main__contacts">
+    <div class="container">
+        <h2 class="main__contacts-title-text"><?= $pageParam->title ?></h2>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="main__contacts-address-wrapper"><span class="main__contacts-address">Адрес:</span><br>
+                    <p class="main__contacts-address-text"><?= $pageParam->address_1 ?></p>
                 </div>
-
-            <?php ActiveForm::end(); ?>
+                <div class="main__contacts-tel-wrapper"><span class="main__contacts-tel-title">Телефон:</span><br>
+                    <ul class="main__contacts-tel-list">
+                        <li class="main__contacts-tel">
+                            <a href="tel:<?= preg_replace("/[^0-9]/", '', $pageParam->phone_1) ?>">
+                                <?= $pageParam->phone_1 ?>
+                            </a>
+                        </li>
+                        <li class="main__contacts-tel">
+                            <a href="tel:<?= preg_replace("/[^0-9]/", '', $pageParam->phone_2) ?>">
+                                <?= $pageParam->phone_2 ?>
+                            </a>
+                        </li>
+                        <li class="main__contacts-tel">
+                            <a href="tel:<?= preg_replace("/[^0-9]/", '', $pageParam->phone_3) ?>">
+                                <?= $pageParam->phone_3 ?>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main__contacts-mail-wrapper"><span class="main__contacts-mail-title">E-mail:</span><br>
+                    <a class="main__contacts-mail" href="mailto:<?= $pageParam->email ?>"><?= $pageParam->email ?></a>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="main__contacts-map-wrapper">
+                    <?= $pageParam->mapScript ?>
+                </div>
+            </div>
         </div>
     </div>
-
 </div>

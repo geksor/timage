@@ -7,14 +7,21 @@ use yii\base\Model;
 
 /**
  * ContactForm is the model behind the contact form.
+ *
+ * Property first_name trap from bot
+ *
+ * @property string $name
+ * @property string $phone
+ * @property string $body
+ * @property string $first_name
+ *
  */
 class ContactForm extends Model
 {
     public $name;
-    public $email;
-    public $subject;
+    public $phone;
     public $body;
-    public $verifyCode;
+    public $first_name;
 
 
     /**
@@ -23,12 +30,12 @@ class ContactForm extends Model
     public function rules()
     {
         return [
-            // name, email, subject and body are required
-            [['name', 'email', 'subject', 'body'], 'required'],
-            // email has to be a valid email address
-            ['email', 'email'],
-            // verifyCode needs to be entered correctly
-            ['verifyCode', 'captcha'],
+            // name, phone and body are required
+            [['name', 'phone', 'body'], 'required'],
+            // phone has to be a valid pattern
+            ['phone', 'match', 'pattern' => '/^([+]?[0-9\s-\(\)]{6,25})*$/i'],
+            // first_name needs to be null
+            ['first_name', 'string'],
         ];
     }
 
@@ -38,7 +45,9 @@ class ContactForm extends Model
     public function attributeLabels()
     {
         return [
-            'verifyCode' => 'Verification Code',
+            'name' => 'Ваше имя',
+            'phone' => 'Номер телефона',
+            'body' => 'Текст сообщения',
         ];
     }
 
@@ -48,13 +57,20 @@ class ContactForm extends Model
      * @param string $email the target email address
      * @return bool whether the email was sent
      */
-    public function sendEmail($email)
+    public function sendEmail($setTo)
     {
+        $mailHead = 'Письмо со страницы "О нас"';
+        $body = '<h1>'.$mailHead.'</h1>
+                <p>'.$this->body.'</p>
+                <h2>Информация об отправителе</h2>
+                <p> Имя: '.$this->name.'</p>
+                <p> Телефон: '.$this->phone . '</p>';
+
         return Yii::$app->mailer->compose()
-            ->setTo($email)
-            ->setFrom([$this->email => $this->name])
-            ->setSubject($this->subject)
-            ->setTextBody($this->body)
+            ->setTo($setTo)
+            ->setFrom([Yii::$app->params['notificEmail'] => Yii::$app->name])
+            ->setSubject($mailHead.' от '. $this->name)
+            ->setHtmlBody($body)
             ->send();
     }
 }

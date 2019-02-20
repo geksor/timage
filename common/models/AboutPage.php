@@ -70,6 +70,8 @@ class AboutPage extends Model
         ];
     }
 
+
+
     public function save($request){
         if ($request){
             $tempParams = json_encode($request);

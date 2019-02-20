@@ -5,6 +5,14 @@
 /* @var $propContact \common\models\Contact */
 
 $this->title = $propHomePage->title;
+$this->registerMetaTag([
+    'name' => 'title',
+    'content' => $propHomePage->meta_title,
+]);
+$this->registerMetaTag([
+    'name' => 'description',
+    'content' => $propHomePage->meta_description,
+]);
 ?>
 
 <div class="main__intro">

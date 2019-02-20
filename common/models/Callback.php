@@ -42,7 +42,7 @@ class Callback extends \yii\db\ActiveRecord
             [['created_at', 'done_at', 'viewed', 'type'], 'integer'],
             [['first_name', 'name', 'phone'], 'string'],
             [['name', 'phone'], 'required'],
-            ['phone', 'match', 'pattern' => '/^([+]?[0-9\s-\(\)]{3,25})*$/i']
+            ['phone', 'match', 'pattern' => '/^([+]?[0-9\s-\(\)]{6,25})*$/i']
         ];
     }
 

@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\AboutPage;
 use common\models\Callback;
 use common\models\CallbackSection;
 use common\models\Contact;
@@ -95,20 +96,14 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-            } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
-            }
+        $pageParam = new Contact();
+        $pageParam->load(Yii::$app->params);
 
-            return $this->refresh();
-        } else {
-            return $this->render('contact', [
-                'model' => $model,
-            ]);
-        }
+
+        return $this->render('contact', [
+            'pageParam' => $pageParam,
+        ]);
+
     }
 
     /**
@@ -118,9 +113,33 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
+        $pageParam = new AboutPage();
+        $pageParam->load(Yii::$app->params);
+
+        $contact = new Contact();
+        $contact->load(Yii::$app->params);
+
+        $contactForm = new ContactForm();
+
+        if ($contactForm->load(Yii::$app->request->post()) && !$contactForm->first_name){
+            if ($contact->email){
+                $contactForm->sendEmail($contact->email);
+                Yii::$app->session->setFlash('popUp', 'Ваше сообщение принято.');
+            }else{
+                Yii::$app->session->setFlash('popUp', 'Что то пошло не так. Попробуйте повторить действие позже');
+            }
+            return $this->refresh();
+        }
+
+        return $this->render('about', [
+            'pageParam' => $pageParam,
+            'contactForm' => $contactForm,
+        ]);
     }
 
+    /**
+     * @return \yii\web\Response
+     */
     public function actionCallBack()
     {
         $callBackModel = new CallBack();
@@ -139,13 +158,16 @@ class SiteController extends Controller
                 if ($contact->email){
                     $callBackModel->sendEmail($contact->email);
                 }
-                return $this->redirect(Yii::$app->request->referrer);
+                return $this->refresh();
             }
         }
         Yii::$app->session->setFlash('popUp', 'Что то пошло не так.');
-        return $this->redirect(Yii::$app->request->referrer);
+        return $this->refresh();
     }
 
+    /**
+     * @return \yii\web\Response
+     */
     public function actionCallBackSection()
     {
         $callBackModel = new CallbackSection();
@@ -164,11 +186,11 @@ class SiteController extends Controller
                 if ($contact->email){
                     $callBackModel->sendEmail($contact->email);
                 }
-                return $this->redirect(Yii::$app->request->referrer);
+                return $this->refresh();
             }
         }
         Yii::$app->session->setFlash('popUp', 'Что то пошло не так.');
-        return $this->redirect(Yii::$app->request->referrer);
+        return $this->refresh();
     }
 
 }
