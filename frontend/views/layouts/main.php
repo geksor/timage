@@ -63,7 +63,15 @@ AppAsset::register($this);
 
 <? if (Yii::$app->session->hasFlash('popUp')) {?>
 
-    <?= Yii::$app->session->getFlash('popUp') ?>
+<div class="modal fade" id="" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title main__about-popup-info-text"> <?= Yii::$app->session->getFlash('popUp') ?></h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">Ок</span>
+                </button>
+            </div>
 
 <?}?>
 
