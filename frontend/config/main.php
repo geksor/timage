@@ -41,19 +41,19 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-
-                '/catalog/<alias:[-\w]+>' => 'catalog/view',
-
-                '/' => 'site/index',
-
-                '<action:[-\w]+>' => 'site/<action>',
-
-            ],
-        ],
+//        'urlManager' => [
+//            'enablePrettyUrl' => true,
+//            'showScriptName' => false,
+//            'rules' => [
+//
+//                '/catalog/<alias:[-\w]+>' => 'catalog/view',
+//
+//                '/' => 'site/index',
+//
+//                '<action:[-\w]+>' => 'site/<action>',
+//
+//            ],
+//        ],
     ],
     'params' => $params,
     'language' => 'ru-RU',
