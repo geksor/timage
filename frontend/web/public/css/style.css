@@ -128,7 +128,7 @@ body {
 .header__navigation-item-dropdown:hover,
 .header__navigation-item-dropdown:focus {
     background-color: #ffde02;
-    color: #141516;
+    color: #141516 !important;
 }
 
 .header__contacts-wrapper {
