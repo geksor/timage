@@ -11,9 +11,10 @@
                     <? foreach ($models as $model) {/* @var $model \common\models\CatalogSections */?>
                         <div class="main__preview-image">
                             <div class="main__preview-image-wrapper">
-                            <img src="<?= $model->getThumbImage('main_image') ?>" alt="<?= $model->title ?>" style="width: 100%">
+                                <img src="<?= $model->getThumbImage('main_image') ?>" alt="<?= $model->title ?>" style="width: 100%">
                             </div>
                             <p class="main__preview-text"><?= $model->title ?></p>
+                            <?= \yii\helpers\Html::a('', "/catalog/$model->alias") ?>
                         </div>
                     <?}?>
                 </div>
