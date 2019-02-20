@@ -783,14 +783,19 @@ ul.header__contacts__list {
 
 /* main__partners---------- */
 
-.main__partners-title-text {
-    color: #141516;
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 2.4px;
-    padding: 5% 0 5% 0;
-    /* padding-top: 15%; */
+.main__partners {
+    padding: 2% 0;
 }
+
+/*.main__partners-title-text {*/
+    /*color: #141516;*/
+    /*font-size: 35px;*/
+    /*font-weight: 700;*/
+    /*letter-spacing: 2.4px;*/
+    /*!*padding: 5% 0 5% 0;*!*/
+    /*!* padding-top: 15%; *!*/
+    /*padding: 2% 0;*/
+/*}*/
 
 .main__partners-image-list {
     display: -webkit-box;
@@ -1332,12 +1337,16 @@ p.help-block.help-block-error {
 /* about.html---------- */
 /* ---------- */
 
+.main__about {
+    padding: 2% 0;
+}
+
 .main__about-title-text {
     color: #141516;
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 2.4px;
-    padding-top: 5%;
+    padding: 2% 0;
 }
 
 .main__about-text-wrapper p {
@@ -1378,7 +1387,7 @@ p.help-block.help-block-error {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 2.4px;
-    padding-top: 5%;
+    padding: 2% 0;
 }
 
 .main__partners-wrapper {
@@ -1394,9 +1403,22 @@ p.help-block.help-block-error {
     padding-bottom: 5%;
 }
 
+.main__partners-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 25%;
+}
+
 .main__partners-image-wrapper img {
-    -o-object-fit: contain;
-    object-fit: contain;
+    /*-o-object-fit: contain;*/
+    /*object-fit: contain;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 2%;
 }
 
 /* ---------- */
@@ -1587,7 +1609,7 @@ p.help-block.help-block-error {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 2.4px;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 .main__projects-text {
@@ -1595,11 +1617,29 @@ p.help-block.help-block-error {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1.2px;
-    padding: 5% 0;
+    padding: 4% 0;
+}
+
+.main__projects-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 15%;
 }
 
 .main__projects-image-wrapper img {
-    padding: 5% 0;
+    /*padding: 5% 0;*/
+    /*padding: 5% 0; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    padding: 2%;
+}
+
+.main__projects {
+    padding: 2% 0;
 }
 
 .main__projects-bottom-wrapper {
@@ -1943,7 +1983,7 @@ button.main__intro-action:hover {
     .main__partners-title-text {
         font-size: 24px;
         text-align: center;
-        padding: 25% 0 5% 0;
+        /*padding: 10% 0 5% 0;*/
     }
 
     .main__our-projects-title-text {
@@ -2031,7 +2071,7 @@ button.main__intro-action:hover {
 
     .main__about-title-text {
         font-size: 40px;
-        padding: 25% 0 5% 0;
+        padding: 10% 0 5% 0;
     }
 
     .main__contacts-title-text {
@@ -2268,7 +2308,7 @@ button.main__intro-action:hover {
     .main__partners-title-text {
         font-size: 24px;
         text-align: center;
-        padding: 30% 0 5% 0;
+        /*padding: 10% 0 5% 0;*/
     }
 
     .main__our-projects-title-text {
@@ -2403,7 +2443,7 @@ button.main__intro-action:hover {
 
     .main__about-title-text {
         font-size: 40px;
-        padding: 30% 0 5% 0;
+        padding: 10% 0 5% 0;
     }
 
     .main__contacts-title-text {
@@ -2616,9 +2656,13 @@ button.main__intro-action:hover {
         font-size: 30px;
     }
 
+    .main__about {
+        padding: 2% 0;
+    }
+
     .main__about-title-text {
         font-size: 40px;
-        padding: 50% 0 5% 0;
+        padding: 10% 0 5% 0;
     }
 
     .main__about-popup-title-text {
@@ -2652,7 +2696,7 @@ button.main__intro-action:hover {
     .main__partners-title-text {
         font-size: 24px;
         text-align: center;
-        padding: 50% 0 5% 0;
+        /*padding: 10% 0 5% 0;*/
     }
 
     .main__our-projects-title-text {
