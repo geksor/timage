@@ -13,7 +13,9 @@ use yii\bootstrap\ActiveForm;
             <div class="main__questions-info-wrapper">
                 <h2 class="main__questions-title-text">Остались вопросы</h2>
                 <p class="main__questions-text">Звоните прямо сейчас</p>
+<!--                <div class="">-->
                 <a class="main__questions-number" href="tel:<?= preg_replace("/[^0-9]/", '', $contact->phone_consult) ?>"><?= $contact->phone_consult ?></a>
+<!--                </div>-->
                 <p class="main__questions-text">Оставьте Вашу заявку</p>
             </div>
             <div class="row">

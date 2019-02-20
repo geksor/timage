@@ -733,6 +733,20 @@ ul.header__contacts__list {
     border-bottom: 2px solid #ffffff;
 }
 
+.main__our-projects-image-wrapper {
+    position: relative;
+}
+
+.main__our-projects-image-wrapper a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 .main__our-projects-image-wrapper img {
     text-align: center;
     padding: 0 2%;
@@ -742,6 +756,15 @@ ul.header__contacts__list {
     text-align: center;
     /* padding: 0 5%; */
     padding-right: 0.25%;
+    position: relative;
+}
+
+.main__preview-image a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .main__preview-image-last {
@@ -1650,12 +1673,16 @@ p.help-block.help-block-error {
 /* catalog.html---------- */
 /* ---------- */
 
+.main__catalog {
+    padding: 2% 0;
+}
+
 .main__catalog-title-text {
     color: #141516;
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 2.4px;
-    padding: 5% 0 5% 0;
+    padding: 2% 0;
 }
 
 h3.main__catalog-title-text {
@@ -1676,7 +1703,7 @@ h3.main__catalog-title-text {
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 1.8px;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
 }
 
 .main-catalog-info p {
@@ -1956,12 +1983,12 @@ button.main__intro-action:hover {
     }
 
     .main-catalog-info p:first-child {
-        padding: 5% 0;
+        padding: 4% 0;
     }
 
     .main__catalog-title-text {
         font-size: 30px;
-        padding: 25% 0 5% 0;
+        padding: 10% 0 5% 0;
     }
 
     .main__about-popup-title-text {
@@ -2274,7 +2301,7 @@ button.main__intro-action:hover {
 
     .main__catalog-title-text {
         font-size: 30px;
-        padding: 30% 0 5% 0;
+        padding: 10% 0 5% 0;
     }
 
     .main-catalog-info p:first-child {
@@ -2649,7 +2676,7 @@ button.main__intro-action:hover {
 
     .main__catalog-title-text {
         font-size: 30px;
-        padding: 50% 0 5% 0;
+        padding: 10% 0 5% 0;
     }
 
     .main-catalog-info p:first-child {
