@@ -8,8 +8,8 @@
         <? if ($models) {?>
             <div class="row slider-partners">
                 <? foreach ($models as $model) {/* @var $model \common\models\Partners */?>
-                    <div class="padding-partners">
-                        <img class=" main__partners-image-item" src="<?= $model->getThumbImage() ?>" alt="<?= $model->title ?>" style="width: 100%">
+                    <div class="padding-partners slider-partners-wrapper">
+                        <img class="main__partners-image-item slider-partners-image" src="<?= $model->getThumbImage() ?>" alt="<?= $model->title ?>" style="width: 100%">
                     </div>
                 <?}?>
             </div>

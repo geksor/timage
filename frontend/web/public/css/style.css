@@ -586,6 +586,21 @@ ul.header__contacts__list {
     padding-top: 81%;
 }
 
+.slider-partners-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 1.47%;
+}
+
+.slider-partners-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 .main__preview-image-wrapper img {
     position: absolute;
     top: 0;
@@ -760,8 +775,8 @@ ul.header__contacts__list {
 }
 
 .main__partners-image-item {
-    -o-object-fit: contain;
-    object-fit: contain;
+    /*-o-object-fit: contain;*/
+    /*object-fit: contain;*/
 }
 
 /* mian__our-projects---------- */
@@ -912,6 +927,7 @@ ul.header__contacts__list {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.8px;
+    padding: 5% 20% 5% 5%;
 }
 
 .main__questions-input-number input::-webkit-input-placeholder {
@@ -944,6 +960,7 @@ ul.header__contacts__list {
 .main__questions-input-number input::placeholder {
     opacity: 0.4;
     color: #141516;
+    padding: 5% 20% 5% 5%;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -953,11 +970,10 @@ ul.header__contacts__list {
 .main__questions-input-name input,
 .main__questions-input-number input {
     width: 90%;
-    padding: 5% 5% 5% 5%;
+    padding: 5% 25% 5% 5%;
     border: none;
     font-family: 'Open Sans', sans-serif;
     color: #141516;
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.8px;
@@ -985,7 +1001,7 @@ ul.header__contacts__list {
     font-weight: 500;
     letter-spacing: 0.8px;
     background-color: #FDB507;
-    /* margin-bottom: 10%; */
+     margin-bottom: 7%;
     width: 100%;
     padding: 5%;
     border: none;
@@ -993,6 +1009,15 @@ ul.header__contacts__list {
     /* color: #ffde02; */
     cursor: pointer;
     /* text-align: center; */
+    box-sizing: content-box;
+}
+
+p.help-block.help-block-error {
+    position: absolute;
+    color: #FDB507;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    padding-top: 5px;
 }
 
 .main__questions-input-submit:hover input {
