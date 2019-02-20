@@ -46,10 +46,11 @@ return [
             'showScriptName' => false,
             'rules' => [
 
-                '/catalog/<alias>' => 'catalog/view',
+                '/catalog/<alias:[-\w]+>' => 'catalog/view',
 
                 '/' => 'site/index',
-                '<action:\w+>' => 'site/<action>',
+
+                '<action:[-\w]+>' => 'site/<action>',
 
             ],
         ],

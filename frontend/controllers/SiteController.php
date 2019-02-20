@@ -121,6 +121,23 @@ class SiteController extends Controller
     }
 
     /**
+     * Displays personal information page.
+     *
+     * @return mixed
+     */
+    public function actionPersonalInformation()
+    {
+        $contact = new Contact();
+        $contact->load(Yii::$app->params);
+
+
+        return $this->render('personal-information', [
+            'contact' => $contact,
+        ]);
+
+    }
+
+    /**
      * Displays about page.
      *
      * @return mixed
