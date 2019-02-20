@@ -1007,6 +1007,18 @@ ul.header__contacts__list {
     border-radius: 4px;
 }
 
+.button-ok {
+    color: #141516;
+    background-color: #FDB507;
+    border-color: none;
+    margin: auto;
+    padding: 2% 8%;
+}
+
+.modal-text-center {
+    text-align: center;
+}
+
 .form-group.field-callbacksection-name.required.has-error {
     display: flex;
     flex-direction: column-reverse;
