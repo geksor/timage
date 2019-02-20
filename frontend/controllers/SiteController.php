@@ -6,16 +6,14 @@ use common\models\Callback;
 use common\models\CallbackSection;
 use common\models\Contact;
 use common\models\HomePage;
+use common\models\Partners;
+use common\models\PartnersPage;
+use common\models\Project;
+use common\models\ProjectPage;
 use Yii;
-use yii\base\InvalidArgumentException;
-use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use common\models\LoginForm;
-use frontend\models\PasswordResetRequestForm;
-use frontend\models\ResetPasswordForm;
-use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 
 /**
@@ -86,6 +84,42 @@ class SiteController extends Controller
         return $this->render('index', [
             'propHomePage' => $propHomePage,
             'propContact' => $propContact,
+        ]);
+    }
+
+    /**
+     * Displays projects page.
+     *
+     * @return mixed
+     */
+    public function actionProjects()
+    {
+        $pageParam = new ProjectPage();
+        $pageParam->load(Yii::$app->params);
+
+        $models = Project::find()->where(['publish' => 1])->orderBy(['rank' => SORT_ASC])->all();
+
+        return $this->render('projects', [
+            'pageParam' => $pageParam,
+            'models' => $models,
+        ]);
+    }
+
+    /**
+     * Displays partners page.
+     *
+     * @return mixed
+     */
+    public function actionPartners()
+    {
+        $pageParam = new PartnersPage();
+        $pageParam->load(Yii::$app->params);
+
+        $models = Partners::find()->where(['publish' => 1])->orderBy(['rank' => SORT_ASC])->all();
+
+        return $this->render('partners', [
+            'pageParam' => $pageParam,
+            'models' => $models,
         ]);
     }
 
