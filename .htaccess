@@ -7,9 +7,9 @@ RewriteEngine on
 RewriteRule /\. - [L,F]
 
 # define the app environment variable
-RewriteCond %{REQUEST_URI} !^/((frontend|backend)/web|admin)
+#RewriteCond %{REQUEST_URI} !^/((frontend|backend)/web|admin)
 RewriteRule ^ - [E=APP:frontend]
-RewriteCond %{REQUEST_URI} (?!^/backend/web)^/admin
+#RewriteCond %{REQUEST_URI} (?!^/backend/web)^/admin
 RewriteRule ^ - [E=APP:backend]
 
 # rewrite the URI of the frontend app
