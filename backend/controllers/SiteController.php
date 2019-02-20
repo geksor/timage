@@ -1,18 +1,13 @@
 <?php
 namespace backend\controllers;
 
-use backend\actions\SetImage;
 use backend\actions\SetImageFromSettings;
 use backend\models\WebVisitor;
 use common\models\AboutPage;
-use common\models\AgreePage;
 use common\models\Contact;
-use common\models\DeliveryPage;
 use common\models\HomePage;
 use common\models\PartnersPage;
 use common\models\ProjectPage;
-use common\models\SiteSettings;
-use common\models\ThreeBlock;
 use nox\components\http\userAgent\UserAgentParser;
 use Yii;
 use yii\web\Controller;
@@ -54,7 +49,6 @@ class SiteController extends Controller
                             'set-image-fsb',
                             'project-page',
                             'partners-page',
-
                         ],
                         'allow' => true,
                         'roles' => ['@'],
