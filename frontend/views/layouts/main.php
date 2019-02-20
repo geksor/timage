@@ -61,6 +61,12 @@ AppAsset::register($this);
 
 <?= \frontend\widgets\ModalConsultWidget::widget() ?>
 
+<? if (Yii::$app->session->hasFlash('popUp')) {?>
+
+    <?= Yii::$app->session->getFlash('popUp') ?>
+
+<?}?>
+
 <?php $this->endBody() ?>
 </body>
 </html>
