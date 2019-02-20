@@ -135,6 +135,7 @@ body {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    padding-right: 0;
 }
 
 .main__intro-action-wrapper {
@@ -589,8 +590,9 @@ ul.header__contacts__list {
 .slider-partners-wrapper {
     position: relative;
     width: 100%;
-    padding: 1.47%;
+    padding-top: 114px;
 }
+
 
 .slider-partners-image {
     position: absolute;
@@ -599,6 +601,12 @@ ul.header__contacts__list {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+.slider-partners {
+    /*display: flex;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
 }
 
 .main__preview-image-wrapper img {
