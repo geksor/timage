@@ -18,6 +18,7 @@ class AppAsset extends AssetBundle
         'public/slick/slick-theme.css',
         'public/css/reset.css',
         'public/css/style.css',
+        'public/css/jquery.fancybox.min.css',
     ];
     public $js = [
         'public/js/sticky-header.js',
@@ -25,6 +26,7 @@ class AppAsset extends AssetBundle
         'public/js/slider-slick.js',
         'public/js/popper.min.js',
         'public/js/bootstrap.min.js',
+        'public/js/jquery.fancybox.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

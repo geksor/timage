@@ -9,22 +9,28 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="main__quality-image-wrapper">
-                    <img class="main__quality-image" src="<?= $firstProduct->getThumbImage('main_image') ?>" alt="<?= $firstProduct->title ?>"
+                        <a href="<?= $firstProduct->getImage('main_image') ?>" data-fancybox="firstProduct-gallery">
+                            <img class="main__quality-image" src="<?= $firstProduct->getThumbImage('main_image') ?>" alt="<?= $firstProduct->title ?>"
                          style="width: 100%">
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6 main__quality-block-two-wrapper">
                     <div class="row main__quality-image-wrapper-one">
                         <div class="col-lg-6">
                             <div class="main__quality-image-wrapper-second">
-                            <img class="main__quality-image" src="<?= $firstProduct->getThumbImage('second_image_1') ?>" alt="<?= $firstProduct->title ?>"
-                                 style="width: 100%">
+                                <a href="<?= $firstProduct->getImage('second_image_1') ?>" data-fancybox="firstProduct-gallery">
+                                    <img class="main__quality-image" src="<?= $firstProduct->getThumbImage('second_image_1') ?>" alt="<?= $firstProduct->title ?>"
+                                     style="width: 100%">
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="main__quality-image-wrapper-second">
-                            <img class="main__quality-image" src="<?= $firstProduct->getThumbImage('second_image_2') ?>" alt="<?= $firstProduct->title ?>"
-                                 style="width: 100%">
+                                <a href="<?= $firstProduct->getImage('second_image_2') ?>" data-fancybox="firstProduct-gallery">
+                                    <img class="main__quality-image" src="<?= $firstProduct->getThumbImage('second_image_2') ?>" alt="<?= $firstProduct->title ?>"
+                                         style="width: 100%">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -55,14 +61,18 @@
                     <div class="row main__quality-image-wrapper-one">
                         <div class="col-lg-6">
                             <div class="main__quality-image-wrapper-second">
-                            <img class="main__quality-image" src="<?= $secondProduct->getThumbImage('second_image_1') ?>" alt="<?= $secondProduct->title ?>"
+                                <a href="<?= $secondProduct->getImage('second_image_1') ?>" data-fancybox="secondProduct-gallery">
+                                    <img class="main__quality-image" src="<?= $secondProduct->getThumbImage('second_image_1') ?>" alt="<?= $secondProduct->title ?>"
                                  style="width: 100%">
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="main__quality-image-wrapper-second">
-                            <img class="main__quality-image" src="<?= $secondProduct->getThumbImage('second_image_2') ?>" alt="<?= $secondProduct->title ?>"
+                                <a href="<?= $secondProduct->getImage('second_image_2') ?>" data-fancybox="secondProduct-gallery">
+                                    <img class="main__quality-image" src="<?= $secondProduct->getThumbImage('second_image_2') ?>" alt="<?= $secondProduct->title ?>"
                                  style="width: 100%">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -83,8 +93,10 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="main__quality-image-wrapper">
-                    <img class="main__quality-image" src="<?= $secondProduct->getThumbImage('main_image') ?>" alt="<?= $secondProduct->title ?>"
+                        <a href="<?= $secondProduct->getImage('main_image') ?>" data-fancybox="secondProduct-gallery">
+                            <img class="main__quality-image" src="<?= $secondProduct->getThumbImage('main_image') ?>" alt="<?= $secondProduct->title ?>"
                          style="width: 100%">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -97,22 +109,28 @@
             <div class="row ">
                 <div class="col-lg-6">
                     <div class="main__quality-image-wrapper">
-                    <img class="main__quality-image" src="<?= $lastProduct->getThumbImage('main_image') ?>" alt="<?= $lastProduct->title ?>"
+                        <a href="<?= $lastProduct->getImage('main_image') ?>" data-fancybox="lastProduct-gallery">
+                            <img class="main__quality-image" src="<?= $lastProduct->getThumbImage('main_image') ?>" alt="<?= $lastProduct->title ?>"
                          style="width: 100%">
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6 main__quality-block-two-wrapper">
                     <div class="row main__quality-image-wrapper-one">
                         <div class="col-lg-6">
                             <div class="main__quality-image-wrapper-second">
-                            <img class="main__quality-image" src="<?= $lastProduct->getThumbImage('second_image_1') ?>" alt="<?= $lastProduct->title ?>"
+                                <a href="<?= $lastProduct->getImage('second_image_1') ?>" data-fancybox="lastProduct-gallery">
+                                    <img class="main__quality-image" src="<?= $lastProduct->getThumbImage('second_image_1') ?>" alt="<?= $lastProduct->title ?>"
                                  style="width: 100%">
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="main__quality-image-wrapper-second">
-                            <img class="main__quality-image" src="<?= $lastProduct->getThumbImage('second_image_2') ?>" alt="<?= $lastProduct->title ?>"
+                                <a href="<?= $lastProduct->getImage('second_image_2') ?>" data-fancybox="lastProduct-gallery">
+                                    <img class="main__quality-image" src="<?= $lastProduct->getThumbImage('second_image_2') ?>" alt="<?= $lastProduct->title ?>"
                                  style="width: 100%">
+                                </a>
                             </div>
                         </div>
                     </div>
