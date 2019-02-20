@@ -996,7 +996,7 @@ ul.header__contacts__list {
 .main__questions-input-name input,
 .main__questions-input-number input {
     width: 90%;
-    padding: 5% 25% 5% 5%;
+    padding: 5% 15% 5% 5%;
     border: none;
     font-family: 'Open Sans', sans-serif;
     color: #141516;
@@ -1006,6 +1006,20 @@ ul.header__contacts__list {
     background: #e4e4e4;
     border-radius: 4px;
 }
+
+.form-group.field-callbacksection-name.required.has-error {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.form-group.field-callbacksection-phone.required.has-error {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+
 
 .main__questions-inputs-wrapper {
     display: -webkit-box;
@@ -1038,24 +1052,24 @@ ul.header__contacts__list {
     box-sizing: content-box;
 }
 
+.field-callback-name {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.field-callback-phone {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
 p.help-block.help-block-error {
     position: absolute;
     color: #FDB507;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
-    /*padding-top: 5px;*/
-    left: 30%;
-    margin-top: -2%;
-}
-
-p.help-block.help-block-error:last-child {
-    position: absolute;
-    color: #FDB507;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    /*padding-top: 5px;*/
-    left: 30%;
-    margin-top: -4%;
+    margin: 15px 0;
 }
 
 .main__questions-input-submit:hover input {
@@ -1445,7 +1459,7 @@ p.help-block.help-block-error:last-child {
     text-align: center;
     border: none;
     width: 75%;
-    margin: 0 10% 5% 10%;
+    margin: 5% 10% 5% 10%;
 }
 
 .btn-primary.focus,
@@ -1499,6 +1513,7 @@ p.help-block.help-block-error:last-child {
     /* padding: 0 0 0 5%; */
     width: 90%;
     text-align: center;
+    padding-top: 5%;
 }
 
 .main__about-popup-agree-text span a {
