@@ -19,7 +19,7 @@
                                 <img src="<?= $img ?>" alt="<?= $model->title ?>" style="width: 100%">
                             </div>
                             <p class="main__our-project-text"><?= $model->title ?></p>
-                            <?= \yii\helpers\Html::a('', "/projects/#project_$model->id") ?>
+                            <?= \yii\helpers\Html::a('', "/projects#project_$model->id") ?>
                         </div>
                     <? } ?>
                 </div>
