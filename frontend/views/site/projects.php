@@ -25,13 +25,15 @@ $this->registerMetaTag([
             <? foreach ($models as $model) {?>
                 <?  $images = $model->getBehavior('galleryBehavior')->getImages(); ?>
                 <? if ($images){?>
-                    <h3 class="main__projects-text"><?= $model->title ?></h3>
-                    <div class="row">
-                        <? foreach ($images as $image) {?>
-                            <div class="col-lg-3 col-md-6 col-sm-12 main__projects-image-wrapper">
-                                <img src="<?= $image->getUrl('preview') ?>" alt="<?= $image->name ?>" style="width: 100%">
-                            </div>
-                        <?}?>
+                    <div id="project_<?= $model->id ?>">
+                        <h3 class="main__projects-text"><?= $model->title ?></h3>
+                        <div class="row">
+                            <? foreach ($images as $image) {?>
+                                <div class="col-lg-3 col-md-6 col-sm-12 main__projects-image-wrapper">
+                                    <img src="<?= $image->getUrl('preview') ?>" alt="<?= $image->name ?>" style="width: 100%">
+                                </div>
+                            <?}?>
+                        </div>
                     </div>
                 <?}?>
             <?}?>
