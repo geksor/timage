@@ -17,6 +17,7 @@ use yii\base\Model;
  * @property string $phone_1
  * @property string $phone_2
  * @property string $phone_3
+ * @property string $phone_consult
  * @property string $address_1
  * @property string $address_2
  * @property string $address_3
@@ -42,6 +43,7 @@ class Contact extends Model
     public $phone_1;
     public $phone_2;
     public $phone_3;
+    public $phone_consult;
     public $address_1;
     public $address_2;
     public $address_3;
@@ -69,6 +71,7 @@ class Contact extends Model
                     'phone_1',
                     'phone_2',
                     'phone_3',
+                    'phone_consult',
                     'address_1',
                     'address_2',
                     'address_3',
@@ -102,6 +105,7 @@ class Contact extends Model
             'phone_1' => 'Телефон-1',
             'phone_2' => 'Телефон-2',
             'phone_3' => 'Телефон-3',
+            'phone_consult' => 'Телефон для консультации',
             'address_1' => 'Адрес-1',
             'address_2' => 'Адрес-2',
             'address_3' => 'Адрес-3',
