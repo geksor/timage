@@ -43,8 +43,6 @@ AppAsset::register($this);
 
 <?= \frontend\widgets\ModalConsultWidget::widget() ?>
 
-<?= \frontend\widgets\ModalSectionWidget::widget() ?>
-
 <?php $this->endBody() ?>
 </body>
 </html>

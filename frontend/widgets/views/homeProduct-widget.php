@@ -136,6 +136,9 @@
     </div>
 <?}?>
 
+
+<?= \frontend\widgets\ModalSectionWidget::widget() ?>
+
 <?
 
 $js = <<<JS

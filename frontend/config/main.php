@@ -45,17 +45,8 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '/catalog/add-cart' => 'catalog/add-cart',
-                '/catalog/calc-price' => 'catalog/calc-price',
-                '/catalog/<alias>/page/<page:\d+>' => 'catalog/index',
-                '/catalog/<alias>/sort/<orderPrice:\d+>' => 'catalog/index',
-                '/catalog/sort/<orderPrice:\d+>' => 'catalog/index',
 
-                '/catalog/<alias>' => 'catalog/index',
-                '/catalog/<alias>/<item>' => 'catalog/item',
-                '<controller:catalog>' => 'catalog/index',
-                '<controller:cart>' => '<controller>/index',
-                '<controller:reviews>' => '<controller>/index',
+                '/catalog/<alias>' => 'catalog/view',
 
                 '/' => 'site/index',
                 '<action:\w+>' => 'site/<action>',
