@@ -1043,7 +1043,19 @@ p.help-block.help-block-error {
     color: #FDB507;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
-    padding-top: 5px;
+    /*padding-top: 5px;*/
+    left: 30%;
+    margin-top: -2%;
+}
+
+p.help-block.help-block-error:last-child {
+    position: absolute;
+    color: #FDB507;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    /*padding-top: 5px;*/
+    left: 30%;
+    margin-top: -4%;
 }
 
 .main__questions-input-submit:hover input {
