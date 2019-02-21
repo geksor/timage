@@ -79,7 +79,7 @@ class CallbackController extends Controller
     public function actionView($id)
     {
         $model = $this->findModel($id);
-        $model->viewed = 2;
+        $model->viewed = 3;
         $model->update(false);
 
         return $this->render('view', [
