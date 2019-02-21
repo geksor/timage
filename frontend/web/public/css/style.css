@@ -2938,6 +2938,114 @@ button.main__intro-action:hover {
         line-height: 20px;
     }
 
+    .main__product-wrapper h2 {
+        color: #141516;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 2.4px;
+        padding: 2% 0;
+        text-align: center;
+    }
+
+    .main__quality-product-wrapper h3 {
+        color: #141516;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        padding: 2%;
+        text-transform: none;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .main__quality-product-wrapper p {
+        text-align: center;
+    }
+
+    .main__quality-image-new {
+        padding: 2% 0;
+    }
+
+    .main__quality-image-wrapper-two {
+        padding: 0;
+        padding: 2% 0;
+    }
+
+    .main__product-stairs-image {
+        padding: 0;
+        padding: 2% 0;
+    }
+
+    .main__quality-image {
+        padding: 2% 0;
+    }
+
+    .field-callback-name {
+        justify-content: center;
+        padding: 0 0 5% 0;
+    }
+
+    .field-callback-phone {
+        justify-content: center;
+        padding: 0 0 5% 0;
+    }
+
+    p.help-block.help-block-error {
+        margin: 50px auto 0 auto;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .slider-partners-wrapper {
+        padding-top: 230px;
+    }
+
+    .footer__adress-text {
+        text-align: center;
+        font-size: 100%;
+    }
+
+    .footer__adress-wrapper {
+        padding: 2% 0;
+    }
+
+    .footer__logo-wrapper {
+        padding: 2% 0;
+    }
+
+    .footer__tel-wrapper {
+        font-size: 75%;
+        padding: 2% 0;
+    }
+
+    .footer__email-wrapper {
+        padding: 2% 0;
+    }
+
+    .footer__copyright {
+        padding: 2% 0;
+    }
+
+    .footer__wrapper {
+        padding: 2% 0;
+    }
+
+    .main__questions-input-submit input,
+    .main__questions-input-submit:hover input {
+        width: 90%;
+    }
+
+    .main__quality-block-wrapper {
+        padding: 0;
+    }
+
+    .main__product-wrapper {
+        padding: 2%;
+    }
+
 }
 
 .main__contacts-map {
