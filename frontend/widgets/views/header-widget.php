@@ -62,7 +62,7 @@
                         <a class="contacts-navigation-tel" href="tel:<?= preg_replace("/[^0-9]/", '', $paramsContact->phone_1) ?>">
                             <img src="/public/img/contacts-icon-1.svg" alt="Иконка телефона">
                         </a>
-                        <a class="contacts-navigation-mail" href="/contacts">
+                        <a class="contacts-navigation-mail" href="/contact#mapLink">
                             <img src="/public/img/contacts-icon-2.svg" alt="Иконка контакты">
                         </a>
                         <div class="row">
@@ -72,49 +72,6 @@
                                         data-target="#exampleModalHeader">
                                     Узнай о скидках
                                 </button>
-<!--                                <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-<!--                                    <ul class="navbar-nav m-auto">-->
-<!--                                        <li class="nav-item dropdown">-->
-<!--                                            <a class="nav-link dropdown-toggle header__navigation-item" href="#" id="navbarDropdown"-->
-<!--                                               role="button" data-toggle="dropdown" aria-haspopup="true"-->
-<!--                                               aria-expanded="false">-->
-<!--                                                Каталог продукции-->
-<!--                                            </a>-->
-<!--                                            <div class="dropdown-menu">-->
-<!--                                                <a class="dropdown-item header__navigation-item-dropdown" href="catalog.html">Раздел-->
-<!--                                                    продукции</a>-->
-<!--                                                <a class="dropdown-item header__navigation-item-dropdown" href="catalog.html">Раздел-->
-<!--                                                    продукции</a>-->
-<!--                                                <a class="dropdown-item header__navigation-item-dropdown" href="catalog.html">Раздел-->
-<!--                                                    продукции</a>-->
-<!--                                                <a class="dropdown-item header__navigation-item-dropdown" href="catalog.html">Раздел-->
-<!--                                                    продукции</a>-->
-<!--                                                <a class="dropdown-item header__navigation-item-dropdown" href="catalog.html">Раздел-->
-<!--                                                    продукции</a>-->
-<!--                                            </div>-->
-<!--                                        </li>-->
-<!--                                        <li class="nav-item">-->
-<!--                                            <a class="nav-link header__navigation-item" href="projects.html">Наши-->
-<!--                                                работы</a>-->
-<!--                                        </li>-->
-<!--                                        <li class="nav-item">-->
-<!--                                            <a class="nav-link header__navigation-item" href="partners.html">Партнёры</a>-->
-<!--                                        </li>-->
-<!--                                        <li class="nav-item">-->
-<!--                                            <a class="nav-link header__navigation-item" href="about.html">О-->
-<!--                                                компании</a>-->
-<!--                                        </li>-->
-<!--                                        <li class="nav-item">-->
-<!--                                            <a class="nav-link header__navigation-item" href="contacts.html">Контакты</a>-->
-<!--                                        </li>-->
-<!--                                        <li class="nav-item">-->
-<!--                                            <button class="nav-link main__intro-action btn btn-primary" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalHeader">-->
-<!--                                                Узнай о скидках-->
-<!--                                            </button>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
                             </div>
                         </div>
                     </nav>

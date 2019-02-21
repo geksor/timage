@@ -46,7 +46,7 @@ $this->registerMetaTag([
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="main__contacts-map-wrapper">
+                <div class="main__contacts-map-wrapper" id="mapLink">
                     <?= $pageParam->mapScript ?>
                 </div>
             </div>
