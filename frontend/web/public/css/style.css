@@ -1092,9 +1092,9 @@ ul.header__contacts__list {
 }
 
 .form-group.field-callbacksection-name.required.has-error {
-    /*display: flex;*/
-    /*flex-direction: column-reverse;*/
-    /*align-items: center;*/
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .form-group.field-callbacksection-phone.required.has-error {
