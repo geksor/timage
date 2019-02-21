@@ -56,7 +56,7 @@
 <? if ($secondProduct) {?>
     <div class="container-fluid background-grey main__quality-block-wrapper">
         <div class="container">
-            <div class="row ">
+            <div class="row row-mobile">
                 <div class="col-lg-6 main__quality-block-two-wrapper">
                     <div class="row main__quality-image-wrapper-one">
                         <div class="col-lg-6">
