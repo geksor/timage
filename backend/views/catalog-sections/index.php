@@ -36,8 +36,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     [
                         'attribute' => 'title',
                         'contentOptions' => [
-                            'max-width' => 300
-                        ]
+                            'style' => 'max-width:300px; white-space: normal;'
+                        ],
                     ],
                     'price:integer',
 //                    'short_desc',
