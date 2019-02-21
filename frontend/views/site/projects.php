@@ -30,7 +30,7 @@ $this->registerMetaTag([
                         <div class="row">
                             <? foreach ($images as $image) {?>
                                 <div class="col-lg-3 col-md-6 col-sm-12 main__projects-image-wrapper">
-                                    <a href="<?= $image->getUrl('original') ?>" data-fancybox="project_gallery">
+                                    <a href="<?= $image->getUrl('original') ?>" data-fancybox="project_gallery_<?= $model->id ?>">
                                         <img src="<?= $image->getUrl('preview') ?>" alt="<?= $image->name ?>" style="width: 100%">
                                     </a>
                                 </div>
