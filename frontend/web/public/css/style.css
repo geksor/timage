@@ -2978,6 +2978,10 @@ button.main__intro-action:hover {
         padding: 2% 0;
     }
 
+    .row {
+        /*margin: 0;*/
+    }
+
     .main__quality-image {
         padding: 2% 0;
     }
@@ -3043,7 +3047,7 @@ button.main__intro-action:hover {
     }
 
     .main__product-wrapper {
-        padding: 2%;
+        /*padding: 2%;*/
     }
 
 }
