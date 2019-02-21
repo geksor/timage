@@ -19,6 +19,7 @@ foreach ($models as $model){
 
     <?= \yii\widgets\Menu::widget([
         'items' => [
+            ['label' => 'Главная', 'url' => [ '/' ]],
             [
                 'label' => 'Каталог продукции',
                 'options' => ['class' => 'nav-item dropdown'],
