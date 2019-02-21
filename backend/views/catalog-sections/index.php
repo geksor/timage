@@ -33,7 +33,12 @@ $this->params['breadcrumbs'][] = $this->title;
                     ['class' => 'yii\grid\SerialColumn'],
 
 //                    'id',
-                    'title:ntext',
+                    [
+                        'attribute' => 'title',
+                        'contentOptions' => [
+                            'max-width' => 300
+                        ]
+                    ],
                     'price:integer',
 //                    'short_desc',
 //                    'desc:ntext',
