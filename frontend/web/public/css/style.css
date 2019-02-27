@@ -816,7 +816,7 @@ ul.header__contacts__list {
 .slick-next {
     right: -50px;
 }
-
+.main__intro-banner
 .main__preview-info-button {
     color: #141516;
     font-size: 16px;
@@ -1082,7 +1082,7 @@ ul.header__contacts__list {
 .button-ok {
     color: #141516;
     background-color: #FDB507;
-    border-color: none;
+    border-color: transparent;
     margin: auto;
     padding: 10px 40px;
 }
@@ -2245,6 +2245,13 @@ button.main__intro-action:hover {
         align-items: flex-start;
     }
 
+    .main__quality-image-new {
+        padding-top: 4%;
+    }
+
+    img.main__quality-image{
+        padding: 4% 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -2275,7 +2282,7 @@ button.main__intro-action:hover {
     }
 
     .main__intro-banner {
-        padding: 20% 0 0 5%;
+        padding: 0 0 0 5%;
     }
 
     .main__intro-mobile {
