@@ -782,7 +782,9 @@ ul.header__contacts__list {
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-    width: 100%;
+    /*width: 100%;*/
+    width: 75%;
+    margin: auto;
 }
 
 .main__preview-image a {
