@@ -1105,6 +1105,10 @@ ul.header__contacts__list {
     align-items: center;
 }
 
+.d-flex {
+    padding: 0;
+}
+
 
 
 .main__questions-inputs-wrapper {
