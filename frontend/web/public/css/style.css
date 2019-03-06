@@ -698,8 +698,8 @@ ul.header__contacts__list {
 }
 
 .main__quality-product-wrapper div {
-    padding: 0 2% 5% 2%;
-    text-align: right;
+    /*padding: 0 2% 5% 2%;*/
+    /*text-align: right;*/
 }
 
 .button-left {
@@ -708,15 +708,15 @@ ul.header__contacts__list {
 
 
 .main__quality-product-wrapper div a {
-    color: #141516;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.8px;
-    background-color: #FDB507;
-    padding: 3% 6% 3% 6%;
-    text-decoration: none;
-    border-radius: 0.25rem;
+    /*color: #141516;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-size: 16px;*/
+    /*font-weight: 500;*/
+    /*letter-spacing: 0.8px;*/
+    /*background-color: #FDB507;*/
+    /*padding: 3% 6% 3% 6%;*/
+    /*text-decoration: none;*/
+    /*border-radius: 0.25rem;*/
 }
 
 /* main__preview---------- */
@@ -2039,9 +2039,9 @@ button.main__intro-action:hover {
 
 
     .main__quality-product-wrapper p {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 14px;
-        line-height: 18px;
+        /*font-family: 'Source Sans Pro', sans-serif;*/
+        /*font-size: 14px;*/
+        /*line-height: 18px;*/
     }
 
     .main__quality-image-new {
@@ -3103,19 +3103,19 @@ button.main__intro-action:hover {
     }
 
     .main__quality-product-wrapper h3 {
-        color: #141516;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 24px;
-        font-weight: 700;
-        letter-spacing: 1.2px;
-        padding: 2%;
-        text-transform: none;
-        line-height: 24px;
-        text-align: center;
+        /*color: #141516;*/
+        /*font-family: 'Open Sans', sans-serif;*/
+        /*font-size: 24px;*/
+        /*font-weight: 700;*/
+        /*letter-spacing: 1.2px;*/
+        /*padding: 2%;*/
+        /*text-transform: none;*/
+        /*line-height: 24px;*/
+        /*text-align: center;*/
     }
 
     .main__quality-product-wrapper p {
-        text-align: center;
+        /*text-align: center;*/
     }
 
     .main__quality-image-new {
@@ -3229,11 +3229,11 @@ button.main__intro-action:hover {
     }
 
     .main__quality-product-wrapper h3 {
-        padding: 4% 0;
+        /*padding: 4% 0;*/
     }
 
     .main__quality-product-wrapper p {
-        padding: 4% 0;
+        /*padding: 4% 0;*/
     }
 
     .main__quality-image-new {
@@ -3282,7 +3282,7 @@ button.main__intro-action:hover {
     }
 
     .main__quality-product-wrapper div {
-        text-align: center !important;
+        /*text-align: center !important;*/
     }
 
     .main__about-popup-info-send-button {
