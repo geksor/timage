@@ -5169,4 +5169,36 @@ button.main__intro-action:hover {
     object-fit: cover;
 }
 
+.intro__bottom-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
 
+.intro__bottom-wrapper img {
+    object-fit: contain;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.text-wrapper-item-one {
+    font-size: 36px;
+    color: #f6b533;
+    padding-bottom: 10px;
+}
+
+.text-wrapper-item-two {
+    font-size: 30px;
+    color: #ffffff;
+    font-style: italic;
+    padding-bottom: 10px;
+
+}
+.text-wrapper-item-three {
+    font-size: 30px;
+    color: #ffffff;
+    font-style: italic;
+}

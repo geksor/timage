@@ -22,6 +22,20 @@ $this->registerMetaTag([
                 <div class="col-lg-12">
                     <h2 class="main__intro-title"><?= $propHomePage->banner_firstTitle ?></h2>
                     <p class="main__intro-info"><?= $propHomePage->banner_secondTitle ?></p>
+
+                <div class="intro__bottom-wrapper">
+<!--                    <div class="col-lg-2">-->
+                        <img src="frontend/web/public/img/tag.png" alt="Логотип">
+<!--                    </div>-->
+<!--                    <div class="col-lg-4">-->
+                    <div class="text-wrapper">
+                        <p class="text-wrapper-item-one">Гарантия лучшей цены</p>
+                        <p class="text-wrapper-item-two">Нашли дешевле?</p>
+                        <p class="text-wrapper-item-three">Снизим цену!</p>
+                    </div>
+<!--                    </div>-->
+<!--                    <div class="col-lg-6"></div>-->
+                </div>
                 </div>
             </div>
             <div class="row main__intro-mobile">
