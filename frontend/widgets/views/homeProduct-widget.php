@@ -41,7 +41,7 @@
                                 <h3><?= $firstProduct->title ?></h3>
                                 <p><?= $firstProduct->short_desc ?></p>
                                 </div>
-                                <div class="main__quality-text-block-wrapper-one">
+                                <div class="main__quality-text-block-wrapper-one main__quality-text-block-wrapper-one-text">
                                     <a class="productOnHomeModalButton" href="#" data-toggle="modal" data-product-name='<?= $firstProduct->title ?>' data-target="#exampleModalOrder">Заказать
                                         расчет</a>
                                 </div>

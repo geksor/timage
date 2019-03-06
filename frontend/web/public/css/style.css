@@ -393,14 +393,14 @@ ul.header__contacts__list {
 }
 
 .main__product-text-wrapper p {
-    color: #545557;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0.8px;
-    /* padding-bottom: 5%; */
-    padding: 2%;
+    /*color: #545557;*/
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    /*font-size: 16px;*/
+    /*font-weight: 400;*/
+    /*line-height: 27px;*/
+    /*letter-spacing: 0.8px;*/
+    /*!* padding-bottom: 5%; *!*/
+    /*padding: 2%;*/
 }
 
 .main__product-wrapper {
@@ -408,8 +408,8 @@ ul.header__contacts__list {
 }
 
 .main__product-text-wrapper {
-    height: 100%;
-    padding: 2%;
+    /*height: 100%;*/
+    /*padding: 2%;*/
 }
 
 .main__product-info-wrapper {
@@ -1438,12 +1438,12 @@ p.help-block.help-block-error {
 }
 
 .main__about-text-wrapper p {
-    color: #545557;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.8px;
-    padding: 5% 0;
+    /*color: #545557;*/
+    /*font-size: 16px;*/
+    /*font-weight: 400;*/
+    /*line-height: 24px;*/
+    /*letter-spacing: 0.8px;*/
+    /*padding: 5% 0;*/
 }
 
 .main__about-image-wrapper img {
@@ -1451,19 +1451,19 @@ p.help-block.help-block-error {
 }
 
 .main__about-text-wrapper div {
-    padding: 10% 0;
+    /*padding: 10% 0;*/
 }
 
 .main__about-text-wrapper div button {
-    color: #141516;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.8px;
-    background-color: #FDB507 !important;
-    padding: 2% 10% 2% 10%;
-    width: 100%;
-    border: none;
-    border-radius: 0.25rem;
+    /*color: #141516;*/
+    /*font-size: 16px;*/
+    /*font-weight: 500;*/
+    /*letter-spacing: 0.8px;*/
+    /*background-color: #FDB507 !important;*/
+    /*padding: 2% 10% 2% 10%;*/
+    /*width: 100%;*/
+    /*border: none;*/
+    /*border-radius: 0.25rem;*/
 }
 
 /* ---------- */
@@ -2831,7 +2831,7 @@ button.main__intro-action:hover {
 
     .main__about-text-wrapper p,
     .main__about-mail-button {
-        font-size: 100%;
+        /*font-size: 100%;*/
     }
 
     .main__catalog-title-text {
@@ -3344,3 +3344,19 @@ button.main__intro-action:hover {
     left: 0;
     object-fit: cover;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
