@@ -392,16 +392,68 @@ ul.header__contacts__list {
     padding-bottom: 2%;
 }
 
-.main__product-text-wrapper p {
-    color: #545557;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0.8px;
-    /* padding-bottom: 5%; */
-    padding: 2%;
+/*.main__product-text-wrapper p {*/
+    /*color: #545557;*/
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    /*font-size: 16px;*/
+    /*font-weight: 400;*/
+    /*line-height: 27px;*/
+    /*letter-spacing: 0.8px;*/
+    /*!* padding-bottom: 5%; *!*/
+    /*padding: 2%;*/
+/*}*/
+
+.main__product-text-wrapper {
+    /* http://meyerweb.com/eric/tools/css/reset/
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+    /* HTML5 display-role reset for older browsers */
+    /*padding: 20px;*/
 }
+.main__product-text-wrapper html, .main__product-text-wrapper body, .main__product-text-wrapper div, .main__product-text-wrapper span, .main__product-text-wrapper applet, .main__product-text-wrapper object, .main__product-text-wrapper iframe,
+.main__product-text-wrapper h1, .main__product-text-wrapper h2, .main__product-text-wrapper h3, .main__product-text-wrapper h4, .main__product-text-wrapper h5, .main__product-text-wrapper h6, .main__product-text-wrapper p, .main__product-text-wrapper blockquote, .main__product-text-wrapper pre,
+.main__product-text-wrapper a, .main__product-text-wrapper abbr, .main__product-text-wrapper acronym, .main__product-text-wrapper address, .main__product-text-wrapper big, .main__product-text-wrapper cite, .main__product-text-wrapper code,
+.main__product-text-wrapper del, .main__product-text-wrapper dfn, .main__product-text-wrapper em, .main__product-text-wrapper img, .main__product-text-wrapper ins, .main__product-text-wrapper kbd, .main__product-text-wrapper q, .main__product-text-wrapper s, .main__product-text-wrapper samp,
+.main__product-text-wrapper small, .main__product-text-wrapper strike, .main__product-text-wrapper strong, .main__product-text-wrapper sub, .main__product-text-wrapper sup, .main__product-text-wrapper tt, .main__product-text-wrapper var,
+.main__product-text-wrapper b, .main__product-text-wrapper u, .main__product-text-wrapper i, .main__product-text-wrapper center,
+.main__product-text-wrapper dl, .main__product-text-wrapper dt, .main__product-text-wrapper dd, .main__product-text-wrapper ol, .main__product-text-wrapper ul, .main__product-text-wrapper li,
+.main__product-text-wrapper fieldset, .main__product-text-wrapper form, .main__product-text-wrapper label, .main__product-text-wrapper legend,
+.main__product-text-wrapper table, .main__product-text-wrapper caption, .main__product-text-wrapper tbody, .main__product-text-wrapper tfoot, .main__product-text-wrapper thead, .main__product-text-wrapper tr, .main__product-text-wrapper th, .main__product-text-wrapper td,
+.main__product-text-wrapper article, .main__product-text-wrapper aside, .main__product-text-wrapper canvas, .main__product-text-wrapper details, .main__product-text-wrapper embed,
+.main__product-text-wrapper figure, .main__product-text-wrapper figcaption, .main__product-text-wrapper footer, .main__product-text-wrapper header, .main__product-text-wrapper hgroup,
+.main__product-text-wrapper menu, .main__product-text-wrapper nav, .main__product-text-wrapper output, .main__product-text-wrapper ruby, .main__product-text-wrapper section, .main__product-text-wrapper summary,
+.main__product-text-wrapper time, .main__product-text-wrapper mark, .main__product-text-wrapper audio, .main__product-text-wrapper video {
+    margin: unset;
+    padding: unset;
+    border: unset;
+    font-size: unset;
+    font: unset;
+    vertical-align: unset;
+}
+.main__product-text-wrapper article, .main__product-text-wrapper aside, .main__product-text-wrapper details, .main__product-text-wrapper figcaption, .main__product-text-wrapper figure,
+.main__product-text-wrapper footer, .main__product-text-wrapper header, .main__product-text-wrapper hgroup, .main__product-text-wrapper menu, .main__product-text-wrapper nav, .main__product-text-wrapper section {
+    display: unset;
+}
+.main__product-text-wrapper body {
+    line-height: unset;
+}
+.main__product-text-wrapper ol, .main__product-text-wrapper ul {
+    list-style: unset;
+}
+.main__product-text-wrapper blockquote, .main__product-text-wrapper q {
+    quotes: unset;
+}
+.main__product-text-wrapper blockquote:before, .main__product-text-wrapper blockquote:after,
+.main__product-text-wrapper q:before, .main__product-text-wrapper q:after {
+    content: "";
+    content: unset;
+}
+.main__product-text-wrapper table {
+    border-collapse: unset;
+    border-spacing: unset;
+}
+
 
 .main__product-wrapper {
     /* padding: 0 0 2% 0; */
@@ -409,7 +461,7 @@ ul.header__contacts__list {
 
 .main__product-text-wrapper {
     height: 100%;
-    padding: 2%;
+    padding: 4%;
 }
 
 .main__product-info-wrapper {
