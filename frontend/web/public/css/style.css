@@ -392,68 +392,16 @@ ul.header__contacts__list {
     padding-bottom: 2%;
 }
 
-/*.main__product-text-wrapper p {*/
-    /*color: #545557;*/
-    /*font-family: 'Source Sans Pro', sans-serif;*/
-    /*font-size: 16px;*/
-    /*font-weight: 400;*/
-    /*line-height: 27px;*/
-    /*letter-spacing: 0.8px;*/
-    /*!* padding-bottom: 5%; *!*/
-    /*padding: 2%;*/
-/*}*/
-
-.main__product-text-wrapper {
-    /* http://meyerweb.com/eric/tools/css/reset/
-       v2.0 | 20110126
-       License: none (public domain)
-    */
-    /* HTML5 display-role reset for older browsers */
-    /*padding: 20px;*/
+.main__product-text-wrapper p {
+    color: #545557;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.8px;
+    /* padding-bottom: 5%; */
+    padding: 2%;
 }
-.main__product-text-wrapper html, .main__product-text-wrapper body, .main__product-text-wrapper div, .main__product-text-wrapper span, .main__product-text-wrapper applet, .main__product-text-wrapper object, .main__product-text-wrapper iframe,
-.main__product-text-wrapper h1, .main__product-text-wrapper h2, .main__product-text-wrapper h3, .main__product-text-wrapper h4, .main__product-text-wrapper h5, .main__product-text-wrapper h6, .main__product-text-wrapper p, .main__product-text-wrapper blockquote, .main__product-text-wrapper pre,
-.main__product-text-wrapper a, .main__product-text-wrapper abbr, .main__product-text-wrapper acronym, .main__product-text-wrapper address, .main__product-text-wrapper big, .main__product-text-wrapper cite, .main__product-text-wrapper code,
-.main__product-text-wrapper del, .main__product-text-wrapper dfn, .main__product-text-wrapper em, .main__product-text-wrapper img, .main__product-text-wrapper ins, .main__product-text-wrapper kbd, .main__product-text-wrapper q, .main__product-text-wrapper s, .main__product-text-wrapper samp,
-.main__product-text-wrapper small, .main__product-text-wrapper strike, .main__product-text-wrapper strong, .main__product-text-wrapper sub, .main__product-text-wrapper sup, .main__product-text-wrapper tt, .main__product-text-wrapper var,
-.main__product-text-wrapper b, .main__product-text-wrapper u, .main__product-text-wrapper i, .main__product-text-wrapper center,
-.main__product-text-wrapper dl, .main__product-text-wrapper dt, .main__product-text-wrapper dd, .main__product-text-wrapper ol, .main__product-text-wrapper ul, .main__product-text-wrapper li,
-.main__product-text-wrapper fieldset, .main__product-text-wrapper form, .main__product-text-wrapper label, .main__product-text-wrapper legend,
-.main__product-text-wrapper table, .main__product-text-wrapper caption, .main__product-text-wrapper tbody, .main__product-text-wrapper tfoot, .main__product-text-wrapper thead, .main__product-text-wrapper tr, .main__product-text-wrapper th, .main__product-text-wrapper td,
-.main__product-text-wrapper article, .main__product-text-wrapper aside, .main__product-text-wrapper canvas, .main__product-text-wrapper details, .main__product-text-wrapper embed,
-.main__product-text-wrapper figure, .main__product-text-wrapper figcaption, .main__product-text-wrapper footer, .main__product-text-wrapper header, .main__product-text-wrapper hgroup,
-.main__product-text-wrapper menu, .main__product-text-wrapper nav, .main__product-text-wrapper output, .main__product-text-wrapper ruby, .main__product-text-wrapper section, .main__product-text-wrapper summary,
-.main__product-text-wrapper time, .main__product-text-wrapper mark, .main__product-text-wrapper audio, .main__product-text-wrapper video {
-    margin: unset;
-    padding: unset;
-    border: unset;
-    font-size: unset;
-    font: unset;
-    vertical-align: unset;
-}
-.main__product-text-wrapper article, .main__product-text-wrapper aside, .main__product-text-wrapper details, .main__product-text-wrapper figcaption, .main__product-text-wrapper figure,
-.main__product-text-wrapper footer, .main__product-text-wrapper header, .main__product-text-wrapper hgroup, .main__product-text-wrapper menu, .main__product-text-wrapper nav, .main__product-text-wrapper section {
-    display: unset;
-}
-.main__product-text-wrapper body {
-    line-height: unset;
-}
-.main__product-text-wrapper ol, .main__product-text-wrapper ul {
-    list-style: unset;
-}
-.main__product-text-wrapper blockquote, .main__product-text-wrapper q {
-    quotes: unset;
-}
-.main__product-text-wrapper blockquote:before, .main__product-text-wrapper blockquote:after,
-.main__product-text-wrapper q:before, .main__product-text-wrapper q:after {
-    content: "";
-    content: unset;
-}
-.main__product-text-wrapper table {
-    border-collapse: unset;
-    border-spacing: unset;
-}
-
 
 .main__product-wrapper {
     /* padding: 0 0 2% 0; */
@@ -461,7 +409,7 @@ ul.header__contacts__list {
 
 .main__product-text-wrapper {
     height: 100%;
-    padding: 4%;
+    padding: 2%;
 }
 
 .main__product-info-wrapper {
@@ -583,7 +531,7 @@ ul.header__contacts__list {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
 }
 
 .main__quality-block-margin-bottom {
@@ -605,15 +553,15 @@ ul.header__contacts__list {
 }
 
 .main__quality-product-wrapper h3 {
-    /*color: #141516;*/
-    /*font-family: 'Open Sans', sans-serif;*/
-    /*font-size: 24px;*/
-    /*font-weight: 700;*/
-    /*letter-spacing: 1.2px;*/
-    /*padding: 2%;*/
-    /*text-transform: none;*/
-    /*line-height: 30px;*/
-    /*text-align: left;*/
+    color: #141516;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding: 2%;
+    text-transform: none;
+    line-height: 30px;
+    text-align: left;
 }
 
 .main__quality-images-wrapper {
@@ -621,18 +569,16 @@ ul.header__contacts__list {
 }
 
 .main__quality-product-wrapper p {
-    /*color: #545557;*/
-    /*font-family: 'Source Sans Pro', sans-serif;*/
-    /*font-size: 16px;*/
-    /*font-weight: 400;*/
-    /*line-height: 20px;*/
-    /*letter-spacing: 0.8px;*/
-    /*padding: 2%;*/
-    /*!* padding-bottom: 10%; *!*/
-    /*text-align: left;*/
+    color: #545557;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    padding: 2%;
+    /* padding-bottom: 10%; */
+    text-align: left;
 }
-
-
 
 .main__quality-block-margin {
     /*margin-bottom: -7%;*/
@@ -698,8 +644,8 @@ ul.header__contacts__list {
 }
 
 .main__quality-product-wrapper div {
-    /*padding: 0 2% 5% 2%;*/
-    /*text-align: right;*/
+    padding: 0 2% 5% 2%;
+    text-align: right;
 }
 
 .button-left {
@@ -708,15 +654,15 @@ ul.header__contacts__list {
 
 
 .main__quality-product-wrapper div a {
-    /*color: #141516;*/
-    /*font-family: 'Open Sans', sans-serif;*/
-    /*font-size: 16px;*/
-    /*font-weight: 500;*/
-    /*letter-spacing: 0.8px;*/
-    /*background-color: #FDB507;*/
-    /*padding: 3% 6% 3% 6%;*/
-    /*text-decoration: none;*/
-    /*border-radius: 0.25rem;*/
+    color: #141516;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    background-color: #FDB507;
+    padding: 3% 6% 3% 6%;
+    text-decoration: none;
+    border-radius: 0.25rem;
 }
 
 /* main__preview---------- */
@@ -2039,9 +1985,9 @@ button.main__intro-action:hover {
 
 
     .main__quality-product-wrapper p {
-        /*font-family: 'Source Sans Pro', sans-serif;*/
-        /*font-size: 14px;*/
-        /*line-height: 18px;*/
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .main__quality-image-new {
@@ -3103,19 +3049,19 @@ button.main__intro-action:hover {
     }
 
     .main__quality-product-wrapper h3 {
-        /*color: #141516;*/
-        /*font-family: 'Open Sans', sans-serif;*/
-        /*font-size: 24px;*/
-        /*font-weight: 700;*/
-        /*letter-spacing: 1.2px;*/
-        /*padding: 2%;*/
-        /*text-transform: none;*/
-        /*line-height: 24px;*/
-        /*text-align: center;*/
+        color: #141516;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        padding: 2%;
+        text-transform: none;
+        line-height: 24px;
+        text-align: center;
     }
 
     .main__quality-product-wrapper p {
-        /*text-align: center;*/
+        text-align: center;
     }
 
     .main__quality-image-new {
@@ -3229,11 +3175,11 @@ button.main__intro-action:hover {
     }
 
     .main__quality-product-wrapper h3 {
-        /*padding: 4% 0;*/
+        padding: 4% 0;
     }
 
     .main__quality-product-wrapper p {
-        /*padding: 4% 0;*/
+        padding: 4% 0;
     }
 
     .main__quality-image-new {
@@ -3282,7 +3228,7 @@ button.main__intro-action:hover {
     }
 
     .main__quality-product-wrapper div {
-        /*text-align: center !important;*/
+        text-align: center !important;
     }
 
     .main__about-popup-info-send-button {
@@ -3397,718 +3343,4 @@ button.main__intro-action:hover {
     top: 0;
     left: 0;
     object-fit: cover;
-}
-
-.main__product-text-wrapper,
-.main__quality-product-wrapper,
-.main__quality-text-block-wrapper-one,
-.main__about-text-wrapper,
-.main-catalog-info {
-    /* Begin bidirectionality settings (do not change) */
-}
-.main__product-text-wrapper html, .main__product-text-wrapper address,
-.main__product-text-wrapper blockquote,
-.main__product-text-wrapper body, .main__product-text-wrapper dd, .main__product-text-wrapper div,
-.main__product-text-wrapper dl, .main__product-text-wrapper dt, .main__product-text-wrapper fieldset, .main__product-text-wrapper form,
-.main__product-text-wrapper frame, .main__product-text-wrapper frameset,
-.main__product-text-wrapper h1, .main__product-text-wrapper h2, .main__product-text-wrapper h3, .main__product-text-wrapper h4,
-.main__product-text-wrapper h5, .main__product-text-wrapper h6, .main__product-text-wrapper noframes,
-.main__product-text-wrapper ol, .main__product-text-wrapper p, .main__product-text-wrapper ul, .main__product-text-wrapper center,
-.main__product-text-wrapper dir, .main__product-text-wrapper hr, .main__product-text-wrapper menu, .main__product-text-wrapper pre,
-.main__quality-product-wrapper html,
-.main__quality-product-wrapper address,
-.main__quality-product-wrapper blockquote,
-.main__quality-product-wrapper body,
-.main__quality-product-wrapper dd,
-.main__quality-product-wrapper div,
-.main__quality-product-wrapper dl,
-.main__quality-product-wrapper dt,
-.main__quality-product-wrapper fieldset,
-.main__quality-product-wrapper form,
-.main__quality-product-wrapper frame,
-.main__quality-product-wrapper frameset,
-.main__quality-product-wrapper h1,
-.main__quality-product-wrapper h2,
-.main__quality-product-wrapper h3,
-.main__quality-product-wrapper h4,
-.main__quality-product-wrapper h5,
-.main__quality-product-wrapper h6,
-.main__quality-product-wrapper noframes,
-.main__quality-product-wrapper ol,
-.main__quality-product-wrapper p,
-.main__quality-product-wrapper ul,
-.main__quality-product-wrapper center,
-.main__quality-product-wrapper dir,
-.main__quality-product-wrapper hr,
-.main__quality-product-wrapper menu,
-.main__quality-product-wrapper pre,
-.main__quality-text-block-wrapper-one html,
-.main__quality-text-block-wrapper-one address,
-.main__quality-text-block-wrapper-one blockquote,
-.main__quality-text-block-wrapper-one body,
-.main__quality-text-block-wrapper-one dd,
-.main__quality-text-block-wrapper-one div,
-.main__quality-text-block-wrapper-one dl,
-.main__quality-text-block-wrapper-one dt,
-.main__quality-text-block-wrapper-one fieldset,
-.main__quality-text-block-wrapper-one form,
-.main__quality-text-block-wrapper-one frame,
-.main__quality-text-block-wrapper-one frameset,
-.main__quality-text-block-wrapper-one h1,
-.main__quality-text-block-wrapper-one h2,
-.main__quality-text-block-wrapper-one h3,
-.main__quality-text-block-wrapper-one h4,
-.main__quality-text-block-wrapper-one h5,
-.main__quality-text-block-wrapper-one h6,
-.main__quality-text-block-wrapper-one noframes,
-.main__quality-text-block-wrapper-one ol,
-.main__quality-text-block-wrapper-one p,
-.main__quality-text-block-wrapper-one ul,
-.main__quality-text-block-wrapper-one center,
-.main__quality-text-block-wrapper-one dir,
-.main__quality-text-block-wrapper-one hr,
-.main__quality-text-block-wrapper-one menu,
-.main__quality-text-block-wrapper-one pre,
-.main__about-text-wrapper html,
-.main__about-text-wrapper address,
-.main__about-text-wrapper blockquote,
-.main__about-text-wrapper body,
-.main__about-text-wrapper dd,
-.main__about-text-wrapper div,
-.main__about-text-wrapper dl,
-.main__about-text-wrapper dt,
-.main__about-text-wrapper fieldset,
-.main__about-text-wrapper form,
-.main__about-text-wrapper frame,
-.main__about-text-wrapper frameset,
-.main__about-text-wrapper h1,
-.main__about-text-wrapper h2,
-.main__about-text-wrapper h3,
-.main__about-text-wrapper h4,
-.main__about-text-wrapper h5,
-.main__about-text-wrapper h6,
-.main__about-text-wrapper noframes,
-.main__about-text-wrapper ol,
-.main__about-text-wrapper p,
-.main__about-text-wrapper ul,
-.main__about-text-wrapper center,
-.main__about-text-wrapper dir,
-.main__about-text-wrapper hr,
-.main__about-text-wrapper menu,
-.main__about-text-wrapper pre,
-.main-catalog-info html,
-.main-catalog-info address,
-.main-catalog-info blockquote,
-.main-catalog-info body,
-.main-catalog-info dd,
-.main-catalog-info div,
-.main-catalog-info dl,
-.main-catalog-info dt,
-.main-catalog-info fieldset,
-.main-catalog-info form,
-.main-catalog-info frame,
-.main-catalog-info frameset,
-.main-catalog-info h1,
-.main-catalog-info h2,
-.main-catalog-info h3,
-.main-catalog-info h4,
-.main-catalog-info h5,
-.main-catalog-info h6,
-.main-catalog-info noframes,
-.main-catalog-info ol,
-.main-catalog-info p,
-.main-catalog-info ul,
-.main-catalog-info center,
-.main-catalog-info dir,
-.main-catalog-info hr,
-.main-catalog-info menu,
-.main-catalog-info pre {
-    display: block;
-    unicode-bidi: embed;
-}
-.main__product-text-wrapper li,
-.main__quality-product-wrapper li,
-.main__quality-text-block-wrapper-one li,
-.main__about-text-wrapper li,
-.main-catalog-info li {
-    display: list-item;
-}
-.main__product-text-wrapper head,
-.main__quality-product-wrapper head,
-.main__quality-text-block-wrapper-one head,
-.main__about-text-wrapper head,
-.main-catalog-info head {
-    display: none;
-}
-.main__product-text-wrapper table,
-.main__quality-product-wrapper table,
-.main__quality-text-block-wrapper-one table,
-.main__about-text-wrapper table,
-.main-catalog-info table {
-    display: table;
-}
-.main__product-text-wrapper tr,
-.main__quality-product-wrapper tr,
-.main__quality-text-block-wrapper-one tr,
-.main__about-text-wrapper tr,
-.main-catalog-info tr {
-    display: table-row;
-}
-.main__product-text-wrapper thead,
-.main__quality-product-wrapper thead,
-.main__quality-text-block-wrapper-one thead,
-.main__about-text-wrapper thead,
-.main-catalog-info thead {
-    display: table-header-group;
-}
-.main__product-text-wrapper tbody,
-.main__quality-product-wrapper tbody,
-.main__quality-text-block-wrapper-one tbody,
-.main__about-text-wrapper tbody,
-.main-catalog-info tbody {
-    display: table-row-group;
-}
-.main__product-text-wrapper tfoot,
-.main__quality-product-wrapper tfoot,
-.main__quality-text-block-wrapper-one tfoot,
-.main__about-text-wrapper tfoot,
-.main-catalog-info tfoot {
-    display: table-footer-group;
-}
-.main__product-text-wrapper col,
-.main__quality-product-wrapper col,
-.main__quality-text-block-wrapper-one col,
-.main__about-text-wrapper col,
-.main-catalog-info col {
-    display: table-column;
-}
-.main__product-text-wrapper colgroup,
-.main__quality-product-wrapper colgroup,
-.main__quality-text-block-wrapper-one colgroup,
-.main__about-text-wrapper colgroup,
-.main-catalog-info colgroup {
-    display: table-column-group;
-}
-.main__product-text-wrapper td, .main__product-text-wrapper th,
-.main__quality-product-wrapper td,
-.main__quality-product-wrapper th,
-.main__quality-text-block-wrapper-one td,
-.main__quality-text-block-wrapper-one th,
-.main__about-text-wrapper td,
-.main__about-text-wrapper th,
-.main-catalog-info td,
-.main-catalog-info th {
-    display: table-cell;
-}
-.main__product-text-wrapper caption,
-.main__quality-product-wrapper caption,
-.main__quality-text-block-wrapper-one caption,
-.main__about-text-wrapper caption,
-.main-catalog-info caption {
-    display: table-caption;
-}
-.main__product-text-wrapper th,
-.main__quality-product-wrapper th,
-.main__quality-text-block-wrapper-one th,
-.main__about-text-wrapper th,
-.main-catalog-info th {
-    font-weight: bolder;
-    text-align: center;
-}
-.main__product-text-wrapper caption,
-.main__quality-product-wrapper caption,
-.main__quality-text-block-wrapper-one caption,
-.main__about-text-wrapper caption,
-.main-catalog-info caption {
-    text-align: center;
-}
-.main__product-text-wrapper body,
-.main__quality-product-wrapper body,
-.main__quality-text-block-wrapper-one body,
-.main__about-text-wrapper body,
-.main-catalog-info body {
-    margin: 8px;
-}
-.main__product-text-wrapper h1,
-.main__quality-product-wrapper h1,
-.main__quality-text-block-wrapper-one h1,
-.main__about-text-wrapper h1,
-.main-catalog-info h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-.main__product-text-wrapper h2,
-.main__quality-product-wrapper h2,
-.main__quality-text-block-wrapper-one h2,
-.main__about-text-wrapper h2,
-.main-catalog-info h2 {
-    font-size: 1.5em;
-    margin: 0.75em 0;
-}
-.main__product-text-wrapper h3,
-.main__quality-product-wrapper h3,
-.main__quality-text-block-wrapper-one h3,
-.main__about-text-wrapper h3,
-.main-catalog-info h3 {
-    font-size: 1.17em;
-    margin: 0.83em 0;
-}
-.main__product-text-wrapper h4, .main__product-text-wrapper p,
-.main__product-text-wrapper blockquote, .main__product-text-wrapper ul,
-.main__product-text-wrapper fieldset, .main__product-text-wrapper form,
-.main__product-text-wrapper ol, .main__product-text-wrapper dl, .main__product-text-wrapper dir,
-.main__product-text-wrapper menu,
-.main__quality-product-wrapper h4,
-.main__quality-product-wrapper p,
-.main__quality-product-wrapper blockquote,
-.main__quality-product-wrapper ul,
-.main__quality-product-wrapper fieldset,
-.main__quality-product-wrapper form,
-.main__quality-product-wrapper ol,
-.main__quality-product-wrapper dl,
-.main__quality-product-wrapper dir,
-.main__quality-product-wrapper menu,
-.main__quality-text-block-wrapper-one h4,
-.main__quality-text-block-wrapper-one p,
-.main__quality-text-block-wrapper-one blockquote,
-.main__quality-text-block-wrapper-one ul,
-.main__quality-text-block-wrapper-one fieldset,
-.main__quality-text-block-wrapper-one form,
-.main__quality-text-block-wrapper-one ol,
-.main__quality-text-block-wrapper-one dl,
-.main__quality-text-block-wrapper-one dir,
-.main__quality-text-block-wrapper-one menu,
-.main__about-text-wrapper h4,
-.main__about-text-wrapper p,
-.main__about-text-wrapper blockquote,
-.main__about-text-wrapper ul,
-.main__about-text-wrapper fieldset,
-.main__about-text-wrapper form,
-.main__about-text-wrapper ol,
-.main__about-text-wrapper dl,
-.main__about-text-wrapper dir,
-.main__about-text-wrapper menu,
-.main-catalog-info h4,
-.main-catalog-info p,
-.main-catalog-info blockquote,
-.main-catalog-info ul,
-.main-catalog-info fieldset,
-.main-catalog-info form,
-.main-catalog-info ol,
-.main-catalog-info dl,
-.main-catalog-info dir,
-.main-catalog-info menu {
-    margin: 1.12em 0;
-}
-.main__product-text-wrapper h5,
-.main__quality-product-wrapper h5,
-.main__quality-text-block-wrapper-one h5,
-.main__about-text-wrapper h5,
-.main-catalog-info h5 {
-    font-size: 0.83em;
-    margin: 1.5em 0;
-}
-.main__product-text-wrapper h6,
-.main__quality-product-wrapper h6,
-.main__quality-text-block-wrapper-one h6,
-.main__about-text-wrapper h6,
-.main-catalog-info h6 {
-    font-size: 0.75em;
-    margin: 1.67em 0;
-}
-.main__product-text-wrapper h1, .main__product-text-wrapper h2, .main__product-text-wrapper h3, .main__product-text-wrapper h4,
-.main__product-text-wrapper h5, .main__product-text-wrapper h6, .main__product-text-wrapper b,
-.main__product-text-wrapper strong,
-.main__quality-product-wrapper h1,
-.main__quality-product-wrapper h2,
-.main__quality-product-wrapper h3,
-.main__quality-product-wrapper h4,
-.main__quality-product-wrapper h5,
-.main__quality-product-wrapper h6,
-.main__quality-product-wrapper b,
-.main__quality-product-wrapper strong,
-.main__quality-text-block-wrapper-one h1,
-.main__quality-text-block-wrapper-one h2,
-.main__quality-text-block-wrapper-one h3,
-.main__quality-text-block-wrapper-one h4,
-.main__quality-text-block-wrapper-one h5,
-.main__quality-text-block-wrapper-one h6,
-.main__quality-text-block-wrapper-one b,
-.main__quality-text-block-wrapper-one strong,
-.main__about-text-wrapper h1,
-.main__about-text-wrapper h2,
-.main__about-text-wrapper h3,
-.main__about-text-wrapper h4,
-.main__about-text-wrapper h5,
-.main__about-text-wrapper h6,
-.main__about-text-wrapper b,
-.main__about-text-wrapper strong,
-.main-catalog-info h1,
-.main-catalog-info h2,
-.main-catalog-info h3,
-.main-catalog-info h4,
-.main-catalog-info h5,
-.main-catalog-info h6,
-.main-catalog-info b,
-.main-catalog-info strong {
-    font-weight: bolder;
-}
-.main__product-text-wrapper blockquote,
-.main__quality-product-wrapper blockquote,
-.main__quality-text-block-wrapper-one blockquote,
-.main__about-text-wrapper blockquote,
-.main-catalog-info blockquote {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-.main__product-text-wrapper i, .main__product-text-wrapper cite, .main__product-text-wrapper em,
-.main__product-text-wrapper var, .main__product-text-wrapper address,
-.main__quality-product-wrapper i,
-.main__quality-product-wrapper cite,
-.main__quality-product-wrapper em,
-.main__quality-product-wrapper var,
-.main__quality-product-wrapper address,
-.main__quality-text-block-wrapper-one i,
-.main__quality-text-block-wrapper-one cite,
-.main__quality-text-block-wrapper-one em,
-.main__quality-text-block-wrapper-one var,
-.main__quality-text-block-wrapper-one address,
-.main__about-text-wrapper i,
-.main__about-text-wrapper cite,
-.main__about-text-wrapper em,
-.main__about-text-wrapper var,
-.main__about-text-wrapper address,
-.main-catalog-info i,
-.main-catalog-info cite,
-.main-catalog-info em,
-.main-catalog-info var,
-.main-catalog-info address {
-    font-style: italic;
-}
-.main__product-text-wrapper pre, .main__product-text-wrapper tt, .main__product-text-wrapper code,
-.main__product-text-wrapper kbd, .main__product-text-wrapper samp,
-.main__quality-product-wrapper pre,
-.main__quality-product-wrapper tt,
-.main__quality-product-wrapper code,
-.main__quality-product-wrapper kbd,
-.main__quality-product-wrapper samp,
-.main__quality-text-block-wrapper-one pre,
-.main__quality-text-block-wrapper-one tt,
-.main__quality-text-block-wrapper-one code,
-.main__quality-text-block-wrapper-one kbd,
-.main__quality-text-block-wrapper-one samp,
-.main__about-text-wrapper pre,
-.main__about-text-wrapper tt,
-.main__about-text-wrapper code,
-.main__about-text-wrapper kbd,
-.main__about-text-wrapper samp,
-.main-catalog-info pre,
-.main-catalog-info tt,
-.main-catalog-info code,
-.main-catalog-info kbd,
-.main-catalog-info samp {
-    font-family: monospace;
-}
-.main__product-text-wrapper pre,
-.main__quality-product-wrapper pre,
-.main__quality-text-block-wrapper-one pre,
-.main__about-text-wrapper pre,
-.main-catalog-info pre {
-    white-space: pre;
-}
-.main__product-text-wrapper button, .main__product-text-wrapper textarea,
-.main__product-text-wrapper input, .main__product-text-wrapper select,
-.main__quality-product-wrapper button,
-.main__quality-product-wrapper textarea,
-.main__quality-product-wrapper input,
-.main__quality-product-wrapper select,
-.main__quality-text-block-wrapper-one button,
-.main__quality-text-block-wrapper-one textarea,
-.main__quality-text-block-wrapper-one input,
-.main__quality-text-block-wrapper-one select,
-.main__about-text-wrapper button,
-.main__about-text-wrapper textarea,
-.main__about-text-wrapper input,
-.main__about-text-wrapper select,
-.main-catalog-info button,
-.main-catalog-info textarea,
-.main-catalog-info input,
-.main-catalog-info select {
-    display: inline-block;
-}
-.main__product-text-wrapper big,
-.main__quality-product-wrapper big,
-.main__quality-text-block-wrapper-one big,
-.main__about-text-wrapper big,
-.main-catalog-info big {
-    font-size: 1.17em;
-}
-.main__product-text-wrapper small, .main__product-text-wrapper sub, .main__product-text-wrapper sup,
-.main__quality-product-wrapper small,
-.main__quality-product-wrapper sub,
-.main__quality-product-wrapper sup,
-.main__quality-text-block-wrapper-one small,
-.main__quality-text-block-wrapper-one sub,
-.main__quality-text-block-wrapper-one sup,
-.main__about-text-wrapper small,
-.main__about-text-wrapper sub,
-.main__about-text-wrapper sup,
-.main-catalog-info small,
-.main-catalog-info sub,
-.main-catalog-info sup {
-    font-size: 0.83em;
-}
-.main__product-text-wrapper sub,
-.main__quality-product-wrapper sub,
-.main__quality-text-block-wrapper-one sub,
-.main__about-text-wrapper sub,
-.main-catalog-info sub {
-    vertical-align: sub;
-}
-.main__product-text-wrapper sup,
-.main__quality-product-wrapper sup,
-.main__quality-text-block-wrapper-one sup,
-.main__about-text-wrapper sup,
-.main-catalog-info sup {
-    vertical-align: super;
-}
-.main__product-text-wrapper table,
-.main__quality-product-wrapper table,
-.main__quality-text-block-wrapper-one table,
-.main__about-text-wrapper table,
-.main-catalog-info table {
-    border-spacing: 2px;
-}
-.main__product-text-wrapper thead, .main__product-text-wrapper tbody,
-.main__product-text-wrapper tfoot,
-.main__quality-product-wrapper thead,
-.main__quality-product-wrapper tbody,
-.main__quality-product-wrapper tfoot,
-.main__quality-text-block-wrapper-one thead,
-.main__quality-text-block-wrapper-one tbody,
-.main__quality-text-block-wrapper-one tfoot,
-.main__about-text-wrapper thead,
-.main__about-text-wrapper tbody,
-.main__about-text-wrapper tfoot,
-.main-catalog-info thead,
-.main-catalog-info tbody,
-.main-catalog-info tfoot {
-    vertical-align: middle;
-}
-.main__product-text-wrapper td, .main__product-text-wrapper th, .main__product-text-wrapper tr,
-.main__quality-product-wrapper td,
-.main__quality-product-wrapper th,
-.main__quality-product-wrapper tr,
-.main__quality-text-block-wrapper-one td,
-.main__quality-text-block-wrapper-one th,
-.main__quality-text-block-wrapper-one tr,
-.main__about-text-wrapper td,
-.main__about-text-wrapper th,
-.main__about-text-wrapper tr,
-.main-catalog-info td,
-.main-catalog-info th,
-.main-catalog-info tr {
-    vertical-align: inherit;
-}
-.main__product-text-wrapper s, .main__product-text-wrapper strike, .main__product-text-wrapper del,
-.main__quality-product-wrapper s,
-.main__quality-product-wrapper strike,
-.main__quality-product-wrapper del,
-.main__quality-text-block-wrapper-one s,
-.main__quality-text-block-wrapper-one strike,
-.main__quality-text-block-wrapper-one del,
-.main__about-text-wrapper s,
-.main__about-text-wrapper strike,
-.main__about-text-wrapper del,
-.main-catalog-info s,
-.main-catalog-info strike,
-.main-catalog-info del {
-    text-decoration: line-through;
-}
-.main__product-text-wrapper hr,
-.main__quality-product-wrapper hr,
-.main__quality-text-block-wrapper-one hr,
-.main__about-text-wrapper hr,
-.main-catalog-info hr {
-    border: 1px inset;
-}
-.main__product-text-wrapper ol, .main__product-text-wrapper ul, .main__product-text-wrapper dir,
-.main__product-text-wrapper menu, .main__product-text-wrapper dd,
-.main__quality-product-wrapper ol,
-.main__quality-product-wrapper ul,
-.main__quality-product-wrapper dir,
-.main__quality-product-wrapper menu,
-.main__quality-product-wrapper dd,
-.main__quality-text-block-wrapper-one ol,
-.main__quality-text-block-wrapper-one ul,
-.main__quality-text-block-wrapper-one dir,
-.main__quality-text-block-wrapper-one menu,
-.main__quality-text-block-wrapper-one dd,
-.main__about-text-wrapper ol,
-.main__about-text-wrapper ul,
-.main__about-text-wrapper dir,
-.main__about-text-wrapper menu,
-.main__about-text-wrapper dd,
-.main-catalog-info ol,
-.main-catalog-info ul,
-.main-catalog-info dir,
-.main-catalog-info menu,
-.main-catalog-info dd {
-    margin-left: 40px;
-}
-.main__product-text-wrapper ol,
-.main__quality-product-wrapper ol,
-.main__quality-text-block-wrapper-one ol,
-.main__about-text-wrapper ol,
-.main-catalog-info ol {
-    list-style-type: decimal;
-}
-.main__product-text-wrapper ol ul, .main__product-text-wrapper ul ol,
-.main__product-text-wrapper ul ul, .main__product-text-wrapper ol ol,
-.main__quality-product-wrapper ol ul,
-.main__quality-product-wrapper ul ol,
-.main__quality-product-wrapper ul ul,
-.main__quality-product-wrapper ol ol,
-.main__quality-text-block-wrapper-one ol ul,
-.main__quality-text-block-wrapper-one ul ol,
-.main__quality-text-block-wrapper-one ul ul,
-.main__quality-text-block-wrapper-one ol ol,
-.main__about-text-wrapper ol ul,
-.main__about-text-wrapper ul ol,
-.main__about-text-wrapper ul ul,
-.main__about-text-wrapper ol ol,
-.main-catalog-info ol ul,
-.main-catalog-info ul ol,
-.main-catalog-info ul ul,
-.main-catalog-info ol ol {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.main__product-text-wrapper u, .main__product-text-wrapper ins,
-.main__quality-product-wrapper u,
-.main__quality-product-wrapper ins,
-.main__quality-text-block-wrapper-one u,
-.main__quality-text-block-wrapper-one ins,
-.main__about-text-wrapper u,
-.main__about-text-wrapper ins,
-.main-catalog-info u,
-.main-catalog-info ins {
-    text-decoration: underline;
-}
-.main__product-text-wrapper br:before,
-.main__quality-product-wrapper br:before,
-.main__quality-text-block-wrapper-one br:before,
-.main__about-text-wrapper br:before,
-.main-catalog-info br:before {
-    content: "\a";
-    white-space: pre-line;
-}
-.main__product-text-wrapper center,
-.main__quality-product-wrapper center,
-.main__quality-text-block-wrapper-one center,
-.main__about-text-wrapper center,
-.main-catalog-info center {
-    text-align: center;
-}
-.main__product-text-wrapper :link, .main__product-text-wrapper :visited,
-.main__quality-product-wrapper :link,
-.main__quality-product-wrapper :visited,
-.main__quality-text-block-wrapper-one :link,
-.main__quality-text-block-wrapper-one :visited,
-.main__about-text-wrapper :link,
-.main__about-text-wrapper :visited,
-.main-catalog-info :link,
-.main-catalog-info :visited {
-    text-decoration: underline;
-}
-.main__product-text-wrapper :focus,
-.main__quality-product-wrapper :focus,
-.main__quality-text-block-wrapper-one :focus,
-.main__about-text-wrapper :focus,
-.main-catalog-info :focus {
-    outline: thin dotted invert;
-}
-.main__product-text-wrapper BDO[DIR=ltr],
-.main__quality-product-wrapper BDO[DIR=ltr],
-.main__quality-text-block-wrapper-one BDO[DIR=ltr],
-.main__about-text-wrapper BDO[DIR=ltr],
-.main-catalog-info BDO[DIR=ltr] {
-    direction: ltr;
-    unicode-bidi: bidi-override;
-}
-.main__product-text-wrapper BDO[DIR=rtl],
-.main__quality-product-wrapper BDO[DIR=rtl],
-.main__quality-text-block-wrapper-one BDO[DIR=rtl],
-.main__about-text-wrapper BDO[DIR=rtl],
-.main-catalog-info BDO[DIR=rtl] {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-}
-.main__product-text-wrapper *[DIR=ltr],
-.main__quality-product-wrapper *[DIR=ltr],
-.main__quality-text-block-wrapper-one *[DIR=ltr],
-.main__about-text-wrapper *[DIR=ltr],
-.main-catalog-info *[DIR=ltr] {
-    direction: ltr;
-    unicode-bidi: embed;
-}
-.main__product-text-wrapper *[DIR=rtl],
-.main__quality-product-wrapper *[DIR=rtl],
-.main__quality-text-block-wrapper-one *[DIR=rtl],
-.main__about-text-wrapper *[DIR=rtl],
-.main-catalog-info *[DIR=rtl] {
-    direction: rtl;
-    unicode-bidi: embed;
-}
-@media print {
-    .main__product-text-wrapper h1,
-    .main__quality-product-wrapper h1,
-    .main__quality-text-block-wrapper-one h1,
-    .main__about-text-wrapper h1,
-    .main-catalog-info h1 {
-        page-break-before: always;
-    }
-    .main__product-text-wrapper h1, .main__product-text-wrapper h2, .main__product-text-wrapper h3,
-    .main__product-text-wrapper h4, .main__product-text-wrapper h5, .main__product-text-wrapper h6,
-    .main__quality-product-wrapper h1,
-    .main__quality-product-wrapper h2,
-    .main__quality-product-wrapper h3,
-    .main__quality-product-wrapper h4,
-    .main__quality-product-wrapper h5,
-    .main__quality-product-wrapper h6,
-    .main__quality-text-block-wrapper-one h1,
-    .main__quality-text-block-wrapper-one h2,
-    .main__quality-text-block-wrapper-one h3,
-    .main__quality-text-block-wrapper-one h4,
-    .main__quality-text-block-wrapper-one h5,
-    .main__quality-text-block-wrapper-one h6,
-    .main__about-text-wrapper h1,
-    .main__about-text-wrapper h2,
-    .main__about-text-wrapper h3,
-    .main__about-text-wrapper h4,
-    .main__about-text-wrapper h5,
-    .main__about-text-wrapper h6,
-    .main-catalog-info h1,
-    .main-catalog-info h2,
-    .main-catalog-info h3,
-    .main-catalog-info h4,
-    .main-catalog-info h5,
-    .main-catalog-info h6 {
-        page-break-after: avoid;
-    }
-    .main__product-text-wrapper ul, .main__product-text-wrapper ol, .main__product-text-wrapper dl,
-    .main__quality-product-wrapper ul,
-    .main__quality-product-wrapper ol,
-    .main__quality-product-wrapper dl,
-    .main__quality-text-block-wrapper-one ul,
-    .main__quality-text-block-wrapper-one ol,
-    .main__quality-text-block-wrapper-one dl,
-    .main__about-text-wrapper ul,
-    .main__about-text-wrapper ol,
-    .main__about-text-wrapper dl,
-    .main-catalog-info ul,
-    .main-catalog-info ol,
-    .main-catalog-info dl {
-        page-break-before: avoid;
-    }
 }
