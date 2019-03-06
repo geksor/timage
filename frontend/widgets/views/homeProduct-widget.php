@@ -79,7 +79,7 @@
                     <div class="row main__quality-image-wrapper-two">
                         <div class="col-lg-12 ">
                             <div class="main__quality-product-wrapper background-white main__quality-block-margin-bottom">
-                                <div class="main__quality-text-block-wrapper-one">
+                                <div class="main__quality-text-block-wrapper-one main__quality-text-block-wrapper-one-info">
                                 <h3><?= $secondProduct->title ?></h3>
                                 <p><?= $secondProduct->short_desc ?></p>
                                 </div>
@@ -137,7 +137,7 @@
                     <div class="row main__quality-image-wrapper-two">
                         <div class="col-lg-12 ">
                             <div class="main__quality-product-wrapper background-grey main__quality-block-margin-bottom">
-                                <div class="main__quality-text-block-wrapper-one">
+                                <div class="main__quality-text-block-wrapper-one main__quality-text-block-wrapper-one-info">
                                 <h3><?= $lastProduct->title ?></h3>
                                 <p><?= $lastProduct->short_desc ?></p>
                                 </div>
