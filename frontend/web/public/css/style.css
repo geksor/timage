@@ -393,14 +393,14 @@ ul.header__contacts__list {
 }
 
 .main__product-text-wrapper p {
-    /*color: #545557;*/
-    /*font-family: 'Source Sans Pro', sans-serif;*/
-    /*font-size: 16px;*/
-    /*font-weight: 400;*/
-    /*line-height: 27px;*/
-    /*letter-spacing: 0.8px;*/
-    /*!* padding-bottom: 5%; *!*/
-    /*padding: 2%;*/
+    color: #545557;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.8px;
+    /* padding-bottom: 5%; */
+    padding: 2%;
 }
 
 .main__product-wrapper {
@@ -408,8 +408,8 @@ ul.header__contacts__list {
 }
 
 .main__product-text-wrapper {
-    /*height: 100%;*/
-    /*padding: 2%;*/
+    height: 100%;
+    padding: 2%;
 }
 
 .main__product-info-wrapper {
@@ -531,7 +531,7 @@ ul.header__contacts__list {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
 }
 
 .main__quality-block-margin-bottom {
@@ -553,15 +553,15 @@ ul.header__contacts__list {
 }
 
 .main__quality-product-wrapper h3 {
-    /*color: #141516;*/
-    /*font-family: 'Open Sans', sans-serif;*/
-    /*font-size: 24px;*/
-    /*font-weight: 700;*/
-    /*letter-spacing: 1.2px;*/
-    /*padding: 2%;*/
-    /*text-transform: none;*/
-    /*line-height: 30px;*/
-    /*text-align: left;*/
+    color: #141516;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding: 2%;
+    text-transform: none;
+    line-height: 30px;
+    text-align: left;
 }
 
 .main__quality-images-wrapper {
@@ -569,15 +569,15 @@ ul.header__contacts__list {
 }
 
 .main__quality-product-wrapper p {
-    /*color: #545557;*/
-    /*font-family: 'Source Sans Pro', sans-serif;*/
-    /*font-size: 16px;*/
-    /*font-weight: 400;*/
-    /*line-height: 20px;*/
-    /*letter-spacing: 0.8px;*/
-    /*padding: 2%;*/
-    /*!* padding-bottom: 10%; *!*/
-    /*text-align: left;*/
+    color: #545557;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    padding: 2%;
+    /* padding-bottom: 10%; */
+    text-align: left;
 }
 
 .main__quality-block-margin {
@@ -644,8 +644,8 @@ ul.header__contacts__list {
 }
 
 .main__quality-product-wrapper div {
-    /*padding: 0 2% 5% 2%;*/
-    /*text-align: right;*/
+    padding: 0 2% 5% 2%;
+    text-align: right;
 }
 
 .button-left {
@@ -654,16 +654,16 @@ ul.header__contacts__list {
 
 
 .main__quality-product-wrapper div a {
-    /*color: #141516;*/
-    /*font-family: 'Open Sans', sans-serif;*/
-    /*font-size: 16px;*/
-    /*font-weight: 500;*/
-    /*letter-spacing: 0.8px;*/
-    /*background-color: #FDB507;*/
-    /*padding: 3% 6% 3% 6%;*/
-    /*text-decoration: none;*/
-    /*border-radius: 0.25rem;*/
-/*}*/
+    color: #141516;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    background-color: #FDB507;
+    padding: 3% 6% 3% 6%;
+    text-decoration: none;
+    border-radius: 0.25rem;
+}
 
 /* main__preview---------- */
 
@@ -1438,12 +1438,12 @@ p.help-block.help-block-error {
 }
 
 .main__about-text-wrapper p {
-    /*color: #545557;*/
-    /*font-size: 16px;*/
-    /*font-weight: 400;*/
-    /*line-height: 24px;*/
-    /*letter-spacing: 0.8px;*/
-    /*padding: 5% 0;*/
+    color: #545557;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    padding: 5% 0;
 }
 
 .main__about-image-wrapper img {
@@ -1451,19 +1451,19 @@ p.help-block.help-block-error {
 }
 
 .main__about-text-wrapper div {
-    /*padding: 10% 0;*/
+    padding: 10% 0;
 }
 
 .main__about-text-wrapper div button {
-    /*color: #141516;*/
-    /*font-size: 16px;*/
-    /*font-weight: 500;*/
-    /*letter-spacing: 0.8px;*/
-    /*background-color: #FDB507 !important;*/
-    /*padding: 2% 10% 2% 10%;*/
-    /*width: 100%;*/
-    /*border: none;*/
-    /*border-radius: 0.25rem;*/
+    color: #141516;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    background-color: #FDB507 !important;
+    padding: 2% 10% 2% 10%;
+    width: 100%;
+    border: none;
+    border-radius: 0.25rem;
 }
 
 /* ---------- */
@@ -1985,9 +1985,9 @@ button.main__intro-action:hover {
 
 
     .main__quality-product-wrapper p {
-        /*font-family: 'Source Sans Pro', sans-serif;*/
-        /*font-size: 14px;*/
-        /*line-height: 18px;*/
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .main__quality-image-new {
@@ -2831,7 +2831,7 @@ button.main__intro-action:hover {
 
     .main__about-text-wrapper p,
     .main__about-mail-button {
-        /*font-size: 100%;*/
+        font-size: 100%;
     }
 
     .main__catalog-title-text {
@@ -3049,19 +3049,19 @@ button.main__intro-action:hover {
     }
 
     .main__quality-product-wrapper h3 {
-        /*color: #141516;*/
-        /*font-family: 'Open Sans', sans-serif;*/
-        /*font-size: 24px;*/
-        /*font-weight: 700;*/
-        /*letter-spacing: 1.2px;*/
-        /*padding: 2%;*/
-        /*text-transform: none;*/
-        /*line-height: 24px;*/
-        /*text-align: center;*/
+        color: #141516;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        padding: 2%;
+        text-transform: none;
+        line-height: 24px;
+        text-align: center;
     }
 
     .main__quality-product-wrapper p {
-        /*text-align: center;*/
+        text-align: center;
     }
 
     .main__quality-image-new {
@@ -3175,11 +3175,11 @@ button.main__intro-action:hover {
     }
 
     .main__quality-product-wrapper h3 {
-        /*padding: 4% 0;*/
+        padding: 4% 0;
     }
 
     .main__quality-product-wrapper p {
-        /*padding: 4% 0;*/
+        padding: 4% 0;
     }
 
     .main__quality-image-new {
@@ -3228,7 +3228,7 @@ button.main__intro-action:hover {
     }
 
     .main__quality-product-wrapper div {
-        /*text-align: center !important;*/
+        text-align: center !important;
     }
 
     .main__about-popup-info-send-button {
@@ -3344,19 +3344,3 @@ button.main__intro-action:hover {
     left: 0;
     object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
