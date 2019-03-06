@@ -1,3 +1,1818 @@
+.main__product-text-wrapper,
+.main__quality-product-wrapper,
+.main__quality-text-block-wrapper-one-info,
+.main__about-text-wrapper,
+.main-catalog-info {
+    /* We need the "bdo:-moz-has-dir-attr" bit because "bdo" has lower
+       specificity than the ":-moz-has-dir-attr" selector above. */
+    /* blocks */
+    /* tables */
+    /* border collapse rules */
+    /* Set hidden if we have 'frame' or 'rules' attribute.
+       Set it on all sides when we do so there's more consistency
+       in what authors should expect */
+    /* Put this first so 'border' and 'frame' rules can override it. */
+    /* 'border' before 'frame' so 'frame' overrides
+        A border with a given value should, of course, pass that value
+        as the border-width in pixels -> attr mapping */
+    /* :-moz-table-border-nonzero is like [border]:not([border="0"]) except it
+       also checks for other zero-like values according to HTML attribute
+       parsing rules */
+    /* specificity must beat table:-moz-table-border-nonzero rule above */
+    /* Internal Table Borders */
+    /* 'border' cell borders first */
+    /* collapse only if rules are really specified */
+    /* only specified rules override 'border' settings
+      (increased specificity to achieve this) */
+    /* caption inherits from table not table-outer */
+    /* for XHTML tables without tbody */
+    /* inlines */
+    /* titles */
+    /* lists */
+    /* nested lists have no top/bottom margins */
+    /* 2 deep unordered lists use a circle */
+    /* 3 deep (or more) unordered lists use a square */
+    /* leafs */
+    /* <hr> noshade and color attributes are handled completely by
+     * the nsHTMLHRElement attribute mapping code
+     */
+    /* focusable content: anything w/ tabindex >=0 is focusable, but we
+       skip drawing a focus outline on a few things that handle it
+       themselves. */
+    /* hidden elements */
+    /* media elements */
+    /* ::cue default settings */
+    /* datetime elements */
+    /* details & summary */
+    /* <dialog> element styles */
+}
+.main__product-text-wrapper address,
+.main__product-text-wrapper article,
+.main__product-text-wrapper aside,
+.main__product-text-wrapper blockquote,
+.main__product-text-wrapper body,
+.main__product-text-wrapper caption,
+.main__product-text-wrapper center,
+.main__product-text-wrapper col,
+.main__product-text-wrapper colgroup,
+.main__product-text-wrapper dd,
+.main__product-text-wrapper dir,
+.main__product-text-wrapper div,
+.main__product-text-wrapper dl,
+.main__product-text-wrapper dt,
+.main__product-text-wrapper fieldset,
+.main__product-text-wrapper figcaption,
+.main__product-text-wrapper figure,
+.main__product-text-wrapper footer,
+.main__product-text-wrapper form,
+.main__product-text-wrapper h1,
+.main__product-text-wrapper h2,
+.main__product-text-wrapper h3,
+.main__product-text-wrapper h4,
+.main__product-text-wrapper h5,
+.main__product-text-wrapper h6,
+.main__product-text-wrapper header,
+.main__product-text-wrapper hgroup,
+.main__product-text-wrapper hr,
+.main__product-text-wrapper html,
+.main__product-text-wrapper legend,
+.main__product-text-wrapper li,
+.main__product-text-wrapper listing,
+.main__product-text-wrapper main,
+.main__product-text-wrapper marquee,
+.main__product-text-wrapper menu,
+.main__product-text-wrapper nav,
+.main__product-text-wrapper noframes,
+.main__product-text-wrapper ol,
+.main__product-text-wrapper p,
+.main__product-text-wrapper plaintext,
+.main__product-text-wrapper pre,
+.main__product-text-wrapper section,
+.main__product-text-wrapper summary,
+.main__product-text-wrapper table,
+.main__product-text-wrapper tbody,
+.main__product-text-wrapper td,
+.main__product-text-wrapper tfoot,
+.main__product-text-wrapper th,
+.main__product-text-wrapper thead,
+.main__product-text-wrapper tr,
+.main__product-text-wrapper ul,
+.main__product-text-wrapper xmp,
+.main__quality-product-wrapper address,
+.main__quality-product-wrapper article,
+.main__quality-product-wrapper aside,
+.main__quality-product-wrapper blockquote,
+.main__quality-product-wrapper body,
+.main__quality-product-wrapper caption,
+.main__quality-product-wrapper center,
+.main__quality-product-wrapper col,
+.main__quality-product-wrapper colgroup,
+.main__quality-product-wrapper dd,
+.main__quality-product-wrapper dir,
+.main__quality-product-wrapper div,
+.main__quality-product-wrapper dl,
+.main__quality-product-wrapper dt,
+.main__quality-product-wrapper fieldset,
+.main__quality-product-wrapper figcaption,
+.main__quality-product-wrapper figure,
+.main__quality-product-wrapper footer,
+.main__quality-product-wrapper form,
+.main__quality-product-wrapper h1,
+.main__quality-product-wrapper h2,
+.main__quality-product-wrapper h3,
+.main__quality-product-wrapper h4,
+.main__quality-product-wrapper h5,
+.main__quality-product-wrapper h6,
+.main__quality-product-wrapper header,
+.main__quality-product-wrapper hgroup,
+.main__quality-product-wrapper hr,
+.main__quality-product-wrapper html,
+.main__quality-product-wrapper legend,
+.main__quality-product-wrapper li,
+.main__quality-product-wrapper listing,
+.main__quality-product-wrapper main,
+.main__quality-product-wrapper marquee,
+.main__quality-product-wrapper menu,
+.main__quality-product-wrapper nav,
+.main__quality-product-wrapper noframes,
+.main__quality-product-wrapper ol,
+.main__quality-product-wrapper p,
+.main__quality-product-wrapper plaintext,
+.main__quality-product-wrapper pre,
+.main__quality-product-wrapper section,
+.main__quality-product-wrapper summary,
+.main__quality-product-wrapper table,
+.main__quality-product-wrapper tbody,
+.main__quality-product-wrapper td,
+.main__quality-product-wrapper tfoot,
+.main__quality-product-wrapper th,
+.main__quality-product-wrapper thead,
+.main__quality-product-wrapper tr,
+.main__quality-product-wrapper ul,
+.main__quality-product-wrapper xmp,
+.main__quality-text-block-wrapper-one-info address,
+.main__quality-text-block-wrapper-one-info article,
+.main__quality-text-block-wrapper-one-info aside,
+.main__quality-text-block-wrapper-one-info blockquote,
+.main__quality-text-block-wrapper-one-info body,
+.main__quality-text-block-wrapper-one-info caption,
+.main__quality-text-block-wrapper-one-info center,
+.main__quality-text-block-wrapper-one-info col,
+.main__quality-text-block-wrapper-one-info colgroup,
+.main__quality-text-block-wrapper-one-info dd,
+.main__quality-text-block-wrapper-one-info dir,
+.main__quality-text-block-wrapper-one-info div,
+.main__quality-text-block-wrapper-one-info dl,
+.main__quality-text-block-wrapper-one-info dt,
+.main__quality-text-block-wrapper-one-info fieldset,
+.main__quality-text-block-wrapper-one-info figcaption,
+.main__quality-text-block-wrapper-one-info figure,
+.main__quality-text-block-wrapper-one-info footer,
+.main__quality-text-block-wrapper-one-info form,
+.main__quality-text-block-wrapper-one-info h1,
+.main__quality-text-block-wrapper-one-info h2,
+.main__quality-text-block-wrapper-one-info h3,
+.main__quality-text-block-wrapper-one-info h4,
+.main__quality-text-block-wrapper-one-info h5,
+.main__quality-text-block-wrapper-one-info h6,
+.main__quality-text-block-wrapper-one-info header,
+.main__quality-text-block-wrapper-one-info hgroup,
+.main__quality-text-block-wrapper-one-info hr,
+.main__quality-text-block-wrapper-one-info html,
+.main__quality-text-block-wrapper-one-info legend,
+.main__quality-text-block-wrapper-one-info li,
+.main__quality-text-block-wrapper-one-info listing,
+.main__quality-text-block-wrapper-one-info main,
+.main__quality-text-block-wrapper-one-info marquee,
+.main__quality-text-block-wrapper-one-info menu,
+.main__quality-text-block-wrapper-one-info nav,
+.main__quality-text-block-wrapper-one-info noframes,
+.main__quality-text-block-wrapper-one-info ol,
+.main__quality-text-block-wrapper-one-info p,
+.main__quality-text-block-wrapper-one-info plaintext,
+.main__quality-text-block-wrapper-one-info pre,
+.main__quality-text-block-wrapper-one-info section,
+.main__quality-text-block-wrapper-one-info summary,
+.main__quality-text-block-wrapper-one-info table,
+.main__quality-text-block-wrapper-one-info tbody,
+.main__quality-text-block-wrapper-one-info td,
+.main__quality-text-block-wrapper-one-info tfoot,
+.main__quality-text-block-wrapper-one-info th,
+.main__quality-text-block-wrapper-one-info thead,
+.main__quality-text-block-wrapper-one-info tr,
+.main__quality-text-block-wrapper-one-info ul,
+.main__quality-text-block-wrapper-one-info xmp,
+.main__about-text-wrapper address,
+.main__about-text-wrapper article,
+.main__about-text-wrapper aside,
+.main__about-text-wrapper blockquote,
+.main__about-text-wrapper body,
+.main__about-text-wrapper caption,
+.main__about-text-wrapper center,
+.main__about-text-wrapper col,
+.main__about-text-wrapper colgroup,
+.main__about-text-wrapper dd,
+.main__about-text-wrapper dir,
+.main__about-text-wrapper div,
+.main__about-text-wrapper dl,
+.main__about-text-wrapper dt,
+.main__about-text-wrapper fieldset,
+.main__about-text-wrapper figcaption,
+.main__about-text-wrapper figure,
+.main__about-text-wrapper footer,
+.main__about-text-wrapper form,
+.main__about-text-wrapper h1,
+.main__about-text-wrapper h2,
+.main__about-text-wrapper h3,
+.main__about-text-wrapper h4,
+.main__about-text-wrapper h5,
+.main__about-text-wrapper h6,
+.main__about-text-wrapper header,
+.main__about-text-wrapper hgroup,
+.main__about-text-wrapper hr,
+.main__about-text-wrapper html,
+.main__about-text-wrapper legend,
+.main__about-text-wrapper li,
+.main__about-text-wrapper listing,
+.main__about-text-wrapper main,
+.main__about-text-wrapper marquee,
+.main__about-text-wrapper menu,
+.main__about-text-wrapper nav,
+.main__about-text-wrapper noframes,
+.main__about-text-wrapper ol,
+.main__about-text-wrapper p,
+.main__about-text-wrapper plaintext,
+.main__about-text-wrapper pre,
+.main__about-text-wrapper section,
+.main__about-text-wrapper summary,
+.main__about-text-wrapper table,
+.main__about-text-wrapper tbody,
+.main__about-text-wrapper td,
+.main__about-text-wrapper tfoot,
+.main__about-text-wrapper th,
+.main__about-text-wrapper thead,
+.main__about-text-wrapper tr,
+.main__about-text-wrapper ul,
+.main__about-text-wrapper xmp,
+.main-catalog-info address,
+.main-catalog-info article,
+.main-catalog-info aside,
+.main-catalog-info blockquote,
+.main-catalog-info body,
+.main-catalog-info caption,
+.main-catalog-info center,
+.main-catalog-info col,
+.main-catalog-info colgroup,
+.main-catalog-info dd,
+.main-catalog-info dir,
+.main-catalog-info div,
+.main-catalog-info dl,
+.main-catalog-info dt,
+.main-catalog-info fieldset,
+.main-catalog-info figcaption,
+.main-catalog-info figure,
+.main-catalog-info footer,
+.main-catalog-info form,
+.main-catalog-info h1,
+.main-catalog-info h2,
+.main-catalog-info h3,
+.main-catalog-info h4,
+.main-catalog-info h5,
+.main-catalog-info h6,
+.main-catalog-info header,
+.main-catalog-info hgroup,
+.main-catalog-info hr,
+.main-catalog-info html,
+.main-catalog-info legend,
+.main-catalog-info li,
+.main-catalog-info listing,
+.main-catalog-info main,
+.main-catalog-info marquee,
+.main-catalog-info menu,
+.main-catalog-info nav,
+.main-catalog-info noframes,
+.main-catalog-info ol,
+.main-catalog-info p,
+.main-catalog-info plaintext,
+.main-catalog-info pre,
+.main-catalog-info section,
+.main-catalog-info summary,
+.main-catalog-info table,
+.main-catalog-info tbody,
+.main-catalog-info td,
+.main-catalog-info tfoot,
+.main-catalog-info th,
+.main-catalog-info thead,
+.main-catalog-info tr,
+.main-catalog-info ul,
+.main-catalog-info xmp {
+    unicode-bidi: isolate;
+}
+.main__product-text-wrapper bdi, .main__product-text-wrapper output,
+.main__quality-product-wrapper bdi,
+.main__quality-product-wrapper output,
+.main__quality-text-block-wrapper-one-info bdi,
+.main__quality-text-block-wrapper-one-info output,
+.main__about-text-wrapper bdi,
+.main__about-text-wrapper output,
+.main-catalog-info bdi,
+.main-catalog-info output {
+    unicode-bidi: isolate;
+}
+.main__product-text-wrapper bdo, .main__product-text-wrapper bdo:-moz-has-dir-attr,
+.main__quality-product-wrapper bdo,
+.main__quality-product-wrapper bdo:-moz-has-dir-attr,
+.main__quality-text-block-wrapper-one-info bdo,
+.main__quality-text-block-wrapper-one-info bdo:-moz-has-dir-attr,
+.main__about-text-wrapper bdo,
+.main__about-text-wrapper bdo:-moz-has-dir-attr,
+.main-catalog-info bdo,
+.main-catalog-info bdo:-moz-has-dir-attr {
+    unicode-bidi: isolate-override;
+}
+.main__product-text-wrapper textarea:-moz-dir-attr-like-auto,
+.main__product-text-wrapper pre:-moz-dir-attr-like-auto,
+.main__quality-product-wrapper textarea:-moz-dir-attr-like-auto,
+.main__quality-product-wrapper pre:-moz-dir-attr-like-auto,
+.main__quality-text-block-wrapper-one-info textarea:-moz-dir-attr-like-auto,
+.main__quality-text-block-wrapper-one-info pre:-moz-dir-attr-like-auto,
+.main__about-text-wrapper textarea:-moz-dir-attr-like-auto,
+.main__about-text-wrapper pre:-moz-dir-attr-like-auto,
+.main-catalog-info textarea:-moz-dir-attr-like-auto,
+.main-catalog-info pre:-moz-dir-attr-like-auto {
+    unicode-bidi: plaintext;
+}
+.main__product-text-wrapper article,
+.main__product-text-wrapper aside,
+.main__product-text-wrapper details,
+.main__product-text-wrapper div,
+.main__product-text-wrapper dt,
+.main__product-text-wrapper figcaption,
+.main__product-text-wrapper footer,
+.main__product-text-wrapper form,
+.main__product-text-wrapper header,
+.main__product-text-wrapper hgroup,
+.main__product-text-wrapper html,
+.main__product-text-wrapper main,
+.main__product-text-wrapper nav,
+.main__product-text-wrapper section,
+.main__product-text-wrapper summary,
+.main__quality-product-wrapper article,
+.main__quality-product-wrapper aside,
+.main__quality-product-wrapper details,
+.main__quality-product-wrapper div,
+.main__quality-product-wrapper dt,
+.main__quality-product-wrapper figcaption,
+.main__quality-product-wrapper footer,
+.main__quality-product-wrapper form,
+.main__quality-product-wrapper header,
+.main__quality-product-wrapper hgroup,
+.main__quality-product-wrapper html,
+.main__quality-product-wrapper main,
+.main__quality-product-wrapper nav,
+.main__quality-product-wrapper section,
+.main__quality-product-wrapper summary,
+.main__quality-text-block-wrapper-one-info article,
+.main__quality-text-block-wrapper-one-info aside,
+.main__quality-text-block-wrapper-one-info details,
+.main__quality-text-block-wrapper-one-info div,
+.main__quality-text-block-wrapper-one-info dt,
+.main__quality-text-block-wrapper-one-info figcaption,
+.main__quality-text-block-wrapper-one-info footer,
+.main__quality-text-block-wrapper-one-info form,
+.main__quality-text-block-wrapper-one-info header,
+.main__quality-text-block-wrapper-one-info hgroup,
+.main__quality-text-block-wrapper-one-info html,
+.main__quality-text-block-wrapper-one-info main,
+.main__quality-text-block-wrapper-one-info nav,
+.main__quality-text-block-wrapper-one-info section,
+.main__quality-text-block-wrapper-one-info summary,
+.main__about-text-wrapper article,
+.main__about-text-wrapper aside,
+.main__about-text-wrapper details,
+.main__about-text-wrapper div,
+.main__about-text-wrapper dt,
+.main__about-text-wrapper figcaption,
+.main__about-text-wrapper footer,
+.main__about-text-wrapper form,
+.main__about-text-wrapper header,
+.main__about-text-wrapper hgroup,
+.main__about-text-wrapper html,
+.main__about-text-wrapper main,
+.main__about-text-wrapper nav,
+.main__about-text-wrapper section,
+.main__about-text-wrapper summary,
+.main-catalog-info article,
+.main-catalog-info aside,
+.main-catalog-info details,
+.main-catalog-info div,
+.main-catalog-info dt,
+.main-catalog-info figcaption,
+.main-catalog-info footer,
+.main-catalog-info form,
+.main-catalog-info header,
+.main-catalog-info hgroup,
+.main-catalog-info html,
+.main-catalog-info main,
+.main-catalog-info nav,
+.main-catalog-info section,
+.main-catalog-info summary {
+    display: block;
+}
+.main__product-text-wrapper body,
+.main__quality-product-wrapper body,
+.main__quality-text-block-wrapper-one-info body,
+.main__about-text-wrapper body,
+.main-catalog-info body {
+    display: block;
+    margin: 8px;
+}
+.main__product-text-wrapper p, .main__product-text-wrapper dl, .main__product-text-wrapper multicol,
+.main__quality-product-wrapper p,
+.main__quality-product-wrapper dl,
+.main__quality-product-wrapper multicol,
+.main__quality-text-block-wrapper-one-info p,
+.main__quality-text-block-wrapper-one-info dl,
+.main__quality-text-block-wrapper-one-info multicol,
+.main__about-text-wrapper p,
+.main__about-text-wrapper dl,
+.main__about-text-wrapper multicol,
+.main-catalog-info p,
+.main-catalog-info dl,
+.main-catalog-info multicol {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.main__product-text-wrapper dd,
+.main__quality-product-wrapper dd,
+.main__quality-text-block-wrapper-one-info dd,
+.main__about-text-wrapper dd,
+.main-catalog-info dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+.main__product-text-wrapper blockquote, .main__product-text-wrapper figure,
+.main__quality-product-wrapper blockquote,
+.main__quality-product-wrapper figure,
+.main__quality-text-block-wrapper-one-info blockquote,
+.main__quality-text-block-wrapper-one-info figure,
+.main__about-text-wrapper blockquote,
+.main__about-text-wrapper figure,
+.main-catalog-info blockquote,
+.main-catalog-info figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+.main__product-text-wrapper address,
+.main__quality-product-wrapper address,
+.main__quality-text-block-wrapper-one-info address,
+.main__about-text-wrapper address,
+.main-catalog-info address {
+    display: block;
+    font-style: italic;
+}
+.main__product-text-wrapper center,
+.main__quality-product-wrapper center,
+.main__quality-text-block-wrapper-one-info center,
+.main__about-text-wrapper center,
+.main-catalog-info center {
+    display: block;
+    text-align: -moz-center;
+}
+.main__product-text-wrapper blockquote[type=cite],
+.main__quality-product-wrapper blockquote[type=cite],
+.main__quality-text-block-wrapper-one-info blockquote[type=cite],
+.main__about-text-wrapper blockquote[type=cite],
+.main-catalog-info blockquote[type=cite] {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 1em;
+    border-inline-start: solid;
+    border-color: blue;
+    border-width: thin;
+}
+.main__product-text-wrapper span[_moz_quote=true],
+.main__quality-product-wrapper span[_moz_quote=true],
+.main__quality-text-block-wrapper-one-info span[_moz_quote=true],
+.main__about-text-wrapper span[_moz_quote=true],
+.main-catalog-info span[_moz_quote=true] {
+    color: blue;
+}
+.main__product-text-wrapper pre[_moz_quote=true],
+.main__quality-product-wrapper pre[_moz_quote=true],
+.main__quality-text-block-wrapper-one-info pre[_moz_quote=true],
+.main__about-text-wrapper pre[_moz_quote=true],
+.main-catalog-info pre[_moz_quote=true] {
+    color: blue;
+}
+.main__product-text-wrapper h1,
+.main__quality-product-wrapper h1,
+.main__quality-text-block-wrapper-one-info h1,
+.main__about-text-wrapper h1,
+.main-catalog-info h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+.main__product-text-wrapper h2,
+.main__product-text-wrapper :-moz-any(article, aside, nav, section) h1,
+.main__quality-product-wrapper h2,
+.main__quality-product-wrapper :-moz-any(article, aside, nav, section) h1,
+.main__quality-text-block-wrapper-one-info h2,
+.main__quality-text-block-wrapper-one-info :-moz-any(article, aside, nav, section) h1,
+.main__about-text-wrapper h2,
+.main__about-text-wrapper :-moz-any(article, aside, nav, section) h1,
+.main-catalog-info h2,
+.main-catalog-info :-moz-any(article, aside, nav, section) h1 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+.main__product-text-wrapper h3,
+.main__product-text-wrapper :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main__quality-product-wrapper h3,
+.main__quality-product-wrapper :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main__quality-text-block-wrapper-one-info h3,
+.main__quality-text-block-wrapper-one-info :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main__about-text-wrapper h3,
+.main__about-text-wrapper :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main-catalog-info h3,
+.main-catalog-info :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1 {
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.main__product-text-wrapper h4,
+.main__product-text-wrapper :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main__quality-product-wrapper h4,
+.main__quality-product-wrapper :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main__quality-text-block-wrapper-one-info h4,
+.main__quality-text-block-wrapper-one-info :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main__about-text-wrapper h4,
+.main__about-text-wrapper :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main-catalog-info h4,
+.main-catalog-info :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1 {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+}
+.main__product-text-wrapper h5,
+.main__product-text-wrapper :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main__quality-product-wrapper h5,
+.main__quality-product-wrapper :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main__quality-text-block-wrapper-one-info h5,
+.main__quality-text-block-wrapper-one-info :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main__about-text-wrapper h5,
+.main__about-text-wrapper :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main-catalog-info h5,
+.main-catalog-info :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1 {
+    display: block;
+    font-size: 0.83em;
+    font-weight: bold;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+}
+.main__product-text-wrapper h6,
+.main__product-text-wrapper :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main__quality-product-wrapper h6,
+.main__quality-product-wrapper :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main__quality-text-block-wrapper-one-info h6,
+.main__quality-text-block-wrapper-one-info :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main__about-text-wrapper h6,
+.main__about-text-wrapper :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1,
+.main-catalog-info h6,
+.main-catalog-info :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) :-moz-any(article, aside, nav, section) h1 {
+    display: block;
+    font-size: 0.67em;
+    font-weight: bold;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+}
+.main__product-text-wrapper listing,
+.main__quality-product-wrapper listing,
+.main__quality-text-block-wrapper-one-info listing,
+.main__about-text-wrapper listing,
+.main-catalog-info listing {
+    display: block;
+    font-family: -moz-fixed;
+    font-size: medium;
+    white-space: pre;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.main__product-text-wrapper xmp, .main__product-text-wrapper pre, .main__product-text-wrapper plaintext,
+.main__quality-product-wrapper xmp,
+.main__quality-product-wrapper pre,
+.main__quality-product-wrapper plaintext,
+.main__quality-text-block-wrapper-one-info xmp,
+.main__quality-text-block-wrapper-one-info pre,
+.main__quality-text-block-wrapper-one-info plaintext,
+.main__about-text-wrapper xmp,
+.main__about-text-wrapper pre,
+.main__about-text-wrapper plaintext,
+.main-catalog-info xmp,
+.main-catalog-info pre,
+.main-catalog-info plaintext {
+    display: block;
+    font-family: -moz-fixed;
+    white-space: pre;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.main__product-text-wrapper table,
+.main__quality-product-wrapper table,
+.main__quality-text-block-wrapper-one-info table,
+.main__about-text-wrapper table,
+.main-catalog-info table {
+    display: table;
+    border-spacing: 2px;
+    border-collapse: separate;
+    /* XXXldb do we want this if we're border-collapse:collapse ? */
+    box-sizing: border-box;
+    text-indent: 0;
+}
+.main__product-text-wrapper table[align=left],
+.main__quality-product-wrapper table[align=left],
+.main__quality-text-block-wrapper-one-info table[align=left],
+.main__about-text-wrapper table[align=left],
+.main-catalog-info table[align=left] {
+    float: left;
+}
+.main__product-text-wrapper table[align=right],
+.main__quality-product-wrapper table[align=right],
+.main__quality-text-block-wrapper-one-info table[align=right],
+.main__about-text-wrapper table[align=right],
+.main-catalog-info table[align=right] {
+    float: right;
+    text-align: start;
+}
+.main__product-text-wrapper table[rules],
+.main__quality-product-wrapper table[rules],
+.main__quality-text-block-wrapper-one-info table[rules],
+.main__about-text-wrapper table[rules],
+.main-catalog-info table[rules] {
+    border-width: thin;
+    border-style: hidden;
+}
+.main__product-text-wrapper table:-moz-table-border-nonzero,
+.main__quality-product-wrapper table:-moz-table-border-nonzero,
+.main__quality-text-block-wrapper-one-info table:-moz-table-border-nonzero,
+.main__about-text-wrapper table:-moz-table-border-nonzero,
+.main-catalog-info table:-moz-table-border-nonzero {
+    border-width: thin;
+    border-style: outset;
+}
+.main__product-text-wrapper table[frame],
+.main__quality-product-wrapper table[frame],
+.main__quality-text-block-wrapper-one-info table[frame],
+.main__about-text-wrapper table[frame],
+.main-catalog-info table[frame] {
+    border: thin hidden;
+}
+.main__product-text-wrapper table[frame=void],
+.main__quality-product-wrapper table[frame=void],
+.main__quality-text-block-wrapper-one-info table[frame=void],
+.main__about-text-wrapper table[frame=void],
+.main-catalog-info table[frame=void] {
+    border-style: hidden;
+}
+.main__product-text-wrapper table[frame=above],
+.main__quality-product-wrapper table[frame=above],
+.main__quality-text-block-wrapper-one-info table[frame=above],
+.main__about-text-wrapper table[frame=above],
+.main-catalog-info table[frame=above] {
+    border-style: outset hidden hidden hidden;
+}
+.main__product-text-wrapper table[frame=below],
+.main__quality-product-wrapper table[frame=below],
+.main__quality-text-block-wrapper-one-info table[frame=below],
+.main__about-text-wrapper table[frame=below],
+.main-catalog-info table[frame=below] {
+    border-style: hidden hidden outset hidden;
+}
+.main__product-text-wrapper table[frame=lhs],
+.main__quality-product-wrapper table[frame=lhs],
+.main__quality-text-block-wrapper-one-info table[frame=lhs],
+.main__about-text-wrapper table[frame=lhs],
+.main-catalog-info table[frame=lhs] {
+    border-style: hidden hidden hidden outset;
+}
+.main__product-text-wrapper table[frame=rhs],
+.main__quality-product-wrapper table[frame=rhs],
+.main__quality-text-block-wrapper-one-info table[frame=rhs],
+.main__about-text-wrapper table[frame=rhs],
+.main-catalog-info table[frame=rhs] {
+    border-style: hidden outset hidden hidden;
+}
+.main__product-text-wrapper table[frame=hsides],
+.main__quality-product-wrapper table[frame=hsides],
+.main__quality-text-block-wrapper-one-info table[frame=hsides],
+.main__about-text-wrapper table[frame=hsides],
+.main-catalog-info table[frame=hsides] {
+    border-style: outset hidden;
+}
+.main__product-text-wrapper table[frame=vsides],
+.main__quality-product-wrapper table[frame=vsides],
+.main__quality-text-block-wrapper-one-info table[frame=vsides],
+.main__about-text-wrapper table[frame=vsides],
+.main-catalog-info table[frame=vsides] {
+    border-style: hidden outset;
+}
+.main__product-text-wrapper table[frame=box],
+.main__product-text-wrapper table[frame=border],
+.main__quality-product-wrapper table[frame=box],
+.main__quality-product-wrapper table[frame=border],
+.main__quality-text-block-wrapper-one-info table[frame=box],
+.main__quality-text-block-wrapper-one-info table[frame=border],
+.main__about-text-wrapper table[frame=box],
+.main__about-text-wrapper table[frame=border],
+.main-catalog-info table[frame=box],
+.main-catalog-info table[frame=border] {
+    border-style: outset;
+}
+.main__product-text-wrapper table:-moz-table-border-nonzero > * > tr > td,
+.main__product-text-wrapper table:-moz-table-border-nonzero > * > tr > th,
+.main__product-text-wrapper table:-moz-table-border-nonzero > * > td,
+.main__product-text-wrapper table:-moz-table-border-nonzero > * > th,
+.main__product-text-wrapper table:-moz-table-border-nonzero > td,
+.main__product-text-wrapper table:-moz-table-border-nonzero > th,
+.main__quality-product-wrapper table:-moz-table-border-nonzero > * > tr > td,
+.main__quality-product-wrapper table:-moz-table-border-nonzero > * > tr > th,
+.main__quality-product-wrapper table:-moz-table-border-nonzero > * > td,
+.main__quality-product-wrapper table:-moz-table-border-nonzero > * > th,
+.main__quality-product-wrapper table:-moz-table-border-nonzero > td,
+.main__quality-product-wrapper table:-moz-table-border-nonzero > th,
+.main__quality-text-block-wrapper-one-info table:-moz-table-border-nonzero > * > tr > td,
+.main__quality-text-block-wrapper-one-info table:-moz-table-border-nonzero > * > tr > th,
+.main__quality-text-block-wrapper-one-info table:-moz-table-border-nonzero > * > td,
+.main__quality-text-block-wrapper-one-info table:-moz-table-border-nonzero > * > th,
+.main__quality-text-block-wrapper-one-info table:-moz-table-border-nonzero > td,
+.main__quality-text-block-wrapper-one-info table:-moz-table-border-nonzero > th,
+.main__about-text-wrapper table:-moz-table-border-nonzero > * > tr > td,
+.main__about-text-wrapper table:-moz-table-border-nonzero > * > tr > th,
+.main__about-text-wrapper table:-moz-table-border-nonzero > * > td,
+.main__about-text-wrapper table:-moz-table-border-nonzero > * > th,
+.main__about-text-wrapper table:-moz-table-border-nonzero > td,
+.main__about-text-wrapper table:-moz-table-border-nonzero > th,
+.main-catalog-info table:-moz-table-border-nonzero > * > tr > td,
+.main-catalog-info table:-moz-table-border-nonzero > * > tr > th,
+.main-catalog-info table:-moz-table-border-nonzero > * > td,
+.main-catalog-info table:-moz-table-border-nonzero > * > th,
+.main-catalog-info table:-moz-table-border-nonzero > td,
+.main-catalog-info table:-moz-table-border-nonzero > th {
+    border-width: thin;
+    border-style: inset;
+}
+.main__product-text-wrapper table[rules]:not([rules=none]):not([rules=""]),
+.main__quality-product-wrapper table[rules]:not([rules=none]):not([rules=""]),
+.main__quality-text-block-wrapper-one-info table[rules]:not([rules=none]):not([rules=""]),
+.main__about-text-wrapper table[rules]:not([rules=none]):not([rules=""]),
+.main-catalog-info table[rules]:not([rules=none]):not([rules=""]) {
+    border-collapse: collapse;
+}
+.main__product-text-wrapper table[rules]:not([rules=""]) > tr > td,
+.main__product-text-wrapper table[rules]:not([rules=""]) > * > tr > td,
+.main__product-text-wrapper table[rules]:not([rules=""]) > tr > th,
+.main__product-text-wrapper table[rules]:not([rules=""]) > * > tr > th,
+.main__product-text-wrapper table[rules]:not([rules=""]) > td,
+.main__product-text-wrapper table[rules]:not([rules=""]) > th,
+.main__quality-product-wrapper table[rules]:not([rules=""]) > tr > td,
+.main__quality-product-wrapper table[rules]:not([rules=""]) > * > tr > td,
+.main__quality-product-wrapper table[rules]:not([rules=""]) > tr > th,
+.main__quality-product-wrapper table[rules]:not([rules=""]) > * > tr > th,
+.main__quality-product-wrapper table[rules]:not([rules=""]) > td,
+.main__quality-product-wrapper table[rules]:not([rules=""]) > th,
+.main__quality-text-block-wrapper-one-info table[rules]:not([rules=""]) > tr > td,
+.main__quality-text-block-wrapper-one-info table[rules]:not([rules=""]) > * > tr > td,
+.main__quality-text-block-wrapper-one-info table[rules]:not([rules=""]) > tr > th,
+.main__quality-text-block-wrapper-one-info table[rules]:not([rules=""]) > * > tr > th,
+.main__quality-text-block-wrapper-one-info table[rules]:not([rules=""]) > td,
+.main__quality-text-block-wrapper-one-info table[rules]:not([rules=""]) > th,
+.main__about-text-wrapper table[rules]:not([rules=""]) > tr > td,
+.main__about-text-wrapper table[rules]:not([rules=""]) > * > tr > td,
+.main__about-text-wrapper table[rules]:not([rules=""]) > tr > th,
+.main__about-text-wrapper table[rules]:not([rules=""]) > * > tr > th,
+.main__about-text-wrapper table[rules]:not([rules=""]) > td,
+.main__about-text-wrapper table[rules]:not([rules=""]) > th,
+.main-catalog-info table[rules]:not([rules=""]) > tr > td,
+.main-catalog-info table[rules]:not([rules=""]) > * > tr > td,
+.main-catalog-info table[rules]:not([rules=""]) > tr > th,
+.main-catalog-info table[rules]:not([rules=""]) > * > tr > th,
+.main-catalog-info table[rules]:not([rules=""]) > td,
+.main-catalog-info table[rules]:not([rules=""]) > th {
+    border-width: thin;
+    border-style: none;
+}
+.main__product-text-wrapper table[rules][rules=none] > tr > td,
+.main__product-text-wrapper table[rules][rules=none] > * > tr > td,
+.main__product-text-wrapper table[rules][rules=none] > tr > th,
+.main__product-text-wrapper table[rules][rules=none] > * > tr > th,
+.main__product-text-wrapper table[rules][rules=none] > td,
+.main__product-text-wrapper table[rules][rules=none] > th,
+.main__quality-product-wrapper table[rules][rules=none] > tr > td,
+.main__quality-product-wrapper table[rules][rules=none] > * > tr > td,
+.main__quality-product-wrapper table[rules][rules=none] > tr > th,
+.main__quality-product-wrapper table[rules][rules=none] > * > tr > th,
+.main__quality-product-wrapper table[rules][rules=none] > td,
+.main__quality-product-wrapper table[rules][rules=none] > th,
+.main__quality-text-block-wrapper-one-info table[rules][rules=none] > tr > td,
+.main__quality-text-block-wrapper-one-info table[rules][rules=none] > * > tr > td,
+.main__quality-text-block-wrapper-one-info table[rules][rules=none] > tr > th,
+.main__quality-text-block-wrapper-one-info table[rules][rules=none] > * > tr > th,
+.main__quality-text-block-wrapper-one-info table[rules][rules=none] > td,
+.main__quality-text-block-wrapper-one-info table[rules][rules=none] > th,
+.main__about-text-wrapper table[rules][rules=none] > tr > td,
+.main__about-text-wrapper table[rules][rules=none] > * > tr > td,
+.main__about-text-wrapper table[rules][rules=none] > tr > th,
+.main__about-text-wrapper table[rules][rules=none] > * > tr > th,
+.main__about-text-wrapper table[rules][rules=none] > td,
+.main__about-text-wrapper table[rules][rules=none] > th,
+.main-catalog-info table[rules][rules=none] > tr > td,
+.main-catalog-info table[rules][rules=none] > * > tr > td,
+.main-catalog-info table[rules][rules=none] > tr > th,
+.main-catalog-info table[rules][rules=none] > * > tr > th,
+.main-catalog-info table[rules][rules=none] > td,
+.main-catalog-info table[rules][rules=none] > th {
+    border-width: thin;
+    border-style: none;
+}
+.main__product-text-wrapper table[rules][rules=all] > tr > td,
+.main__product-text-wrapper table[rules][rules=all] > * > tr > td,
+.main__product-text-wrapper table[rules][rules=all] > tr > th,
+.main__product-text-wrapper table[rules][rules=all] > * > tr > th,
+.main__product-text-wrapper table[rules][rules=all] > td,
+.main__product-text-wrapper table[rules][rules=all] > th,
+.main__quality-product-wrapper table[rules][rules=all] > tr > td,
+.main__quality-product-wrapper table[rules][rules=all] > * > tr > td,
+.main__quality-product-wrapper table[rules][rules=all] > tr > th,
+.main__quality-product-wrapper table[rules][rules=all] > * > tr > th,
+.main__quality-product-wrapper table[rules][rules=all] > td,
+.main__quality-product-wrapper table[rules][rules=all] > th,
+.main__quality-text-block-wrapper-one-info table[rules][rules=all] > tr > td,
+.main__quality-text-block-wrapper-one-info table[rules][rules=all] > * > tr > td,
+.main__quality-text-block-wrapper-one-info table[rules][rules=all] > tr > th,
+.main__quality-text-block-wrapper-one-info table[rules][rules=all] > * > tr > th,
+.main__quality-text-block-wrapper-one-info table[rules][rules=all] > td,
+.main__quality-text-block-wrapper-one-info table[rules][rules=all] > th,
+.main__about-text-wrapper table[rules][rules=all] > tr > td,
+.main__about-text-wrapper table[rules][rules=all] > * > tr > td,
+.main__about-text-wrapper table[rules][rules=all] > tr > th,
+.main__about-text-wrapper table[rules][rules=all] > * > tr > th,
+.main__about-text-wrapper table[rules][rules=all] > td,
+.main__about-text-wrapper table[rules][rules=all] > th,
+.main-catalog-info table[rules][rules=all] > tr > td,
+.main-catalog-info table[rules][rules=all] > * > tr > td,
+.main-catalog-info table[rules][rules=all] > tr > th,
+.main-catalog-info table[rules][rules=all] > * > tr > th,
+.main-catalog-info table[rules][rules=all] > td,
+.main-catalog-info table[rules][rules=all] > th {
+    border-width: thin;
+    border-style: solid;
+}
+.main__product-text-wrapper table[rules][rules=rows] > tr,
+.main__product-text-wrapper table[rules][rules=rows] > * > tr,
+.main__quality-product-wrapper table[rules][rules=rows] > tr,
+.main__quality-product-wrapper table[rules][rules=rows] > * > tr,
+.main__quality-text-block-wrapper-one-info table[rules][rules=rows] > tr,
+.main__quality-text-block-wrapper-one-info table[rules][rules=rows] > * > tr,
+.main__about-text-wrapper table[rules][rules=rows] > tr,
+.main__about-text-wrapper table[rules][rules=rows] > * > tr,
+.main-catalog-info table[rules][rules=rows] > tr,
+.main-catalog-info table[rules][rules=rows] > * > tr {
+    border-block-start-width: thin;
+    border-block-end-width: thin;
+    border-block-start-style: solid;
+    border-block-end-style: solid;
+}
+.main__product-text-wrapper table[rules][rules=cols] > tr > td,
+.main__product-text-wrapper table[rules][rules=cols] > * > tr > td,
+.main__product-text-wrapper table[rules][rules=cols] > tr > th,
+.main__product-text-wrapper table[rules][rules=cols] > * > tr > th,
+.main__quality-product-wrapper table[rules][rules=cols] > tr > td,
+.main__quality-product-wrapper table[rules][rules=cols] > * > tr > td,
+.main__quality-product-wrapper table[rules][rules=cols] > tr > th,
+.main__quality-product-wrapper table[rules][rules=cols] > * > tr > th,
+.main__quality-text-block-wrapper-one-info table[rules][rules=cols] > tr > td,
+.main__quality-text-block-wrapper-one-info table[rules][rules=cols] > * > tr > td,
+.main__quality-text-block-wrapper-one-info table[rules][rules=cols] > tr > th,
+.main__quality-text-block-wrapper-one-info table[rules][rules=cols] > * > tr > th,
+.main__about-text-wrapper table[rules][rules=cols] > tr > td,
+.main__about-text-wrapper table[rules][rules=cols] > * > tr > td,
+.main__about-text-wrapper table[rules][rules=cols] > tr > th,
+.main__about-text-wrapper table[rules][rules=cols] > * > tr > th,
+.main-catalog-info table[rules][rules=cols] > tr > td,
+.main-catalog-info table[rules][rules=cols] > * > tr > td,
+.main-catalog-info table[rules][rules=cols] > tr > th,
+.main-catalog-info table[rules][rules=cols] > * > tr > th {
+    border-inline-start-width: thin;
+    border-inline-end-width: thin;
+    border-inline-start-style: solid;
+    border-inline-end-style: solid;
+}
+.main__product-text-wrapper table[rules][rules=groups] > colgroup,
+.main__quality-product-wrapper table[rules][rules=groups] > colgroup,
+.main__quality-text-block-wrapper-one-info table[rules][rules=groups] > colgroup,
+.main__about-text-wrapper table[rules][rules=groups] > colgroup,
+.main-catalog-info table[rules][rules=groups] > colgroup {
+    border-inline-start-width: thin;
+    border-inline-end-width: thin;
+    border-inline-start-style: solid;
+    border-inline-end-style: solid;
+}
+.main__product-text-wrapper table[rules][rules=groups] > tfoot,
+.main__product-text-wrapper table[rules][rules=groups] > thead,
+.main__product-text-wrapper table[rules][rules=groups] > tbody,
+.main__quality-product-wrapper table[rules][rules=groups] > tfoot,
+.main__quality-product-wrapper table[rules][rules=groups] > thead,
+.main__quality-product-wrapper table[rules][rules=groups] > tbody,
+.main__quality-text-block-wrapper-one-info table[rules][rules=groups] > tfoot,
+.main__quality-text-block-wrapper-one-info table[rules][rules=groups] > thead,
+.main__quality-text-block-wrapper-one-info table[rules][rules=groups] > tbody,
+.main__about-text-wrapper table[rules][rules=groups] > tfoot,
+.main__about-text-wrapper table[rules][rules=groups] > thead,
+.main__about-text-wrapper table[rules][rules=groups] > tbody,
+.main-catalog-info table[rules][rules=groups] > tfoot,
+.main-catalog-info table[rules][rules=groups] > thead,
+.main-catalog-info table[rules][rules=groups] > tbody {
+    border-block-start-width: thin;
+    border-block-end-width: thin;
+    border-block-start-style: solid;
+    border-block-start-style: solid;
+}
+.main__product-text-wrapper caption,
+.main__quality-product-wrapper caption,
+.main__quality-text-block-wrapper-one-info caption,
+.main__about-text-wrapper caption,
+.main-catalog-info caption {
+    display: table-caption;
+    text-align: center;
+}
+.main__product-text-wrapper table[align=center] > caption,
+.main__quality-product-wrapper table[align=center] > caption,
+.main__quality-text-block-wrapper-one-info table[align=center] > caption,
+.main__about-text-wrapper table[align=center] > caption,
+.main-catalog-info table[align=center] > caption {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+.main__product-text-wrapper table[align=center] > caption[align=left]:dir(ltr),
+.main__quality-product-wrapper table[align=center] > caption[align=left]:dir(ltr),
+.main__quality-text-block-wrapper-one-info table[align=center] > caption[align=left]:dir(ltr),
+.main__about-text-wrapper table[align=center] > caption[align=left]:dir(ltr),
+.main-catalog-info table[align=center] > caption[align=left]:dir(ltr) {
+    margin-inline-end: 0;
+}
+.main__product-text-wrapper table[align=center] > caption[align=left]:dir(rtl),
+.main__quality-product-wrapper table[align=center] > caption[align=left]:dir(rtl),
+.main__quality-text-block-wrapper-one-info table[align=center] > caption[align=left]:dir(rtl),
+.main__about-text-wrapper table[align=center] > caption[align=left]:dir(rtl),
+.main-catalog-info table[align=center] > caption[align=left]:dir(rtl) {
+    margin-inline-start: 0;
+}
+.main__product-text-wrapper table[align=center] > caption[align=right]:dir(ltr),
+.main__quality-product-wrapper table[align=center] > caption[align=right]:dir(ltr),
+.main__quality-text-block-wrapper-one-info table[align=center] > caption[align=right]:dir(ltr),
+.main__about-text-wrapper table[align=center] > caption[align=right]:dir(ltr),
+.main-catalog-info table[align=center] > caption[align=right]:dir(ltr) {
+    margin-inline-start: 0;
+}
+.main__product-text-wrapper table[align=center] > caption[align=right]:dir(rtl),
+.main__quality-product-wrapper table[align=center] > caption[align=right]:dir(rtl),
+.main__quality-text-block-wrapper-one-info table[align=center] > caption[align=right]:dir(rtl),
+.main__about-text-wrapper table[align=center] > caption[align=right]:dir(rtl),
+.main-catalog-info table[align=center] > caption[align=right]:dir(rtl) {
+    margin-inline-end: 0;
+}
+.main__product-text-wrapper tr,
+.main__quality-product-wrapper tr,
+.main__quality-text-block-wrapper-one-info tr,
+.main__about-text-wrapper tr,
+.main-catalog-info tr {
+    display: table-row;
+    vertical-align: inherit;
+}
+.main__product-text-wrapper col,
+.main__quality-product-wrapper col,
+.main__quality-text-block-wrapper-one-info col,
+.main__about-text-wrapper col,
+.main-catalog-info col {
+    display: table-column;
+}
+.main__product-text-wrapper colgroup,
+.main__quality-product-wrapper colgroup,
+.main__quality-text-block-wrapper-one-info colgroup,
+.main__about-text-wrapper colgroup,
+.main-catalog-info colgroup {
+    display: table-column-group;
+}
+.main__product-text-wrapper tbody,
+.main__quality-product-wrapper tbody,
+.main__quality-text-block-wrapper-one-info tbody,
+.main__about-text-wrapper tbody,
+.main-catalog-info tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
+.main__product-text-wrapper thead,
+.main__quality-product-wrapper thead,
+.main__quality-text-block-wrapper-one-info thead,
+.main__about-text-wrapper thead,
+.main-catalog-info thead {
+    display: table-header-group;
+    vertical-align: middle;
+}
+.main__product-text-wrapper tfoot,
+.main__quality-product-wrapper tfoot,
+.main__quality-text-block-wrapper-one-info tfoot,
+.main__about-text-wrapper tfoot,
+.main-catalog-info tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+}
+.main__product-text-wrapper table > tr,
+.main__quality-product-wrapper table > tr,
+.main__quality-text-block-wrapper-one-info table > tr,
+.main__about-text-wrapper table > tr,
+.main-catalog-info table > tr {
+    vertical-align: middle;
+}
+.main__product-text-wrapper td,
+.main__quality-product-wrapper td,
+.main__quality-text-block-wrapper-one-info td,
+.main__about-text-wrapper td,
+.main-catalog-info td {
+    display: table-cell;
+    vertical-align: inherit;
+    text-align: unset;
+    padding: 1px;
+}
+.main__product-text-wrapper th,
+.main__quality-product-wrapper th,
+.main__quality-text-block-wrapper-one-info th,
+.main__about-text-wrapper th,
+.main-catalog-info th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    padding: 1px;
+}
+.main__product-text-wrapper tr > form:-moz-is-html, .main__product-text-wrapper tbody > form:-moz-is-html,
+.main__product-text-wrapper thead > form:-moz-is-html, .main__product-text-wrapper tfoot > form:-moz-is-html,
+.main__product-text-wrapper table > form:-moz-is-html,
+.main__quality-product-wrapper tr > form:-moz-is-html,
+.main__quality-product-wrapper tbody > form:-moz-is-html,
+.main__quality-product-wrapper thead > form:-moz-is-html,
+.main__quality-product-wrapper tfoot > form:-moz-is-html,
+.main__quality-product-wrapper table > form:-moz-is-html,
+.main__quality-text-block-wrapper-one-info tr > form:-moz-is-html,
+.main__quality-text-block-wrapper-one-info tbody > form:-moz-is-html,
+.main__quality-text-block-wrapper-one-info thead > form:-moz-is-html,
+.main__quality-text-block-wrapper-one-info tfoot > form:-moz-is-html,
+.main__quality-text-block-wrapper-one-info table > form:-moz-is-html,
+.main__about-text-wrapper tr > form:-moz-is-html,
+.main__about-text-wrapper tbody > form:-moz-is-html,
+.main__about-text-wrapper thead > form:-moz-is-html,
+.main__about-text-wrapper tfoot > form:-moz-is-html,
+.main__about-text-wrapper table > form:-moz-is-html,
+.main-catalog-info tr > form:-moz-is-html,
+.main-catalog-info tbody > form:-moz-is-html,
+.main-catalog-info thead > form:-moz-is-html,
+.main-catalog-info tfoot > form:-moz-is-html,
+.main-catalog-info table > form:-moz-is-html {
+    /* Important: don't show these forms in HTML */
+    display: none !important;
+}
+.main__product-text-wrapper table[bordercolor] > tbody,
+.main__product-text-wrapper table[bordercolor] > thead,
+.main__product-text-wrapper table[bordercolor] > tfoot,
+.main__product-text-wrapper table[bordercolor] > col,
+.main__product-text-wrapper table[bordercolor] > colgroup,
+.main__product-text-wrapper table[bordercolor] > tr,
+.main__product-text-wrapper table[bordercolor] > * > tr,
+.main__product-text-wrapper table[bordercolor] > tr > td,
+.main__product-text-wrapper table[bordercolor] > * > tr > td,
+.main__product-text-wrapper table[bordercolor] > tr > th,
+.main__product-text-wrapper table[bordercolor] > * > tr > th,
+.main__quality-product-wrapper table[bordercolor] > tbody,
+.main__quality-product-wrapper table[bordercolor] > thead,
+.main__quality-product-wrapper table[bordercolor] > tfoot,
+.main__quality-product-wrapper table[bordercolor] > col,
+.main__quality-product-wrapper table[bordercolor] > colgroup,
+.main__quality-product-wrapper table[bordercolor] > tr,
+.main__quality-product-wrapper table[bordercolor] > * > tr,
+.main__quality-product-wrapper table[bordercolor] > tr > td,
+.main__quality-product-wrapper table[bordercolor] > * > tr > td,
+.main__quality-product-wrapper table[bordercolor] > tr > th,
+.main__quality-product-wrapper table[bordercolor] > * > tr > th,
+.main__quality-text-block-wrapper-one-info table[bordercolor] > tbody,
+.main__quality-text-block-wrapper-one-info table[bordercolor] > thead,
+.main__quality-text-block-wrapper-one-info table[bordercolor] > tfoot,
+.main__quality-text-block-wrapper-one-info table[bordercolor] > col,
+.main__quality-text-block-wrapper-one-info table[bordercolor] > colgroup,
+.main__quality-text-block-wrapper-one-info table[bordercolor] > tr,
+.main__quality-text-block-wrapper-one-info table[bordercolor] > * > tr,
+.main__quality-text-block-wrapper-one-info table[bordercolor] > tr > td,
+.main__quality-text-block-wrapper-one-info table[bordercolor] > * > tr > td,
+.main__quality-text-block-wrapper-one-info table[bordercolor] > tr > th,
+.main__quality-text-block-wrapper-one-info table[bordercolor] > * > tr > th,
+.main__about-text-wrapper table[bordercolor] > tbody,
+.main__about-text-wrapper table[bordercolor] > thead,
+.main__about-text-wrapper table[bordercolor] > tfoot,
+.main__about-text-wrapper table[bordercolor] > col,
+.main__about-text-wrapper table[bordercolor] > colgroup,
+.main__about-text-wrapper table[bordercolor] > tr,
+.main__about-text-wrapper table[bordercolor] > * > tr,
+.main__about-text-wrapper table[bordercolor] > tr > td,
+.main__about-text-wrapper table[bordercolor] > * > tr > td,
+.main__about-text-wrapper table[bordercolor] > tr > th,
+.main__about-text-wrapper table[bordercolor] > * > tr > th,
+.main-catalog-info table[bordercolor] > tbody,
+.main-catalog-info table[bordercolor] > thead,
+.main-catalog-info table[bordercolor] > tfoot,
+.main-catalog-info table[bordercolor] > col,
+.main-catalog-info table[bordercolor] > colgroup,
+.main-catalog-info table[bordercolor] > tr,
+.main-catalog-info table[bordercolor] > * > tr,
+.main-catalog-info table[bordercolor] > tr > td,
+.main-catalog-info table[bordercolor] > * > tr > td,
+.main-catalog-info table[bordercolor] > tr > th,
+.main-catalog-info table[bordercolor] > * > tr > th {
+    border-color: inherit;
+}
+.main__product-text-wrapper q:before,
+.main__quality-product-wrapper q:before,
+.main__quality-text-block-wrapper-one-info q:before,
+.main__about-text-wrapper q:before,
+.main-catalog-info q:before {
+    content: open-quote;
+}
+.main__product-text-wrapper q:after,
+.main__quality-product-wrapper q:after,
+.main__quality-text-block-wrapper-one-info q:after,
+.main__about-text-wrapper q:after,
+.main-catalog-info q:after {
+    content: close-quote;
+}
+.main__product-text-wrapper b, .main__product-text-wrapper strong,
+.main__quality-product-wrapper b,
+.main__quality-product-wrapper strong,
+.main__quality-text-block-wrapper-one-info b,
+.main__quality-text-block-wrapper-one-info strong,
+.main__about-text-wrapper b,
+.main__about-text-wrapper strong,
+.main-catalog-info b,
+.main-catalog-info strong {
+    font-weight: bolder;
+}
+.main__product-text-wrapper i, .main__product-text-wrapper cite, .main__product-text-wrapper em, .main__product-text-wrapper var, .main__product-text-wrapper dfn,
+.main__quality-product-wrapper i,
+.main__quality-product-wrapper cite,
+.main__quality-product-wrapper em,
+.main__quality-product-wrapper var,
+.main__quality-product-wrapper dfn,
+.main__quality-text-block-wrapper-one-info i,
+.main__quality-text-block-wrapper-one-info cite,
+.main__quality-text-block-wrapper-one-info em,
+.main__quality-text-block-wrapper-one-info var,
+.main__quality-text-block-wrapper-one-info dfn,
+.main__about-text-wrapper i,
+.main__about-text-wrapper cite,
+.main__about-text-wrapper em,
+.main__about-text-wrapper var,
+.main__about-text-wrapper dfn,
+.main-catalog-info i,
+.main-catalog-info cite,
+.main-catalog-info em,
+.main-catalog-info var,
+.main-catalog-info dfn {
+    font-style: italic;
+}
+.main__product-text-wrapper tt, .main__product-text-wrapper code, .main__product-text-wrapper kbd, .main__product-text-wrapper samp,
+.main__quality-product-wrapper tt,
+.main__quality-product-wrapper code,
+.main__quality-product-wrapper kbd,
+.main__quality-product-wrapper samp,
+.main__quality-text-block-wrapper-one-info tt,
+.main__quality-text-block-wrapper-one-info code,
+.main__quality-text-block-wrapper-one-info kbd,
+.main__quality-text-block-wrapper-one-info samp,
+.main__about-text-wrapper tt,
+.main__about-text-wrapper code,
+.main__about-text-wrapper kbd,
+.main__about-text-wrapper samp,
+.main-catalog-info tt,
+.main-catalog-info code,
+.main-catalog-info kbd,
+.main-catalog-info samp {
+    font-family: -moz-fixed;
+}
+.main__product-text-wrapper u, .main__product-text-wrapper ins,
+.main__quality-product-wrapper u,
+.main__quality-product-wrapper ins,
+.main__quality-text-block-wrapper-one-info u,
+.main__quality-text-block-wrapper-one-info ins,
+.main__about-text-wrapper u,
+.main__about-text-wrapper ins,
+.main-catalog-info u,
+.main-catalog-info ins {
+    text-decoration: underline;
+}
+.main__product-text-wrapper s, .main__product-text-wrapper strike, .main__product-text-wrapper del,
+.main__quality-product-wrapper s,
+.main__quality-product-wrapper strike,
+.main__quality-product-wrapper del,
+.main__quality-text-block-wrapper-one-info s,
+.main__quality-text-block-wrapper-one-info strike,
+.main__quality-text-block-wrapper-one-info del,
+.main__about-text-wrapper s,
+.main__about-text-wrapper strike,
+.main__about-text-wrapper del,
+.main-catalog-info s,
+.main-catalog-info strike,
+.main-catalog-info del {
+    text-decoration: line-through;
+}
+.main__product-text-wrapper big,
+.main__quality-product-wrapper big,
+.main__quality-text-block-wrapper-one-info big,
+.main__about-text-wrapper big,
+.main-catalog-info big {
+    font-size: larger;
+}
+.main__product-text-wrapper small,
+.main__quality-product-wrapper small,
+.main__quality-text-block-wrapper-one-info small,
+.main__about-text-wrapper small,
+.main-catalog-info small {
+    font-size: smaller;
+}
+.main__product-text-wrapper sub,
+.main__quality-product-wrapper sub,
+.main__quality-text-block-wrapper-one-info sub,
+.main__about-text-wrapper sub,
+.main-catalog-info sub {
+    vertical-align: sub;
+    font-size: smaller;
+    line-height: normal;
+}
+.main__product-text-wrapper sup,
+.main__quality-product-wrapper sup,
+.main__quality-text-block-wrapper-one-info sup,
+.main__about-text-wrapper sup,
+.main-catalog-info sup {
+    vertical-align: super;
+    font-size: smaller;
+    line-height: normal;
+}
+.main__product-text-wrapper nobr,
+.main__quality-product-wrapper nobr,
+.main__quality-text-block-wrapper-one-info nobr,
+.main__about-text-wrapper nobr,
+.main-catalog-info nobr {
+    white-space: nowrap;
+}
+.main__product-text-wrapper mark,
+.main__quality-product-wrapper mark,
+.main__quality-text-block-wrapper-one-info mark,
+.main__about-text-wrapper mark,
+.main-catalog-info mark {
+    background: yellow;
+    color: black;
+}
+.main__product-text-wrapper abbr[title], .main__product-text-wrapper acronym[title],
+.main__quality-product-wrapper abbr[title],
+.main__quality-product-wrapper acronym[title],
+.main__quality-text-block-wrapper-one-info abbr[title],
+.main__quality-text-block-wrapper-one-info acronym[title],
+.main__about-text-wrapper abbr[title],
+.main__about-text-wrapper acronym[title],
+.main-catalog-info abbr[title],
+.main-catalog-info acronym[title] {
+    text-decoration: dotted underline;
+}
+.main__product-text-wrapper ul, .main__product-text-wrapper menu, .main__product-text-wrapper dir,
+.main__quality-product-wrapper ul,
+.main__quality-product-wrapper menu,
+.main__quality-product-wrapper dir,
+.main__quality-text-block-wrapper-one-info ul,
+.main__quality-text-block-wrapper-one-info menu,
+.main__quality-text-block-wrapper-one-info dir,
+.main__about-text-wrapper ul,
+.main__about-text-wrapper menu,
+.main__about-text-wrapper dir,
+.main-catalog-info ul,
+.main-catalog-info menu,
+.main-catalog-info dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+}
+.main__product-text-wrapper menu[type=context],
+.main__quality-product-wrapper menu[type=context],
+.main__quality-text-block-wrapper-one-info menu[type=context],
+.main__about-text-wrapper menu[type=context],
+.main-catalog-info menu[type=context] {
+    display: none !important;
+}
+.main__product-text-wrapper ol,
+.main__quality-product-wrapper ol,
+.main__quality-text-block-wrapper-one-info ol,
+.main__about-text-wrapper ol,
+.main-catalog-info ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+}
+.main__product-text-wrapper li,
+.main__quality-product-wrapper li,
+.main__quality-text-block-wrapper-one-info li,
+.main__about-text-wrapper li,
+.main-catalog-info li {
+    display: list-item;
+    text-align: match-parent;
+}
+.main__product-text-wrapper :-moz-any(ul, ol, dir, menu, dl) ul,
+.main__product-text-wrapper :-moz-any(ul, ol, dir, menu, dl) ol,
+.main__product-text-wrapper :-moz-any(ul, ol, dir, menu, dl) dir,
+.main__product-text-wrapper :-moz-any(ul, ol, dir, menu, dl) menu,
+.main__product-text-wrapper :-moz-any(ul, ol, dir, menu, dl) dl,
+.main__quality-product-wrapper :-moz-any(ul, ol, dir, menu, dl) ul,
+.main__quality-product-wrapper :-moz-any(ul, ol, dir, menu, dl) ol,
+.main__quality-product-wrapper :-moz-any(ul, ol, dir, menu, dl) dir,
+.main__quality-product-wrapper :-moz-any(ul, ol, dir, menu, dl) menu,
+.main__quality-product-wrapper :-moz-any(ul, ol, dir, menu, dl) dl,
+.main__quality-text-block-wrapper-one-info :-moz-any(ul, ol, dir, menu, dl) ul,
+.main__quality-text-block-wrapper-one-info :-moz-any(ul, ol, dir, menu, dl) ol,
+.main__quality-text-block-wrapper-one-info :-moz-any(ul, ol, dir, menu, dl) dir,
+.main__quality-text-block-wrapper-one-info :-moz-any(ul, ol, dir, menu, dl) menu,
+.main__quality-text-block-wrapper-one-info :-moz-any(ul, ol, dir, menu, dl) dl,
+.main__about-text-wrapper :-moz-any(ul, ol, dir, menu, dl) ul,
+.main__about-text-wrapper :-moz-any(ul, ol, dir, menu, dl) ol,
+.main__about-text-wrapper :-moz-any(ul, ol, dir, menu, dl) dir,
+.main__about-text-wrapper :-moz-any(ul, ol, dir, menu, dl) menu,
+.main__about-text-wrapper :-moz-any(ul, ol, dir, menu, dl) dl,
+.main-catalog-info :-moz-any(ul, ol, dir, menu, dl) ul,
+.main-catalog-info :-moz-any(ul, ol, dir, menu, dl) ol,
+.main-catalog-info :-moz-any(ul, ol, dir, menu, dl) dir,
+.main-catalog-info :-moz-any(ul, ol, dir, menu, dl) menu,
+.main-catalog-info :-moz-any(ul, ol, dir, menu, dl) dl {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.main__product-text-wrapper :-moz-any(ol, ul, menu, dir) ul,
+.main__product-text-wrapper :-moz-any(ol, ul, menu, dir) menu,
+.main__product-text-wrapper :-moz-any(ol, ul, menu, dir) dir,
+.main__quality-product-wrapper :-moz-any(ol, ul, menu, dir) ul,
+.main__quality-product-wrapper :-moz-any(ol, ul, menu, dir) menu,
+.main__quality-product-wrapper :-moz-any(ol, ul, menu, dir) dir,
+.main__quality-text-block-wrapper-one-info :-moz-any(ol, ul, menu, dir) ul,
+.main__quality-text-block-wrapper-one-info :-moz-any(ol, ul, menu, dir) menu,
+.main__quality-text-block-wrapper-one-info :-moz-any(ol, ul, menu, dir) dir,
+.main__about-text-wrapper :-moz-any(ol, ul, menu, dir) ul,
+.main__about-text-wrapper :-moz-any(ol, ul, menu, dir) menu,
+.main__about-text-wrapper :-moz-any(ol, ul, menu, dir) dir,
+.main-catalog-info :-moz-any(ol, ul, menu, dir) ul,
+.main-catalog-info :-moz-any(ol, ul, menu, dir) menu,
+.main-catalog-info :-moz-any(ol, ul, menu, dir) dir {
+    list-style-type: circle;
+}
+.main__product-text-wrapper :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) ul,
+.main__product-text-wrapper :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) menu,
+.main__product-text-wrapper :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) dir,
+.main__quality-product-wrapper :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) ul,
+.main__quality-product-wrapper :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) menu,
+.main__quality-product-wrapper :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) dir,
+.main__quality-text-block-wrapper-one-info :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) ul,
+.main__quality-text-block-wrapper-one-info :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) menu,
+.main__quality-text-block-wrapper-one-info :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) dir,
+.main__about-text-wrapper :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) ul,
+.main__about-text-wrapper :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) menu,
+.main__about-text-wrapper :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) dir,
+.main-catalog-info :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) ul,
+.main-catalog-info :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) menu,
+.main-catalog-info :-moz-any(ol, ul, menu, dir) :-moz-any(ol, ul, menu, dir) dir {
+    list-style-type: square;
+}
+.main__product-text-wrapper hr,
+.main__quality-product-wrapper hr,
+.main__quality-text-block-wrapper-one-info hr,
+.main__about-text-wrapper hr,
+.main-catalog-info hr {
+    display: block;
+    border: 1px inset;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    color: gray;
+    -moz-float-edge: margin-box;
+    box-sizing: content-box;
+}
+.main__product-text-wrapper hr[size="1"],
+.main__quality-product-wrapper hr[size="1"],
+.main__quality-text-block-wrapper-one-info hr[size="1"],
+.main__about-text-wrapper hr[size="1"],
+.main-catalog-info hr[size="1"] {
+    border-style: solid none none none;
+}
+.main__product-text-wrapper img:-moz-broken::before, .main__product-text-wrapper input:-moz-broken::before,
+.main__product-text-wrapper img:-moz-user-disabled::before, .main__product-text-wrapper input:-moz-user-disabled::before,
+.main__product-text-wrapper img:-moz-loading::before, .main__product-text-wrapper input:-moz-loading::before,
+.main__quality-product-wrapper img:-moz-broken::before,
+.main__quality-product-wrapper input:-moz-broken::before,
+.main__quality-product-wrapper img:-moz-user-disabled::before,
+.main__quality-product-wrapper input:-moz-user-disabled::before,
+.main__quality-product-wrapper img:-moz-loading::before,
+.main__quality-product-wrapper input:-moz-loading::before,
+.main__quality-text-block-wrapper-one-info img:-moz-broken::before,
+.main__quality-text-block-wrapper-one-info input:-moz-broken::before,
+.main__quality-text-block-wrapper-one-info img:-moz-user-disabled::before,
+.main__quality-text-block-wrapper-one-info input:-moz-user-disabled::before,
+.main__quality-text-block-wrapper-one-info img:-moz-loading::before,
+.main__quality-text-block-wrapper-one-info input:-moz-loading::before,
+.main__about-text-wrapper img:-moz-broken::before,
+.main__about-text-wrapper input:-moz-broken::before,
+.main__about-text-wrapper img:-moz-user-disabled::before,
+.main__about-text-wrapper input:-moz-user-disabled::before,
+.main__about-text-wrapper img:-moz-loading::before,
+.main__about-text-wrapper input:-moz-loading::before,
+.main-catalog-info img:-moz-broken::before,
+.main-catalog-info input:-moz-broken::before,
+.main-catalog-info img:-moz-user-disabled::before,
+.main-catalog-info input:-moz-user-disabled::before,
+.main-catalog-info img:-moz-loading::before,
+.main-catalog-info input:-moz-loading::before {
+    content: -moz-alt-content !important;
+    unicode-bidi: isolate;
+}
+.main__product-text-wrapper object:-moz-any(:-moz-broken, :-moz-user-disabled) > *|*,
+.main__quality-product-wrapper object:-moz-any(:-moz-broken, :-moz-user-disabled) > *|*,
+.main__quality-text-block-wrapper-one-info object:-moz-any(:-moz-broken, :-moz-user-disabled) > *|*,
+.main__about-text-wrapper object:-moz-any(:-moz-broken, :-moz-user-disabled) > *|*,
+.main-catalog-info object:-moz-any(:-moz-broken, :-moz-user-disabled) > *|* {
+    /*
+      Inherit in the object's alignment so that if we aren't aligned explicitly
+      we'll end up in the right place vertically.  See bug 36997.  Note that this
+      is not !important because we _might_ be aligned explicitly.
+    */
+    vertical-align: inherit;
+}
+.main__product-text-wrapper img:-moz-suppressed, .main__product-text-wrapper input:-moz-suppressed, .main__product-text-wrapper object:-moz-suppressed,
+.main__product-text-wrapper embed:-moz-suppressed,
+.main__quality-product-wrapper img:-moz-suppressed,
+.main__quality-product-wrapper input:-moz-suppressed,
+.main__quality-product-wrapper object:-moz-suppressed,
+.main__quality-product-wrapper embed:-moz-suppressed,
+.main__quality-text-block-wrapper-one-info img:-moz-suppressed,
+.main__quality-text-block-wrapper-one-info input:-moz-suppressed,
+.main__quality-text-block-wrapper-one-info object:-moz-suppressed,
+.main__quality-text-block-wrapper-one-info embed:-moz-suppressed,
+.main__about-text-wrapper img:-moz-suppressed,
+.main__about-text-wrapper input:-moz-suppressed,
+.main__about-text-wrapper object:-moz-suppressed,
+.main__about-text-wrapper embed:-moz-suppressed,
+.main-catalog-info img:-moz-suppressed,
+.main-catalog-info input:-moz-suppressed,
+.main-catalog-info object:-moz-suppressed,
+.main-catalog-info embed:-moz-suppressed {
+    /*
+      Set visibility too in case the page changes display.  Note that we _may_
+      want to just set visibility and not display, in general, if we find that
+      display:none breaks too many layouts.  And if we decide we really do want
+      people to be able to right-click blocked images, etc, we need to set
+      neither one, and hack the painting code.... :(
+     */
+    display: none !important;
+    visibility: hidden !important;
+}
+.main__product-text-wrapper img[usemap], .main__product-text-wrapper object[usemap],
+.main__quality-product-wrapper img[usemap],
+.main__quality-product-wrapper object[usemap],
+.main__quality-text-block-wrapper-one-info img[usemap],
+.main__quality-text-block-wrapper-one-info object[usemap],
+.main__about-text-wrapper img[usemap],
+.main__about-text-wrapper object[usemap],
+.main-catalog-info img[usemap],
+.main-catalog-info object[usemap] {
+    color: blue;
+}
+.main__product-text-wrapper frameset,
+.main__quality-product-wrapper frameset,
+.main__quality-text-block-wrapper-one-info frameset,
+.main__about-text-wrapper frameset,
+.main-catalog-info frameset {
+    display: block !important;
+    overflow: -moz-hidden-unscrollable;
+    position: static !important;
+    float: none !important;
+    border: none !important;
+}
+.main__product-text-wrapper link,
+.main__quality-product-wrapper link,
+.main__quality-text-block-wrapper-one-info link,
+.main__about-text-wrapper link,
+.main-catalog-info link {
+    display: none;
+}
+.main__product-text-wrapper frame,
+.main__quality-product-wrapper frame,
+.main__quality-text-block-wrapper-one-info frame,
+.main__about-text-wrapper frame,
+.main-catalog-info frame {
+    border-radius: 0 !important;
+}
+.main__product-text-wrapper iframe,
+.main__quality-product-wrapper iframe,
+.main__quality-text-block-wrapper-one-info iframe,
+.main__about-text-wrapper iframe,
+.main-catalog-info iframe {
+    border: 2px inset;
+}
+.main__product-text-wrapper noframes,
+.main__quality-product-wrapper noframes,
+.main__quality-text-block-wrapper-one-info noframes,
+.main__about-text-wrapper noframes,
+.main-catalog-info noframes {
+    display: none;
+}
+.main__product-text-wrapper spacer,
+.main__quality-product-wrapper spacer,
+.main__quality-text-block-wrapper-one-info spacer,
+.main__about-text-wrapper spacer,
+.main-catalog-info spacer {
+    position: static !important;
+    float: none !important;
+}
+.main__product-text-wrapper canvas,
+.main__quality-product-wrapper canvas,
+.main__quality-text-block-wrapper-one-info canvas,
+.main__about-text-wrapper canvas,
+.main-catalog-info canvas {
+    -moz-user-select: none;
+}
+.main__product-text-wrapper :-moz-focusring:not(input):not(button):not(select):not(textarea):not(iframe):not(frame):not(body):not(html),
+.main__quality-product-wrapper :-moz-focusring:not(input):not(button):not(select):not(textarea):not(iframe):not(frame):not(body):not(html),
+.main__quality-text-block-wrapper-one-info :-moz-focusring:not(input):not(button):not(select):not(textarea):not(iframe):not(frame):not(body):not(html),
+.main__about-text-wrapper :-moz-focusring:not(input):not(button):not(select):not(textarea):not(iframe):not(frame):not(body):not(html),
+.main-catalog-info :-moz-focusring:not(input):not(button):not(select):not(textarea):not(iframe):not(frame):not(body):not(html) {
+    /* Don't specify the outline-color, we should always use initial value. */
+    outline: 1px dotted;
+}
+.main__product-text-wrapper base, .main__product-text-wrapper basefont, .main__product-text-wrapper datalist, .main__product-text-wrapper head, .main__product-text-wrapper meta, .main__product-text-wrapper script, .main__product-text-wrapper style, .main__product-text-wrapper title,
+.main__product-text-wrapper noembed, .main__product-text-wrapper param, .main__product-text-wrapper template,
+.main__quality-product-wrapper base,
+.main__quality-product-wrapper basefont,
+.main__quality-product-wrapper datalist,
+.main__quality-product-wrapper head,
+.main__quality-product-wrapper meta,
+.main__quality-product-wrapper script,
+.main__quality-product-wrapper style,
+.main__quality-product-wrapper title,
+.main__quality-product-wrapper noembed,
+.main__quality-product-wrapper param,
+.main__quality-product-wrapper template,
+.main__quality-text-block-wrapper-one-info base,
+.main__quality-text-block-wrapper-one-info basefont,
+.main__quality-text-block-wrapper-one-info datalist,
+.main__quality-text-block-wrapper-one-info head,
+.main__quality-text-block-wrapper-one-info meta,
+.main__quality-text-block-wrapper-one-info script,
+.main__quality-text-block-wrapper-one-info style,
+.main__quality-text-block-wrapper-one-info title,
+.main__quality-text-block-wrapper-one-info noembed,
+.main__quality-text-block-wrapper-one-info param,
+.main__quality-text-block-wrapper-one-info template,
+.main__about-text-wrapper base,
+.main__about-text-wrapper basefont,
+.main__about-text-wrapper datalist,
+.main__about-text-wrapper head,
+.main__about-text-wrapper meta,
+.main__about-text-wrapper script,
+.main__about-text-wrapper style,
+.main__about-text-wrapper title,
+.main__about-text-wrapper noembed,
+.main__about-text-wrapper param,
+.main__about-text-wrapper template,
+.main-catalog-info base,
+.main-catalog-info basefont,
+.main-catalog-info datalist,
+.main-catalog-info head,
+.main-catalog-info meta,
+.main-catalog-info script,
+.main-catalog-info style,
+.main-catalog-info title,
+.main-catalog-info noembed,
+.main-catalog-info param,
+.main-catalog-info template {
+    display: none;
+}
+.main__product-text-wrapper area,
+.main__quality-product-wrapper area,
+.main__quality-text-block-wrapper-one-info area,
+.main__about-text-wrapper area,
+.main-catalog-info area {
+    /* Don't give it frames other than its imageframe */
+    display: none !important;
+}
+.main__product-text-wrapper iframe:fullscreen,
+.main__quality-product-wrapper iframe:fullscreen,
+.main__quality-text-block-wrapper-one-info iframe:fullscreen,
+.main__about-text-wrapper iframe:fullscreen,
+.main-catalog-info iframe:fullscreen {
+    /* iframes in full-screen mode don't show a border. */
+    border: none !important;
+    padding: unset !important;
+}
+.main__product-text-wrapper video > xul|videocontrols, .main__product-text-wrapper audio > xul|videocontrols,
+.main__quality-product-wrapper video > xul|videocontrols,
+.main__quality-product-wrapper audio > xul|videocontrols,
+.main__quality-text-block-wrapper-one-info video > xul|videocontrols,
+.main__quality-text-block-wrapper-one-info audio > xul|videocontrols,
+.main__about-text-wrapper video > xul|videocontrols,
+.main__about-text-wrapper audio > xul|videocontrols,
+.main-catalog-info video > xul|videocontrols,
+.main-catalog-info audio > xul|videocontrols {
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-binding: url("chrome://global/content/bindings/videocontrols.xml#videoControls");
+}
+.main__product-text-wrapper video:not([controls]) > xul|videocontrols,
+.main__product-text-wrapper audio:not([controls]) > xul|videocontrols,
+.main__quality-product-wrapper video:not([controls]) > xul|videocontrols,
+.main__quality-product-wrapper audio:not([controls]) > xul|videocontrols,
+.main__quality-text-block-wrapper-one-info video:not([controls]) > xul|videocontrols,
+.main__quality-text-block-wrapper-one-info audio:not([controls]) > xul|videocontrols,
+.main__about-text-wrapper video:not([controls]) > xul|videocontrols,
+.main__about-text-wrapper audio:not([controls]) > xul|videocontrols,
+.main-catalog-info video:not([controls]) > xul|videocontrols,
+.main-catalog-info audio:not([controls]) > xul|videocontrols {
+    visibility: hidden;
+    -moz-binding: none;
+}
+.main__product-text-wrapper video,
+.main__quality-product-wrapper video,
+.main__quality-text-block-wrapper-one-info video,
+.main__about-text-wrapper video,
+.main-catalog-info video {
+    object-fit: contain;
+}
+.main__product-text-wrapper video > img:-moz-native-anonymous,
+.main__quality-product-wrapper video > img:-moz-native-anonymous,
+.main__quality-text-block-wrapper-one-info video > img:-moz-native-anonymous,
+.main__about-text-wrapper video > img:-moz-native-anonymous,
+.main-catalog-info video > img:-moz-native-anonymous {
+    /* Video poster images should render with the video element's "object-fit" &
+       "object-position" properties */
+    object-fit: inherit !important;
+    object-position: inherit !important;
+}
+.main__product-text-wrapper audio:not([controls]),
+.main__quality-product-wrapper audio:not([controls]),
+.main__quality-text-block-wrapper-one-info audio:not([controls]),
+.main__about-text-wrapper audio:not([controls]),
+.main-catalog-info audio:not([controls]) {
+    display: none;
+}
+.main__product-text-wrapper audio[controls],
+.main__quality-product-wrapper audio[controls],
+.main__quality-text-block-wrapper-one-info audio[controls],
+.main__about-text-wrapper audio[controls],
+.main-catalog-info audio[controls] {
+    /* This ensures that intrinsic sizing can reliably shrinkwrap our
+        controls (which are also always horizontal) and produce a
+        reasonable intrinsic size from them. */
+    writing-mode: horizontal-tb !important;
+}
+.main__product-text-wrapper *|*::-moz-html-canvas-content,
+.main__quality-product-wrapper *|*::-moz-html-canvas-content,
+.main__quality-text-block-wrapper-one-info *|*::-moz-html-canvas-content,
+.main__about-text-wrapper *|*::-moz-html-canvas-content,
+.main-catalog-info *|*::-moz-html-canvas-content {
+    display: block !important;
+    /* we want to be an absolute and fixed container */
+    transform: translate(0) !important;
+}
+.main__product-text-wrapper video > .caption-box,
+.main__quality-product-wrapper video > .caption-box,
+.main__quality-text-block-wrapper-one-info video > .caption-box,
+.main__about-text-wrapper video > .caption-box,
+.main-catalog-info video > .caption-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.main__product-text-wrapper ::cue,
+.main__quality-product-wrapper ::cue,
+.main__quality-text-block-wrapper-one-info ::cue,
+.main__about-text-wrapper ::cue,
+.main-catalog-info ::cue {
+    color: white;
+    white-space: pre-line;
+    background-color: rgba(0, 0, 0, 0.8);
+    font: var(--cue-font-size) sans-serif;
+}
+.main__product-text-wrapper input[type=time] > xul|datetimebox,
+.main__quality-product-wrapper input[type=time] > xul|datetimebox,
+.main__quality-text-block-wrapper-one-info input[type=time] > xul|datetimebox,
+.main__about-text-wrapper input[type=time] > xul|datetimebox,
+.main-catalog-info input[type=time] > xul|datetimebox {
+    display: flex;
+    -moz-binding: url("chrome://global/content/bindings/datetimebox.xml#time-input");
+}
+.main__product-text-wrapper input[type=date] > xul|datetimebox,
+.main__quality-product-wrapper input[type=date] > xul|datetimebox,
+.main__quality-text-block-wrapper-one-info input[type=date] > xul|datetimebox,
+.main__about-text-wrapper input[type=date] > xul|datetimebox,
+.main-catalog-info input[type=date] > xul|datetimebox {
+    display: flex;
+    -moz-binding: url("chrome://global/content/bindings/datetimebox.xml#date-input");
+}
+.main__product-text-wrapper details > summary:first-of-type,
+.main__product-text-wrapper details > summary:-moz-native-anonymous,
+.main__quality-product-wrapper details > summary:first-of-type,
+.main__quality-product-wrapper details > summary:-moz-native-anonymous,
+.main__quality-text-block-wrapper-one-info details > summary:first-of-type,
+.main__quality-text-block-wrapper-one-info details > summary:-moz-native-anonymous,
+.main__about-text-wrapper details > summary:first-of-type,
+.main__about-text-wrapper details > summary:-moz-native-anonymous,
+.main-catalog-info details > summary:first-of-type,
+.main-catalog-info details > summary:-moz-native-anonymous {
+    display: list-item;
+    list-style: disclosure-closed inside;
+}
+.main__product-text-wrapper details[open] > summary:first-of-type,
+.main__product-text-wrapper details[open] > summary:-moz-native-anonymous,
+.main__quality-product-wrapper details[open] > summary:first-of-type,
+.main__quality-product-wrapper details[open] > summary:-moz-native-anonymous,
+.main__quality-text-block-wrapper-one-info details[open] > summary:first-of-type,
+.main__quality-text-block-wrapper-one-info details[open] > summary:-moz-native-anonymous,
+.main__about-text-wrapper details[open] > summary:first-of-type,
+.main__about-text-wrapper details[open] > summary:-moz-native-anonymous,
+.main-catalog-info details[open] > summary:first-of-type,
+.main-catalog-info details[open] > summary:-moz-native-anonymous {
+    list-style-type: disclosure-open;
+}
+.main__product-text-wrapper details > summary:first-of-type > *|*,
+.main__quality-product-wrapper details > summary:first-of-type > *|*,
+.main__quality-text-block-wrapper-one-info details > summary:first-of-type > *|*,
+.main__about-text-wrapper details > summary:first-of-type > *|*,
+.main-catalog-info details > summary:first-of-type > *|* {
+    /* Cancel "list-style-position: inside" inherited from summary. */
+    list-style-position: initial;
+}
+.main__product-text-wrapper dialog,
+.main__quality-product-wrapper dialog,
+.main__quality-text-block-wrapper-one-info dialog,
+.main__about-text-wrapper dialog,
+.main-catalog-info dialog {
+    position: absolute;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    color: black;
+    margin: auto;
+    border-width: initial;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    padding: 1em;
+    background: white;
+    width: -moz-fit-content;
+}
+.main__product-text-wrapper dialog:not([open]),
+.main__quality-product-wrapper dialog:not([open]),
+.main__quality-text-block-wrapper-one-info dialog:not([open]),
+.main__about-text-wrapper dialog:not([open]),
+.main-catalog-info dialog:not([open]) {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -393,14 +2208,23 @@ ul.header__contacts__list {
 }
 
 .main__product-text-wrapper p {
-    color: #545557;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0.8px;
-    /* padding-bottom: 5%; */
-    padding: 2%;
+    /*color: #545557;*/
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    /*font-size: 16px;*/
+    /*font-weight: 400;*/
+    /*line-height: 27px;*/
+    /*letter-spacing: 0.8px;*/
+    /*!* padding-bottom: 5%; *!*/
+    /*padding: 2%;*/
+    /*display: block;*/
+    /*margin-block-start: 1em;*/
+    /*margin-block-end: 1em;*/
+    /*margin-inline-start: 0px;*/
+    /*margin-inline-end: 0px;*/
+}
+
+.main__product-text-wrapper li {
+
 }
 
 .main__product-wrapper {
@@ -3344,3 +5168,5 @@ button.main__intro-action:hover {
     left: 0;
     object-fit: cover;
 }
+
+
