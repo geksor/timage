@@ -25,7 +25,7 @@ $this->registerMetaTag([
 
                 <div class="intro__bottom-wrapper">
 <!--                    <div class="col-lg-2">-->
-                        <img src="frontend/web/public/img/tag.png" alt="Логотип">
+                        <img src="frontend/web/public/img/quality-image.svg" alt="Логотип">
 <!--                    </div>-->
 <!--                    <div class="col-lg-4">-->
                     <div class="text-wrapper">
