@@ -5202,3 +5202,9 @@ button.main__intro-action:hover {
     color: #ffffff;
     font-style: italic;
 }
+
+.intro__bottom-wrapper img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
