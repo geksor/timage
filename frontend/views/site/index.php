@@ -33,17 +33,18 @@ $this->registerMetaTag([
                         <p class="text-wrapper-item-two">Нашли дешевле?</p>
                         <p class="text-wrapper-item-three">Снизим цену!</p>
                     </div>
+                    <a class="main__intro-cost" data-toggle="modal" data-target="#exampleModalConsult" href="#">Бесплатная
+                        консультация</a>
 <!--                    </div>-->
 <!--                    <div class="col-lg-6"></div>-->
                 </div>
                 </div>
             </div>
-            <div class="row main__intro-mobile">
-                <div class="main__intro-cost-wrapper">
-                    <a class="main__intro-cost" data-toggle="modal" data-target="#exampleModalConsult" href="#">Бесплатная
-                        консультация</a>
-                </div>
-            </div>
+<!--            <div class="row main__intro-mobile">-->
+<!--                <div class="main__intro-cost-wrapper">-->
+<!--                    -->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 </div>
