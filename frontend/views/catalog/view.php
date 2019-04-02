@@ -39,7 +39,9 @@ $images = $model->getBehavior('galleryBehavior')->getImages();
                 <? foreach ($images as $image) {?>
                     <div class="col-lg-3 col-md-6 col-sm-12 main__catalog-wrapper">
                         <a href="<?= $image->getUrl('original') ?>" data-fancybox="section_gallery">
+                            <div class="catalog-image-wrapper">
                             <img src="<?= $image->getUrl('preview') ?>" alt="<?= $image->name ?>" style="width: 100%">
+                            </div>
                         </a>
                     </div>
                 <?}?>
