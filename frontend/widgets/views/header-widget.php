@@ -70,7 +70,7 @@
                                 <?= \frontend\widgets\HeaderMenuWidget::widget() ?>
                                 <button class="nav-link main__intro-action btn btn-primary" data-toggle="modal"
                                         data-target="#exampleModalHeader">
-                                    Узнай о скидках
+                                        Узнай о скидках
                                 </button>
                             </div>
                         </div>
